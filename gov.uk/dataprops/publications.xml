@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-GB" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:www.gov.uk,2005:/government/publications</id>
+  <link rel="alternate" type="text/html" href="https://www.gov.uk/"/>
+  <link rel="self" type="application/atom+xml" href="https://www.gov.uk/government/publications.atom"/>
+  <title>Publications on GOV.UK</title>
+  <author>
+    <name>HM Government</name>
+  </author>
+  <updated>2014-07-29T14:56:18+01:00</updated>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252125</id>
+    <published>2014-07-29T14:56:18+01:00</published>
+    <updated>2014-07-29T14:56:18+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/violence-against-women-and-girls-evidence-digest-july-2014"/>
+    <title>Guidance: Violence against women and girls: Evidence digest July 2014</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>A review of the latest research and evidence of what works in prevention of violence against women and girls programming.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;A review of the latest research and evidence of what works in prevention of violence against women and girls programming.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/202447</id>
+    <published>2013-12-06T14:32:00+00:00</published>
+    <updated>2014-07-29T14:52:57+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/statistical-data-sets/unclaimed-estates-list"/>
+    <title>Statistical data set: Unclaimed estates list</title>
+    <category label="Statistical data set" term="Statistical data set"/>
+    <summary>A list of unclaimed estates held by the Treasury Solicitor. Last updated 29 July 2014.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Daily update of the unclaimed estates list&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;The Division publishes a list of unclaimed estates which have been recently referred, but not yet administered, and historic cases which have not yet been claimed by entitled relatives.&lt;/p&gt;
+
+&lt;h2 id="the-list"&gt;The list&lt;/h2&gt;
+
+&lt;p&gt;The list is published in a Comma Separated Values (CSV) file format. This acts like a spreadsheet and although it can be opened in any text editor it is is best viewed in a spreadsheet application, such as Microsoft Excel, Google Docs or OpenOffice Calc.&lt;/p&gt;
+
+&lt;p&gt;If you are looking for a particular estate you can search by using Ctrl-F in your browser, text editor or spreadsheet application.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class="attachment inline" id="attachment_654000"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/337925/UnclaimedEstatesList.csv"&gt;Unclaimed estates list&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Comma-separated Values"&gt;CSV&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;1.24MB&lt;/span&gt;)
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The list is updated every working day and newly advertised estates appear at the top of the list. After one day of publication, new estates drop into the rest of the list in alphabetical order.&lt;/p&gt;
+
+&lt;p&gt;Any estates where the the Bona Vacantia division (BVD) no longer has an interest, for example, when a claim to an estate has been admitted, will be removed daily. &lt;/p&gt;
+
+&lt;p&gt;BVD provide as much information about the deceased as they hold in their files. If a field is blank then BVD either do not hold the information or it may be held in paper files stored off-site (historic cases).  BVD are currently working to update the historic estates on the list with information that may be held on their paper files.&lt;/p&gt;
+
+&lt;h2 id="claiming-an-estate"&gt;Claiming an Estate&lt;/h2&gt;
+
+&lt;p&gt;BVD cannot tell you if you are related to any person whose estate appears on the list.  It is the responsibility of claimants to identify their relationship to the deceased and then to submit documentary evidence, including ID documents, to prove that relationship.  &lt;/p&gt;
+
+&lt;p&gt;Further information can be found in the guide on how to &lt;a href="https://www.gov.uk/make-a-claim-to-a-deceased-persons-estate"&gt;Make a claim to a deceased person’s estate&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;However, if you believe you have an entitlement to share in one of the estates on the list then please email &lt;a href="mailto:bvestates@tsol.gsi.gov.uk"&gt;bvestates@tsol.gsi.gov.uk&lt;/a&gt; with a simple family tree which shows how you are related to the deceased and provide the deceased’s name, date of death and our case reference number in your e-mail. &lt;/p&gt;
+
+&lt;p&gt;Alternatively, you can write to BVD with the information at &lt;/p&gt;
+
+&lt;div class="contact postal-address" id="contact_1454"&gt;
+  &lt;div class="content"&gt;
+    &lt;h3&gt;Bona Vacantia - Estates&lt;/h3&gt;
+
+    &lt;div class="vcard contact-inner"&gt;
+        &lt;p class="adr"&gt;
+&lt;span class="fn"&gt;Treasury Solicitor's Department&lt;/span&gt;&lt;br&gt;&lt;span class="street-address"&gt;PO Box 70165&lt;/span&gt;&lt;br&gt;&lt;span class="locality"&gt;London&lt;/span&gt;&lt;br&gt;&lt;span class="postal-code"&gt;WC1A 9HG&lt;/span&gt;
+&lt;/p&gt;
+
+
+        &lt;div class="email-url-number"&gt;
+            &lt;p class="email"&gt;
+              &lt;span class="type"&gt;Email&lt;/span&gt;
+              &lt;a class="email" href="mailto:bvestates@tsol.gsi.gov.uk"&gt;bvestates@tsol.gsi.gov.uk&lt;/a&gt;
+            &lt;/p&gt;
+            &lt;p class="tel"&gt;
+              &lt;span class="type"&gt;Switchboard&lt;/span&gt;
+              020 7210 4700
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;BVD aim to contact you within 20 working days to confirm what documentary evidence you will need to supply in order for us to deal with your claim. &lt;/p&gt;
+
+&lt;p&gt;You should always provide BVD with the BV reference number when you contact them about an estate on the list.&lt;/p&gt;
+
+&lt;h2 id="disclaimer"&gt;Disclaimer&lt;/h2&gt;
+
+&lt;p&gt;Please note: The list cannot be guaranteed to be complete and correct and no warranties are given or implied to that effect. Copies of the list held on other sources or provided by third parties other than the Treasury Solicitor cannot be guaranteed to be accurate or up-to-date. The Treasury Solicitor does not accept any responsibility for any loss whatsoever which might result from reliance thereon.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/156602</id>
+    <published>2013-04-04T01:00:00+01:00</published>
+    <updated>2014-07-29T14:43:59+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/direct-earnings-attachments-an-employers-guide"/>
+    <title>Guidance: Direct Earnings Attachments: an employers' guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Information for employers making Direct Earnings Attachment deductions.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Published updates to both Direct Earnings Attachment guides.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;As an employer, you may be asked to deduct any benefit overpayments an employee owes the Department for Work and Pensions (&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt;) from their pay. This is called a Direct Earnings Attachment.&lt;/p&gt;
+
+&lt;p&gt;The employers’ guide explains what you need to do if you’re asked to implement a Direct Earnings Attachment. It tells you:  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;how to operate and make payments for a Direct Earnings Attachment  &lt;/li&gt;
+  &lt;li&gt;what your legal responsibilities are&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;We have also published more detailed guidance for employers and payroll software developers that includes worked examples on how a &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; Direct Earnings Attachment should be operated.&lt;/p&gt;
+
+&lt;p&gt;These guides are intended to help you understand the main points about Direct Earnings Attachments. They are not a full description or statement of the law.&lt;/p&gt;
+
+&lt;h2 id="more-about-direct-earnings-attachments-on-govuk"&gt;More about Direct Earnings Attachments on GOV.UK&lt;/h2&gt;
+
+&lt;p&gt;Find out more in our guide &lt;a href="https://www.gov.uk/make-benefit-debt-deductions"&gt;Make benefit debt deductions from an employee’s pay&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252135</id>
+    <published>2014-07-29T14:35:21+01:00</published>
+    <updated>2014-07-29T14:35:21+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/dn15-9ss-environmental-permit-application-advertisement"/>
+    <title>Notice: DN15 9SS: Environmental permit application advertisement</title>
+    <category label="Notice" term="Notice"/>
+    <summary>View the application submitted by Anglian Water Services Limited for Winterton Holmes Boreholes at Winterton, Scunthorpe, DN15 9SS.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The Environment Agency consult the public on certain applications for waste operations, mining waste operations, installations, water discharge and groundwater activities.&lt;/p&gt;
+
+&lt;p&gt;These notices explain:&lt;/p&gt;
+
+&lt;p&gt;•	what the application is about&lt;/p&gt;
+
+&lt;p&gt;•	which Environment Agency and local authority offices you can visit to see the application documents on the public register&lt;/p&gt;
+
+&lt;p&gt;•	when you need to comment by&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/192992</id>
+    <published>2013-03-22T00:00:00+00:00</published>
+    <updated>2014-07-29T14:30:30+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"/>
+    <title>Guidance: Advice for decision making: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Advice for DWP decision makers on Universal Credit, PIP and contribution-based JSA and ESA for people who are eligible for Universal Credit.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added memo 15/14 - Universal Credit - further changes to the gateway conditions. Replaced chapter M3 - annotated with references to memo 15/14.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This advice for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers covers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit (&lt;abbr title="Universal Credit"&gt;UC&lt;/abbr&gt;)&lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment (&lt;abbr title="Personal Independence Payment"&gt;PIP&lt;/abbr&gt;)&lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance (&lt;abbr title="Jobseeker's Allowance"&gt;JSA&lt;/abbr&gt;) and contribution-based Employment and Support Allowance (&lt;abbr title="Employment and Support Allowance"&gt;ESA&lt;/abbr&gt;) for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The advice in the &lt;a href="https://www.gov.uk/government/collections/decision-makers-guide-staff-guide"&gt;Decision makers’ guide&lt;/a&gt; applies in all other cases. &lt;/p&gt;
+
+&lt;div class="call-to-action"&gt;
+&lt;p&gt;Join our mailing list to find out when we update this publication by emailing &lt;a href="mailto:dma.leedsmailinglist@dwp.gsi.gov.uk"&gt;dma.leedsmailinglist@dwp.gsi.gov.uk&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/universal-credit"&gt;Universal Credit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href="https://www.gov.uk/pip"&gt;Personal Independence Payment&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/jobseekers-allowance"&gt;Jobseeker’s Allowance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/employment-support-allowance"&gt;Employment and Support Allowance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/237973</id>
+    <published>2014-05-23T00:00:00+01:00</published>
+    <updated>2014-07-29T14:30:28+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/consultations/tax-free-childcare-consultation-on-childcare-account-provision"/>
+    <title>Consultation outcome: Tax-Free Childcare: consultation on childcare account provision</title>
+    <category label="Consultation outcome" term="Consultation outcome"/>
+    <summary>Consultation on the provision of childcare accounts in Tax-Free Childcare.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Response document published alongside Economic Insight and Ipsos MORI research reports&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;The consultation seeks views on options for the government to deliver Tax-Free Childcare itself, through National Savings and Investments (NS&amp;amp;I), or within HM Revenue and Customs (HMRC). This will mean all interested parties will have had an opportunity to comment on all of the options for account provision across public and private sectors. The government will consider responses to this consultation alongside the response to the previous consultation before it makes its final decision on the provision of childcare accounts.&lt;/p&gt;
+
+&lt;div class="call-to-action"&gt;
+&lt;p&gt;Read the &lt;a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/226460/tax-free_childcare_consultation_on_design_and_operation.pdf"&gt;consultation on the implementation of the Tax-Free Childcare scheme&lt;/a&gt; published in August 2013.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="call-to-action"&gt;
+&lt;p&gt;Read the &lt;a href="https://www.gov.uk/government/consultations/tax-free-childcare"&gt;government’s response&lt;/a&gt; to the August consultation which set out details on the design of Tax-Free Childcare.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The government has also commissioned the following external research on Tax-Free Childcare account provision: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+    &lt;p&gt;the economic consultancy Economic Insight will carry out an assessment of the public and private sector account provision options outlined in the consultation document; the specification for this work is set out above &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HMRC have appointed an external research agency to undertake focus groups and interviews with parents on Tax-Free Childcare; further information is &lt;a rel="external" href="https://online.contractsfinder.businesslink.gov.uk:443/Common/View%20Notice.aspx?site=1000&amp;amp;lang=en&amp;amp;NoticeId=1433279"&gt;available online&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;This work will report in time to inform decisions on Tax-Free Childcare account provision.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/200999</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:29:27+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vols-13-and-14-state-pension-credit-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vols 13 and 14: State Pension Credit: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added revised chapters to volumes 13 and 14. Changes to chapters are listed in amendment 31 (vol 13) and 34 (vol 14).&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/collections/decision-makers-guide-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252155</id>
+    <published>2014-07-29T14:29:25+01:00</published>
+    <updated>2014-07-29T14:29:25+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/anti-dumping-duty-measure-ad1989"/>
+    <title>Notice: Anti-Dumping Duty measure AD1989</title>
+    <category label="Notice" term="Notice"/>
+    <summary>Amending Anti-Dumping Duty on imports of ceramic tableware and kitchenware, originating in the People’s Republic of China.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;Anti-Dumping Duty is an import duty charged in addition to normal customs duty and is applied across the whole European Community. It is designed to allow the EC to take action against goods that are sold at less than their normal value - that being defined as the price for ‘like goods’ sold in the exporter’s home market.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/200996</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:28:57+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vol-12-widows-benefit-and-retirement-pension-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vol 12: Widow's Benefit and Retirement Pension: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Replaced chapter 75 with revised version. Amendment 29 lists the changes.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/200936</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:28:28+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vol-11-industrial-injuries-benefits-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vol 11: Industrial injuries benefits: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Replaced chapter 72 with amended version. The changes made are listed in amendment 34.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/200916</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:28:00+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vol-10-benefits-for-incapacity-disability-maternity-and-bereavement-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vol 10: Benefits for incapacity, disability, maternity and bereavement: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added revised chapters 56, 58, 62 and 63. See amendment 37 for a list of changes made.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/200909</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:27:05+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vols-8-and-9-employment-and-support-allowance-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vols 8 and 9: Employment and Support Allowance: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added revised chapters to volumes 8 and 9. See amendment PDFs 15 (vol 8) and 16 (vol 9) for a list of the changes made.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/200787</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:26:28+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vols-4-5-6-and-7-jobseekers-allowance-and-income-support-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vols 4, 5, 6 and 7: Jobseeker's Allowance and Income Support: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added revised chapters of volumes 4 to 7. See amendment PDFs 43 (vol 4), 42 (vol 5), 40 (vol 6) and 38 (vol 7) for a list of changes made.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252161</id>
+    <published>2014-07-29T14:26:22+01:00</published>
+    <updated>2014-07-29T14:26:22+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/monitor-audit-and-risk-committee-papers-may-2014"/>
+    <title>Corporate report: Monitor: audit and risk committee papers May 2014</title>
+    <category label="Corporate report" term="Corporate report"/>
+    <summary>Agenda and committee papers. </summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;Audit and risk committee papers from the May 2014 meeting.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/199051</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:23:34+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vol-3-subjects-common-to-all-benefits-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vol 3: Subjects common to all benefits: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added revised chapters 8, 9, 10, 11, 15, 16 and amendment 45. Amendments to these PDFs are listed in amendment 45.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/227851</id>
+    <published>2014-03-10T00:00:00+00:00</published>
+    <updated>2014-07-29T14:21:38+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/drakelands-mineral-processing-facility-near-plympton-devon"/>
+    <title>Policy paper: Drakelands mineral processing facility, near Plympton, Devon</title>
+    <category label="Policy paper" term="Policy paper"/>
+    <summary>How the Environment Agency is monitoring run-off at Drakelands mineral processing facility at Hemerdon, Devon.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; How the Environment Agency is monitoring run-off at Drakelands Mineral Processing Facility.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;Information about how the Environment Agency is monitoring run-off at Drakelands mineral processing facility, Hemerdon, near Plympton, Devon.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/199043</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:21:33+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vol-2-international-subjects-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vol 2: International subjects: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added amendment 28 giving changes to chapter 7 part 3.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/198975</id>
+    <published>2013-06-01T00:00:00+01:00</published>
+    <updated>2014-07-29T14:19:44+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/decision-makers-guide-vol-1-decision-making-and-appeals-staff-guide"/>
+    <title>Guidance: Decision makers’ guide: Vol 1: Decision making and appeals: staff guide</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Guidance for DWP decision makers on decision making and appeals.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added revised chapters 1, 2, 4, 5, 6 and amendment 45. The amendments to these PDFs are listed in amendment 45.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This guidance is for &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff who make decisions about benefits and pensions. It helps them make decisions that are accurate and consistent.&lt;/p&gt;
+
+&lt;p&gt;The introduction of Universal Credit and Personal Independence Payment affects the guidance &lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; staff use. &lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title="Department for Work and Pensions"&gt;DWP&lt;/abbr&gt; decision makers now use &lt;a href="https://www.gov.uk/government/publications/advice-for-decision-making-staff-guide"&gt;Advice for decision making&lt;/a&gt; (instead of the &lt;abbr title="Decision makers’ guide"&gt;DMG&lt;/abbr&gt;) for decisions that involve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Universal Credit &lt;/li&gt;
+  &lt;li&gt;Personal Independence Payment &lt;/li&gt;
+  &lt;li&gt;contribution-based Jobseeker’s Allowance and contribution-based Employment and Support Allowance for &lt;a href="https://www.gov.uk/universal-credit/eligibility"&gt;people who are eligible for Universal Credit&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="why-we-publish-this-guide"&gt;Why we publish this guide&lt;/h2&gt;
+
+&lt;p&gt;We publish this guide to help people understand how we make decisions.&lt;/p&gt;
+
+&lt;h2 id="information-for-claimants"&gt;Information for claimants&lt;/h2&gt;
+
+&lt;p&gt;Information for claimants about eligibility and how to claim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/browse/benefits"&gt;benefits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/browse/working/state-pension"&gt;pensions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/173329</id>
+    <published>2013-07-17T00:00:00+01:00</published>
+    <updated>2014-07-29T14:05:26+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/consultations/future-of-vehicle-registration-and-licensing-services-in-northern-ireland"/>
+    <title>Consultation outcome: Future of vehicle registration and licensing services in Northern Ireland</title>
+    <category label="Consultation outcome" term="Consultation outcome"/>
+    <summary>This consultation outlines proposals to harmonise vehicle registration and licensing services in Northern Ireland with those in Great Britain so that all customers benefit from the provision of the same modern electronic services.  </summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Updated trade booklet for Northern Ireland.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This consultation outlines proposals to harmonise vehicle registration and licensing services in Northern Ireland (NI) with those in Great Britain so that all customers benefit from the provision of the same modern electronic services.  &lt;/p&gt;
+
+&lt;p&gt;These changes will give customers in NI greater choice and flexibility including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the ability to tax vehicles online or by automated telephone service&lt;/li&gt;
+  &lt;li&gt;access to more services at around 150 Post Office® branches across NI&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The objective is to improve customer service and reduce the burden for businesses and customers when complying with the need to tax their vehicles. &lt;/p&gt;
+
+&lt;p&gt;You are encouraged to consider the Consultation document, Impact Assessments and the screening documents prepared in relation to Section 75 of the Northern Ireland Act 1998. &lt;/p&gt;
+
+&lt;p&gt;The documents have been prepared on the information available at the time of publication and will be updated with any additional information provided during the consultation process. This is your chance to contribute to this consultation and make your views known.&lt;/p&gt;
+
+&lt;h3 id="youtube-future-of-vehicle-registration-and-licensing-services-in-northern-ireland-video"&gt;YouTube: Future of vehicle registration and licensing services in Northern Ireland video&lt;/h3&gt;
+
+&lt;p&gt;Victoria Ford, DVLA Head of Communications talks about the proposed changes to vehicle registration and licensing services for Northern Ireland motorists.&lt;/p&gt;
+
+&lt;p&gt;&lt;a rel="external" href="http://youtu.be/Z-jMC1ZMv5A"&gt;Future of vehicle licensing services in Northern Ireland video&lt;/a&gt;
+*[NI]: Northern Ireland&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/156327</id>
+    <published>2012-11-22T09:30:00+00:00</published>
+    <updated>2014-07-29T14:00:07+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/statistical-data-sets/greenhouse-gas-emissions-from-agriculture-indicators"/>
+    <title>Statistical data set: Greenhouse gas emissions from agriculture indicators</title>
+    <category label="Statistical data set" term="Statistical data set"/>
+    <summary>Indicators of progress in reducing greenhouse gas emissions from agriculture in England.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Updated various indicators in July 2014. &lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;The indicator framework aims to assess progress in reducing greenhouse gas (GHG) emissions whilst research is undertaken to improve the UK agricultural GHG inventory.&lt;/p&gt;
+
+&lt;p&gt;The framework, developed as part of the 2012 review of progress in reducing GHG emissions from agriculture in England, consists of ten key indicators covering farmer attitudes and knowledge, the uptake of mitigation methods and the GHG emission intensity of production in key agricultural sectors. As far as possible, it reflects the farm practices which are aligned to the Industry’s Greenhouse Gas Action Plan and acknowledges the indicators set out in the Committee on Climate Change annual progress reports.&lt;/p&gt;
+
+&lt;p&gt;The indicators are updated on an ongoing basis as new data becomes available with an overall, annual assessment of progress published each July in the Agricultural Statistics and Climate Change publication.&lt;/p&gt;
+
+&lt;p&gt;The &lt;span class="attachment inline" id="attachment_653118"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/181350/ghgindicator-summary-30jul13.pdf"&gt;framework overview&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;233KB&lt;/span&gt;, &lt;span class="page-length"&gt;7 pages&lt;/span&gt;)
+&lt;/span&gt; provides a summary of the key points for each indicator and an overall assessment of the current position. The ten indicators are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653119"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/336843/ghgindicator-1attitudes-25jul14.pdf"&gt;Attitudes and awareness (July 2014)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;265KB&lt;/span&gt;, &lt;span class="page-length"&gt;5 pages&lt;/span&gt;)
+&lt;/span&gt; &lt;/li&gt;
+  &lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653120"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/337786/ghgindicator-2mitigation-30jul14.pdf"&gt;Uptake of mitigation methods (July 2014)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;373KB&lt;/span&gt;, &lt;span class="page-length"&gt;14 pages&lt;/span&gt;)
+&lt;/span&gt; &lt;/li&gt;
+  &lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653121"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/337787/ghgindicator-3soilnitrogen-30jul14.pdf"&gt;Soil nitrogen balance (July 2014)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;219KB&lt;/span&gt;, &lt;span class="page-length"&gt;3 pages&lt;/span&gt;)
+&lt;/span&gt;  &lt;/li&gt;
+  &lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653122"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/337789/ghgindicator-4pigs-30jul14.pdf"&gt;Pig sector: feed conversion ratio for fattening herd (July 2014)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;305KB&lt;/span&gt;, &lt;span class="page-length"&gt;3 pages&lt;/span&gt;)
+&lt;/span&gt; &lt;/li&gt;
+  &lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653123"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/337798/ghgindicator-5grazing-30jul14.pdf"&gt;Grazing livestock sector: beef and sheep breeding regimes (July 2014)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;295KB&lt;/span&gt;, &lt;span class="page-length"&gt;3 pages&lt;/span&gt;)
+&lt;/span&gt;  &lt;/li&gt;
+  &lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653124"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/312691/ghgindicator-6dairycow-20may14.pdf"&gt;Dairy sector: ratio of dairy cow feed production to milk production (May 2014)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;256KB&lt;/span&gt;, &lt;span class="page-length"&gt;3 pages&lt;/span&gt;)
+&lt;/span&gt;  &lt;/li&gt;
+  &lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653125"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/337795/ghgindicator-7poultrysector-30jul14.pdf"&gt;Poultry sector: feed conversion ratio for table birds (July 2014)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;317KB&lt;/span&gt;, &lt;span class="page-length"&gt;4 pages&lt;/span&gt;)
+&lt;/span&gt; &lt;/li&gt;
+  &lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653126"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/319349/ghgindicator-8cereals-11jun14.pdf"&gt;Cereals and other crops: manufactured fertiliser application (May 2014)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;325KB&lt;/span&gt;, &lt;span class="page-length"&gt;6 pages&lt;/span&gt;)
+&lt;/span&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;span class="attachment inline" id="attachment_653127"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/181362/ghgindicator-9slurry-30jul13.pdf"&gt;Slurry and manure (July 2013)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;297KB&lt;/span&gt;, &lt;span class="page-length"&gt;11 pages&lt;/span&gt;)
+&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;
+&lt;span class="attachment inline" id="attachment_653128"&gt;
+  &lt;a href="/government/uploads/system/uploads/attachment_data/file/181363/ghgindicator-10fertiliser-30jul13.pdf"&gt;Organic fertiliser application (July 2013)&lt;/a&gt;
+  (&lt;span class="type"&gt;&lt;abbr title="Portable Document Format"&gt;PDF&lt;/abbr&gt;&lt;/span&gt;, &lt;span class="file-size"&gt;263KB&lt;/span&gt;, &lt;span class="page-length"&gt;9 pages&lt;/span&gt;)
+&lt;/span&gt; &lt;/li&gt;
+&lt;/ol&gt;&lt;div class="call-to-action"&gt;
+&lt;p&gt;For further information please contact:&lt;br&gt;&lt;a href="mailto:observatory@defra.gsi.gov.uk"&gt;observatory@defra.gsi.gov.uk&lt;/a&gt;&lt;br&gt;&lt;a rel="external" href="http://www.twitter.com/@defrastats" title="@DefraStats"&gt;Twitter: @DefraStats&lt;/a&gt;&lt;br&gt;
+Defra Helpline: 03459 33 55 77 (Monday to Friday: 8am to 6pm)&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/179192</id>
+    <published>2013-08-15T14:14:00+01:00</published>
+    <updated>2014-07-29T13:54:05+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/immunisations-at-secondary-school"/>
+    <title>Promotional material: Immunisations at secondary school</title>
+    <category label="Promotional material" term="Promotional material"/>
+    <summary>Your questions answered about the HPV, Td/IPV and MenC vaccinations given between 12 and 14 years of age (school years 8 to 9 or 10).
+</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Updated to reflect the reduction from 3 to 2 in the number of HPV vaccinations that girls will receive from the beginning of September 2014.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;This leaflet has been updated to bring it into line with the immunisation schedule that includes rotavirus and the rescheduled meningitis C vaccination programme.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252142</id>
+    <published>2014-07-29T13:52:04+01:00</published>
+    <updated>2014-07-29T13:52:04+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/yo26-8eu-and-yo26-8ex-environmental-permit-issued"/>
+    <title>Notice: YO26 8EU and YO26 8EX: Environmental permit issued</title>
+    <category label="Notice" term="Notice"/>
+    <summary>View the permit issued for Grange Farm and Widdington Grange Farm, York under the Industrial Emissions Directive.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The Environment Agency publish permit variations that they issue under the Industrial Emissions Directive (IED). &lt;/p&gt;
+
+&lt;p&gt;This decision includes the variation and consolidation notice and decision document for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Operator name: Mr David Rodney Throup, Mr Stephen James Throup, Mr James William Throup, Mr Andrew Rodney Throup, Mr David  James Throup and Mr John Richard Throup&lt;/li&gt;
+  &lt;li&gt;Installation name: Grange Farm and Widdington Grange Farm&lt;/li&gt;
+  &lt;li&gt;Permit number: EPR/GP3536TG/V002&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252139</id>
+    <published>2014-07-29T13:48:42+01:00</published>
+    <updated>2014-07-29T13:48:42+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/ng33-5qt-environmental-permit-issued"/>
+    <title>Notice: NG33 5QT: Environmental permit issued</title>
+    <category label="Notice" term="Notice"/>
+    <summary>View the permit issued for Lincwaste Limted, Stainby under the Industrial Emissions Directive.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The Environment Agency publish permits that they issue under the Industrial Emissions Directive (IED). &lt;/p&gt;
+
+&lt;p&gt;This decision includes the permit letter and decision document for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Operator name: Lincwaste Limited&lt;/li&gt;
+  &lt;li&gt;Installation name: Colsterworth Landfill&lt;/li&gt;
+  &lt;li&gt;Permit number: EPR/BV1437IB/V008&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252137</id>
+    <published>2014-07-29T13:47:08+01:00</published>
+    <updated>2014-07-29T13:47:08+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/gl52-7dg-environmental-permit-issued"/>
+    <title>Notice: GL52 7DG: Environmental permit issued</title>
+    <category label="Notice" term="Notice"/>
+    <summary>View the permit issued for Wingmoor Farm East AD Facility, Cheltenham  under the Industrial Emissions Directive.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The Environment Agency publish permits that they issue under the Industrial Emissions Directive (IED). &lt;/p&gt;
+
+&lt;p&gt;This decision includes the permit and decision document for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Operator name: Andigestion Limited&lt;/li&gt;
+  &lt;li&gt;Installation name: Wingmoor Farm East AD Facility&lt;/li&gt;
+  &lt;li&gt;Permit number: EPR/SP3132VU/A001&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252133</id>
+    <published>2014-07-29T13:45:21+01:00</published>
+    <updated>2014-07-29T13:45:21+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/dn22-0eu-environmental-permit-application-advertisement"/>
+    <title>Notice: DN22 0EU: Environmental permit application advertisement</title>
+    <category label="Notice" term="Notice"/>
+    <summary>View the application submitted by EDF Energy (Cottam Power) Limited for Cottam Ash Processing Plant, Nottingham.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The Environment Agency consult the public on certain applications for waste operations, mining waste operations, installations, water discharge and groundwater activities. The arrangements are explained in their &lt;a href="https://www.gov.uk/government/publications/environmental-permitting-public-participation-statement"&gt;Public Participation Statement&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These notices explain:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;what the application is about&lt;/li&gt;
+  &lt;li&gt;which Environment Agency office you can visit to see the application documents on the public register&lt;/li&gt;
+  &lt;li&gt;when you need to comment by&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252131</id>
+    <published>2014-07-29T13:42:32+01:00</published>
+    <updated>2014-07-29T13:42:32+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/ex2-8bg-environmental-permit-application-advertisement"/>
+    <title>Notice: EX2 8BG: Environmental permit application advertisement</title>
+    <category label="Notice" term="Notice"/>
+    <summary>View the application submitted by Exeter Marine Salvage Limited for Units 1, 2 and 3 Gabriel's Wharf, Exeter.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The Environment Agency consult the public on certain applications for waste operations, mining waste operations, installations, water discharge and groundwater activities. The arrangements are explained in their &lt;a href="https://www.gov.uk/government/publications/environmental-permitting-public-participation-statement"&gt;Public Participation Statement&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These notices explain:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;what the application is about&lt;/li&gt;
+  &lt;li&gt;which Environment Agency office you can visit to see the application documents on the public register&lt;/li&gt;
+  &lt;li&gt;when you need to comment by&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252127</id>
+    <published>2014-07-29T13:40:14+01:00</published>
+    <updated>2014-07-29T13:40:14+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/sk10-4tf-environmental-permit-application-advertisement"/>
+    <title>Notice: SK10 4TF: Environmental permit application advertisement</title>
+    <category label="Notice" term="Notice"/>
+    <summary>View the application submitted by Cyprotex Discovery Limited for BioHub at Alderley Park, Alderley Edge.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The Environment Agency consults the public on certain applications for Radioactive Substances Activity.&lt;/p&gt;
+
+&lt;p&gt;These notices explain:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;what the application is about&lt;/li&gt;
+  &lt;li&gt;which Environment Agency office you can visit to see the application documents on the public register&lt;/li&gt;
+  &lt;li&gt;when you need to comment by&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252124</id>
+    <published>2014-07-29T13:35:34+01:00</published>
+    <updated>2014-07-29T13:35:34+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/de7-4rf-environmental-permit-application-advertisement"/>
+    <title>Notice: DE7 4RF: Environmental permit application advertisement</title>
+    <category label="Notice" term="Notice"/>
+    <summary>View the application submitted by Donald Ward Limited for Wards Recycling, Ilkeston.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The Environment Agency consult the public on certain applications for waste operations, mining waste operations, installations, water discharge and groundwater activities. The arrangements are explained in their &lt;a href="https://www.gov.uk/government/publications/environmental-permitting-public-participation-statement"&gt;Public Participation Statement&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These notices explain:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;what the application is about&lt;/li&gt;
+  &lt;li&gt;which Environment Agency office you can visit to see the application documents on the public register&lt;/li&gt;
+  &lt;li&gt;when you need to comment by&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/244936</id>
+    <published>2014-07-29T13:00:16+01:00</published>
+    <updated>2014-07-29T13:00:16+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/ip-insight-july-2014"/>
+    <title>Correspondence: IP Insight: July 2014</title>
+    <category label="Correspondence" term="Correspondence"/>
+    <summary>Monthly newsletter from the Intellectual Property Office, bringing you the latest developments in the world of Intellectual Property.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;Each edition includes;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;news and views from the Intellectual Property Office and IP professionals&lt;/li&gt;
+  &lt;li&gt;intellectual property stories appearing in the media&lt;/li&gt;
+  &lt;li&gt;details of intellectual property events and exhibitions being held around the UK&lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id="subscriptions"&gt;Subscriptions&lt;/h2&gt;
+
+&lt;p&gt;&lt;a rel="external" href="http://www.ipo.gov.uk/subscribe.htm"&gt;Subscribe&lt;/a&gt; today and join over 11,000 people who receive email notifications every time a new edition is published.&lt;/p&gt;
+
+&lt;p&gt;Already subscribed but don’t want to be? You can &lt;a rel="external" href="http://www.ipo.gov.uk/subscribe-unsub-all.htm"&gt;unsubscribe&lt;/a&gt;, but we’d be sorry to see you go!&lt;/p&gt;
+
+&lt;h2 id="contributions"&gt;Contributions&lt;/h2&gt;
+
+&lt;p&gt;If you have any subjects or stories that you think we should cover, then please email &lt;a href="mailto:ipinsight@ipo.gov.uk"&gt;ipinsight@ipo.gov.uk&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+
+&lt;p&gt;Newsletter articles and/or opinions expressed therein do not necessarily reflect the views of the Intellectual Property Office but remain solely those of the author.&lt;/p&gt;
+
+&lt;p&gt;Previous editions of IP Insight are available on the &lt;a rel="external" href="http://www.ipo.gov.uk/ipinsight.htm"&gt;IPO website&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/201528</id>
+    <published>2013-10-29T20:29:00+00:00</published>
+    <updated>2014-07-29T12:55:02+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/armed-forces-corporate-covenant-signed-pledges"/>
+    <title>Guidance: A to B signed pledges: armed forces corporate covenant</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Find out which organisations have signed a corporate covenant and what they are pledging to do to support you and your family.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added 2 new pledges Astute Facilities Management Ltd and Be Training Academy Ltd.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;h3 id="about-the-corporate-covenant"&gt;About the corporate covenant&lt;/h3&gt;
+
+&lt;p&gt;The corporate covenant is a voluntary pledge made by organisations who wish to demonstrate their concrete support for the armed forces community. It complements the &lt;a href="https://www.gov.uk/the-armed-forces-covenant"&gt;armed forces covenant&lt;/a&gt; and sits alongside the &lt;a href="https://www.gov.uk/armed-forces-community-covenant"&gt;community covenant&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;All corporate covenants include a core statement of commitment that those adopting the scheme sign up to. This covers the 2 key principles of the armed forces covenant, which are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;no member of the armed forces community should face disadvantage in the provision of public and commercial services compared to any other citizen &lt;/li&gt;
+  &lt;li&gt;in some circumstances special treatment may be appropriate, especially for the injured or bereaved &lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Each organisation is then encouraged to offer support in a way most appropriate to their situation and capacity, with the pledge document including a ‘menu’ of options for them to sign up to. This menu covers employment support for veterans, reservists, service spouses and partners, as well as support for cadet units, &lt;a rel="external" href="http://www.armedforcesday.org.uk/"&gt;Armed Forces Day&lt;/a&gt;, and discounts for the armed forces community. There is also an opportunity for companies and charitable organisations to add their own commitments based on local circumstances&lt;/p&gt;
+
+&lt;h3 id="related-information"&gt;Related information&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/government/publications/corporate-covenant-pledge"&gt;Corporate covenant pledge document&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/government/policies/fulfilling-the-commitments-of-the-armed-forces-covenant/supporting-pages/corporate-covenant"&gt;The corporate covenant&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/212435</id>
+    <published>2014-01-02T10:52:00+00:00</published>
+    <updated>2014-07-29T12:54:52+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/statistical-releases-timetable-for-twelve-months-ahead"/>
+    <title>Statistics: Statistical releases: timetable for twelve months ahead</title>
+    <category label="Statistics" term="Statistics"/>
+    <summary>DECC’s timetable of statistical releases for twelve months ahead.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Latest timetable published.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;DECC’s timetable of statistical releases for twelve months ahead is detailed below; all releases are National Statistics unless stated otherwise. The timetable will be updated at the beginning of every month or as and when new releases or revised publication dates are confirmed. All releases will be published on this website at 9:30am on the day of release.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/247905</id>
+    <published>2014-07-25T12:48:00+01:00</published>
+    <updated>2014-07-29T12:53:52+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/h-to-j-signed-pledges-armed-forces-corporate-covenant"/>
+    <title>Guidance: H to J signed pledges: armed forces corporate covenant</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Find out which organisations have signed a corporate covenant and what they are pledging to do to support you and your family.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added John Gillman &amp; Sons (Electrical) Ltd.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;h3 id="about-the-corporate-covenant"&gt;About the corporate covenant&lt;/h3&gt;
+
+&lt;p&gt;The corporate covenant is a voluntary pledge made by organisations who wish to demonstrate their concrete support for the armed forces community. It complements the &lt;a href="https://www.gov.uk/the-armed-forces-covenant"&gt;armed forces covenant&lt;/a&gt; and sits alongside the &lt;a href="https://www.gov.uk/armed-forces-community-covenant"&gt;community covenant&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;All corporate covenants include a core statement of commitment that those adopting the scheme sign up to. This covers the 2 key principles of the armed forces covenant, which are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;no member of the armed forces community should face disadvantage in the provision of public and commercial services compared to any other citizen &lt;/li&gt;
+  &lt;li&gt;in some circumstances special treatment may be appropriate, especially for the injured or bereaved &lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Each organisation is then encouraged to offer support in a way most appropriate to their situation and capacity, with the pledge document including a ‘menu’ of options for them to sign up to. This menu covers employment support for veterans, reservists, service spouses and partners, as well as support for cadet units, &lt;a rel="external" href="http://www.armedforcesday.org.uk/"&gt;Armed Forces Day&lt;/a&gt;, and discounts for the armed forces community. There is also an opportunity for companies and charitable organisations to add their own commitments based on local circumstances.&lt;/p&gt;
+
+&lt;h2 id="related-information"&gt;Related information&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/government/publications/corporate-covenant-pledge"&gt;Corporate covenant pledge document&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/government/policies/fulfilling-the-commitments-of-the-armed-forces-covenant/supporting-pages/corporate-covenant"&gt;The corporate covenant&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/211521</id>
+    <published>2013-10-13T00:00:00+01:00</published>
+    <updated>2014-07-29T12:43:43+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/child-death-overview-panels-contacts"/>
+    <title>Guidance: Child death overview panels: contacts</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Contact details of the designated people in every child death overview panel to whom child death notifications should be sent.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Updated a number of email addresses in the contact document.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;Since 1 April 2008 all local safeguarding children boards (&lt;abbr title="local safeguarding children boards"&gt;LSCBs&lt;/abbr&gt;) are required to review the deaths of all children in their area, as outlined in chapter 5 of the 2013 guidance, &lt;a rel="external" href="http://www.education.gov.uk/aboutdfe/statutory/g00213160/working-together-to-safeguard-children"&gt;‘Working together to safeguard children&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The overall principle of the child death review process is to learn lessons and reduce the incidence of preventable child deaths in the future. It is a statutory requirement in the &lt;a rel="external" href="http://www.legislation.gov.uk/ukpga/2008/23/contents"&gt;Children and Young Persons Act 2008&lt;/a&gt; that each &lt;abbr title="local safeguarding children board"&gt;LSCB&lt;/abbr&gt; must make arrangements for the receipt of notifications from registrars and to publish those arrangements. The &lt;a rel="external" href="http://www.legislation.gov.uk/uksi/2008/1652/made"&gt;Coroners (Amendment) Rules 2008&lt;/a&gt; also place a duty on coroners to inform an &lt;abbr title="local safeguarding children board"&gt;LSCB&lt;/abbr&gt; for the area in which the child died that there will be an inquest or post-mortem.&lt;/p&gt;
+
+&lt;p&gt;In addition, in order for &lt;abbr title="local safeguarding children boards"&gt;LSCBs&lt;/abbr&gt; to fulfil their responsibilities for reviewing deaths, every &lt;abbr title="local safeguarding children board"&gt;LSCB&lt;/abbr&gt; should be informed of all deaths of children normally resident in its geographical area.&lt;/p&gt;
+
+&lt;p&gt;To assist those responsible for carrying out these tasks, contact details are provided for the child death overview panels in England.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252132</id>
+    <published>2014-07-29T12:22:48+01:00</published>
+    <updated>2014-07-29T12:22:48+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/insolvency-service-household-expenditure-survey-in-connection-to-income-payment-agreements-ipa"/>
+    <title>Transparency data: Insolvency Service household expenditure survey in connection to income payment agreements (IPA)</title>
+    <category label="Transparency data" term="Transparency data"/>
+    <summary>Spreadsheet showing average UK spending calculated from the Office of National Statistics publication ‘Household (family) Expenditure Survey’</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;The attached spreadsheet shows the average UK spending calculated from the Office of National Statistics publication ‘Household (family) Expenditure Survey’. &lt;/p&gt;
+
+&lt;p&gt;The Insolvency Service uses this information when calculating income payment agreements.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252129</id>
+    <published>2014-07-29T12:12:27+01:00</published>
+    <updated>2014-07-29T12:12:27+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/dukes-annual-tables"/>
+    <title>Statistics: DUKES: annual tables</title>
+    <category label="Statistics" term="Statistics"/>
+    <summary>Annual statistics on the value balance of traded energy, sales of electricity and gas by sector, and expenditure on energy by final user.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;DECC publishes annual statistics on the value balance of traded energy, sales of electricity and gas by sector, and expenditure on energy by final user in its annual DUKES publication.&lt;/p&gt;
+
+&lt;p&gt;Tables last updated on 25 July 2013.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/211226</id>
+    <published>2013-12-16T12:10:00+00:00</published>
+    <updated>2014-07-29T11:59:32+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/new-school-proposals"/>
+    <title>Transparency data: New school proposals</title>
+    <category label="Transparency data" term="Transparency data"/>
+    <summary>Lists of local authorities seeking academy and free school proposers, and of all academies and free schools set up.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Updated local authorities seeking proposals information.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;p&gt;‘Local authorities currently seeking proposers’ contains details of all local authorities seeking proposers to establish a new academy or free school and includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;name of local authority&lt;/li&gt;
+  &lt;li&gt;location of the new school&lt;/li&gt;
+  &lt;li&gt;phase of education&lt;/li&gt;
+  &lt;li&gt;capacity of the school&lt;/li&gt;
+  &lt;li&gt;closing date of specification&lt;/li&gt;
+  &lt;li&gt;a link to the specification&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;‘Recently established schools under section 6A’ contains details of all schools established under the academy/free school presumption section of the Education and Inspections Act 2006. It includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;name of local authority&lt;/li&gt;
+  &lt;li&gt;location of the new school&lt;/li&gt;
+  &lt;li&gt;phase of education&lt;/li&gt;
+  &lt;li&gt;proposed opening date&lt;/li&gt;
+  &lt;li&gt;sponsor&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252088</id>
+    <published>2014-07-29T11:56:40+01:00</published>
+    <updated>2014-07-29T11:56:40+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/trade-mark-forms-and-fees"/>
+    <title>Guidance: Trade mark forms and fees</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>List of trade mark forms and fees.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;Use this guide to find details of all our trade marks forms, cost for both online and paper transactions and when they were last updated. &lt;/p&gt;
+
+&lt;h2 id="fee-sheets"&gt;Fee sheets&lt;/h2&gt;
+
+&lt;p&gt;A &lt;a href="https://www.gov.uk/government/collections/intellectual-property-office-fee-sheets"&gt;fee sheet&lt;/a&gt; must be filed with all fee bearing forms. &lt;/p&gt;
+
+&lt;h2 id="how-to-pay-us"&gt;How to pay us&lt;/h2&gt;
+
+&lt;p&gt;Information on &lt;a href="https://www.gov.uk/government/publications/intellectual-property-office-how-to-pay-us"&gt;how to pay&lt;/a&gt; by card, cheque, bank transfer or deposit account are available in in a supporting detailed guide.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/247923</id>
+    <published>2014-07-25T12:51:00+01:00</published>
+    <updated>2014-07-29T11:53:14+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/q-to-r-signed-pledges-armed-forces-corporate-covenant"/>
+    <title>Guidance: Q to R signed pledges: armed forces corporate covenant</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Find out which organisations have signed a corporate covenant and what they are pledging to do to support you and your family.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added Ryder Ltd.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;h3 id="about-the-corporate-covenant"&gt;About the corporate covenant&lt;/h3&gt;
+
+&lt;p&gt;The corporate covenant is a voluntary pledge made by organisations who wish to demonstrate their concrete support for the armed forces community. It complements the &lt;a href="https://www.gov.uk/the-armed-forces-covenant"&gt;armed forces covenant&lt;/a&gt; and sits alongside the &lt;a href="https://www.gov.uk/armed-forces-community-covenant"&gt;community covenant&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;All corporate covenants include a core statement of commitment that those adopting the scheme sign up to. This covers the 2 key principles of the armed forces covenant, which are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;no member of the armed forces community should face disadvantage in the provision of public and commercial services compared to any other citizen &lt;/li&gt;
+  &lt;li&gt;in some circumstances special treatment may be appropriate, especially for the injured or bereaved &lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Each organisation is then encouraged to offer support in a way most appropriate to their situation and capacity, with the pledge document including a ‘menu’ of options for them to sign up to. This menu covers employment support for veterans, reservists, service spouses and partners, as well as support for cadet units, &lt;a rel="external" href="http://www.armedforcesday.org.uk/"&gt;Armed Forces Day&lt;/a&gt;, and discounts for the armed forces community. There is also an opportunity for companies and charitable organisations to add their own commitments based on local circumstances&lt;/p&gt;
+
+&lt;h2 id="related-information"&gt;Related information&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/government/publications/corporate-covenant-pledge"&gt;Corporate covenant pledge document&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/government/policies/fulfilling-the-commitments-of-the-armed-forces-covenant/supporting-pages/corporate-covenant"&gt;The corporate covenant&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/247907</id>
+    <published>2014-07-25T12:49:00+01:00</published>
+    <updated>2014-07-29T11:52:16+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/n-to-p-signed-pledges-armed-forces-corporate-covenant"/>
+    <title>Guidance: N to P signed pledges: armed forces corporate covenant</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>Find out which organisations have signed a corporate covenant and what they are pledging to do to support you and your family.</summary>
+    <content type="html">&lt;p&gt;&lt;em&gt;Updated:&lt;/em&gt; Added Protective Security Training &amp; Consultancy.&lt;/p&gt;&lt;div class="govspeak"&gt;&lt;h3 id="about-the-corporate-covenant"&gt;About the corporate covenant&lt;/h3&gt;
+
+&lt;p&gt;The corporate covenant is a voluntary pledge made by organisations who wish to demonstrate their concrete support for the armed forces community. It complements the &lt;a href="https://www.gov.uk/the-armed-forces-covenant"&gt;armed forces covenant&lt;/a&gt; and sits alongside the &lt;a href="https://www.gov.uk/armed-forces-community-covenant"&gt;community covenant&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;All corporate covenants include a core statement of commitment that those adopting the scheme sign up to. This covers the 2 key principles of the armed forces covenant, which are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;no member of the armed forces community should face disadvantage in the provision of public and commercial services compared to any other citizen &lt;/li&gt;
+  &lt;li&gt;in some circumstances special treatment may be appropriate, especially for the injured or bereaved &lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Each organisation is then encouraged to offer support in a way most appropriate to their situation and capacity, with the pledge document including a ‘menu’ of options for them to sign up to. This menu covers employment support for veterans, reservists, service spouses and partners, as well as support for cadet units, &lt;a rel="external" href="http://www.armedforcesday.org.uk/"&gt;Armed Forces Day&lt;/a&gt;, and discounts for the armed forces community. There is also an opportunity for companies and charitable organisations to add their own commitments based on local circumstances&lt;/p&gt;
+
+&lt;h2 id="related-information"&gt;Related information&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/government/publications/corporate-covenant-pledge"&gt;Corporate covenant pledge document&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.gov.uk/government/policies/fulfilling-the-commitments-of-the-armed-forces-covenant/supporting-pages/corporate-covenant"&gt;The corporate covenant&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:www.gov.uk,2005:PublicationesquePresenter/252089</id>
+    <published>2014-07-29T11:50:18+01:00</published>
+    <updated>2014-07-29T11:50:18+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.gov.uk/government/publications/patent-forms-and-fees"/>
+    <title>Guidance: Patent forms and fees</title>
+    <category label="Guidance" term="Guidance"/>
+    <summary>List of online and paper patent forms and fees.</summary>
+    <content type="html">&lt;div class="govspeak"&gt;&lt;p&gt;Use this guide to find details of all our patent forms, cost for both online and paper transactions and when they were last updated. &lt;/p&gt;
+
+&lt;h2 id="fee-sheets"&gt;Fee sheets&lt;/h2&gt;
+
+&lt;p&gt;A &lt;a href="https://www.gov.uk/government/collections/intellectual-property-office-fee-sheets"&gt;fee sheet&lt;/a&gt; must be filed with all fee bearing forms. &lt;/p&gt;
+
+&lt;h2 id="how-to-pay-us"&gt;How to pay us&lt;/h2&gt;
+
+&lt;p&gt;Information on &lt;a href="https://www.gov.uk/government/publications/intellectual-property-office-how-to-pay-us"&gt;how to pay&lt;/a&gt; by card, cheque, bank transfer or deposit account are available in in a supporting detailed guide.&lt;/p&gt;&lt;/div&gt;</content>
+  </entry>
+</feed>

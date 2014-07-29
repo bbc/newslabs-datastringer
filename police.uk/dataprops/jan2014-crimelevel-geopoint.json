@@ -1,0 +1,3709 @@
+[{
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.586677",
+    "street": {
+      "id": 978598,
+      "name": "On or near Pedestrian Subway"
+    },
+    "longitude": "-0.147058"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244408,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.580602",
+    "street": {
+      "id": 974736,
+      "name": "On or near Toyne Way"
+    },
+    "longitude": "-0.156471"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244427,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.580091",
+    "street": {
+      "id": 974742,
+      "name": "On or near Kenwood Road"
+    },
+    "longitude": "-0.156000"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244424,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572858",
+    "street": {
+      "id": 974862,
+      "name": "On or near Wembury Mews"
+    },
+    "longitude": "-0.139828"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29243720,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.570098",
+    "street": {
+      "id": 972151,
+      "name": "On or near Cromwell Place"
+    },
+    "longitude": "-0.141037"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29243726,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576714",
+    "street": {
+      "id": 974855,
+      "name": "On or near Shepherd's Close"
+    },
+    "longitude": "-0.141979"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29243727,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575398",
+    "street": {
+      "id": 974858,
+      "name": "On or near Holmesdale Road"
+    },
+    "longitude": "-0.141788"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29243730,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577476",
+    "street": {
+      "id": 974702,
+      "name": "On or near Parking Area"
+    },
+    "longitude": "-0.145830"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29243774,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.585679",
+    "street": {
+      "id": 978600,
+      "name": "On or near Muswell Hill Road"
+    },
+    "longitude": "-0.147113"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29243778,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.578582",
+    "street": {
+      "id": 974718,
+      "name": "On or near North Hill"
+    },
+    "longitude": "-0.153824"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244418,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.570820",
+    "street": {
+      "id": 972140,
+      "name": "On or near Tile Kiln Lane"
+    },
+    "longitude": "-0.139463"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29243719,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.585486",
+    "street": {
+      "id": 978599,
+      "name": "On or near Woodside Avenue"
+    },
+    "longitude": "-0.154786"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244419,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.573595",
+    "street": {
+      "id": 974846,
+      "name": "On or near Milton Avenue"
+    },
+    "longitude": "-0.138138"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29243718,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.589087",
+    "street": {
+      "id": 978521,
+      "name": "On or near Lynmouth Road"
+    },
+    "longitude": "-0.155622"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244423,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.578448",
+    "street": {
+      "id": 974724,
+      "name": "On or near Church Road"
+    },
+    "longitude": "-0.151607"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244417,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.562374",
+    "street": {
+      "id": 972272,
+      "name": "On or near St Anne's Close"
+    },
+    "longitude": "-0.150701"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258770,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569219",
+    "street": {
+      "id": 972158,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.142270"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29259617,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569219",
+    "street": {
+      "id": 972158,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.142270"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29259607,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569219",
+    "street": {
+      "id": 972158,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.142270"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29259606,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569219",
+    "street": {
+      "id": 972158,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.142270"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29259605,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.563044",
+    "street": {
+      "id": 972107,
+      "name": "On or near Winscombe Street"
+    },
+    "longitude": "-0.142493"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29259604,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29259603,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.568823",
+    "street": {
+      "id": 972284,
+      "name": "On or near Witanhurst Lane"
+    },
+    "longitude": "-0.151377"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258780,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.562374",
+    "street": {
+      "id": 972272,
+      "name": "On or near St Anne's Close"
+    },
+    "longitude": "-0.150701"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258775,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.562374",
+    "street": {
+      "id": 972272,
+      "name": "On or near St Anne's Close"
+    },
+    "longitude": "-0.150701"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258774,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.562374",
+    "street": {
+      "id": 972272,
+      "name": "On or near St Anne's Close"
+    },
+    "longitude": "-0.150701"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258773,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.562374",
+    "street": {
+      "id": 972272,
+      "name": "On or near St Anne's Close"
+    },
+    "longitude": "-0.150701"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258772,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.562374",
+    "street": {
+      "id": 972272,
+      "name": "On or near St Anne's Close"
+    },
+    "longitude": "-0.150701"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258771,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571023",
+    "street": {
+      "id": 972288,
+      "name": "On or near Highgate High Street"
+    },
+    "longitude": "-0.148921"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258768,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.565995",
+    "street": {
+      "id": 972303,
+      "name": "On or near Swain's Lane"
+    },
+    "longitude": "-0.146557"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258758,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572521",
+    "street": {
+      "id": 974754,
+      "name": "On or near Hampstead Lane"
+    },
+    "longitude": "-0.165268"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29258853,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569219",
+    "street": {
+      "id": 972158,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.142270"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253136,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564817",
+    "street": {
+      "id": 972132,
+      "name": "On or near Anatola Road"
+    },
+    "longitude": "-0.140286"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253135,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253132,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253131,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253130,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253129,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253128,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569890",
+    "street": {
+      "id": 972232,
+      "name": "On or near Gladsmuir Road"
+    },
+    "longitude": "-0.134696"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253114,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569890",
+    "street": {
+      "id": 972232,
+      "name": "On or near Gladsmuir Road"
+    },
+    "longitude": "-0.134696"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253113,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572185",
+    "street": {
+      "id": 974879,
+      "name": "On or near Ashmount Road"
+    },
+    "longitude": "-0.132539"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253101,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564817",
+    "street": {
+      "id": 972132,
+      "name": "On or near Anatola Road"
+    },
+    "longitude": "-0.140286"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29253134,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.579893",
+    "street": {
+      "id": 974716,
+      "name": "On or near North Hill Avenue"
+    },
+    "longitude": "-0.154248"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244416,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "anti-social-behaviour",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.573510",
+    "street": {
+      "id": 974762,
+      "name": "On or near Castle Yard"
+    },
+    "longitude": "-0.149210"
+  },
+  "context": "",
+  "outcome_status": null,
+  "persistent_id": "",
+  "id": 29244414,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "bicycle-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575398",
+    "street": {
+      "id": 974858,
+      "name": "On or near Holmesdale Road"
+    },
+    "longitude": "-0.141788"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "13f0368b0c44746a103865b7219b4772d005a84a3babc8305c5d0e9ef9a55054",
+  "id": 29221952,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.565757",
+    "street": {
+      "id": 972121,
+      "name": "On or near Magdala Avenue"
+    },
+    "longitude": "-0.138905"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-03"
+  },
+  "persistent_id": "c60890b815dbb240de74b9b93beab0133f67a59bc5d585ba0b3194312af46d0a",
+  "id": 29230831,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.588043",
+    "street": {
+      "id": 978518,
+      "name": "On or near Southern Road"
+    },
+    "longitude": "-0.157887"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "72d5ac54a193af9b134d06d4587661e7bcc7d1e4db3d74a276fcf055937d4c36",
+  "id": 29187372,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.566564",
+    "street": {
+      "id": 972271,
+      "name": "On or near Westhill Park"
+    },
+    "longitude": "-0.155278"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "0454e5561d86986f463a6f77ed7645cde2fa6adfccc9ccf2ee5027874deea95e",
+  "id": 29194461,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575655",
+    "street": {
+      "id": 974723,
+      "name": "On or near Hillcrest"
+    },
+    "longitude": "-0.149527"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-01"
+  },
+  "persistent_id": "4983d96781fa24131e6a0da5a5d44b50ab1b2cbc100ef0ab1470aeecf8b73994",
+  "id": 29239903,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564624",
+    "street": {
+      "id": 972277,
+      "name": "On or near Makepeace Avenue"
+    },
+    "longitude": "-0.149686"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-03"
+  },
+  "persistent_id": "4a7528350290ae96c7e5938897d814018bb91d287abc8428a02daf5ef80129e4",
+  "id": 29237576,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571549",
+    "street": {
+      "id": 974877,
+      "name": "On or near Gresley Road"
+    },
+    "longitude": "-0.133257"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "165c9514f2b32e8319d41e50229aacb808987658ae43bb09a4373f7e4979d69e",
+  "id": 29236599,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.589087",
+    "street": {
+      "id": 978521,
+      "name": "On or near Lynmouth Road"
+    },
+    "longitude": "-0.155622"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "4c8edb2bcf18559ac0f03d7275ab18d12829a35067850c25aa15b57bd38700b9",
+  "id": 29231812,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.570931",
+    "street": {
+      "id": 972291,
+      "name": "On or near Dukes Point"
+    },
+    "longitude": "-0.145375"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-04"
+  },
+  "persistent_id": "ed8e160a945b479c49f2dd618a2dd8844fd730243e2ea87fe648f57615656167",
+  "id": 29203085,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571189",
+    "street": {
+      "id": 972152,
+      "name": "On or near Cromwell Avenue"
+    },
+    "longitude": "-0.141194"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-01"
+  },
+  "persistent_id": "bd229d15a423903587b489d051dcc66c1d28443c0bf1a5da1554476041216cde",
+  "id": 29230505,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.586677",
+    "street": {
+      "id": 978598,
+      "name": "On or near Pedestrian Subway"
+    },
+    "longitude": "-0.147058"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "084d06ab92939248c8877ebb2bcce802bfdf2b7efc8ec1d090d1b2ddd1f1d9a6",
+  "id": 29224598,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.581899",
+    "street": {
+      "id": 974741,
+      "name": "On or near North Hill"
+    },
+    "longitude": "-0.157154"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "08b27633a1692be51f813ff04a7e1b690a647771976b5e3c6ae4085bd18075ef",
+  "id": 29211262,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569273",
+    "street": {
+      "id": 972231,
+      "name": "On or near Harberton Road"
+    },
+    "longitude": "-0.134346"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-01"
+  },
+  "persistent_id": "4d65cd0996a3009c0ddb1da8cb89fc52198c95f322bd94dfdffcdd4ef26139f2",
+  "id": 29211128,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.586902",
+    "street": {
+      "id": 978737,
+      "name": "On or near Edmunds Walk"
+    },
+    "longitude": "-0.167114"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "1cf42366e816ef98284b8b6b9dfccac0a085d8cbea485a9b70f213c926f97de3",
+  "id": 29206608,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577016",
+    "street": {
+      "id": 974705,
+      "name": "On or near View Road"
+    },
+    "longitude": "-0.155447"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "70cf01863d25d8184750fd2234fd7957998ce49e9a41846e459ad6049f65692c",
+  "id": 29205276,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575655",
+    "street": {
+      "id": 974723,
+      "name": "On or near Hillcrest"
+    },
+    "longitude": "-0.149527"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "bed65438d023826da386d6353a6eb85f59701f9f190b5a905c90235e88b2ad40",
+  "id": 29203599,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576602",
+    "street": {
+      "id": 974706,
+      "name": "On or near The Park"
+    },
+    "longitude": "-0.149113"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "20ef0da90804de78f125f559610a1eadb1a5dc2afb5380f10d6fd645177dd407",
+  "id": 29192581,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.582755",
+    "street": {
+      "id": 974737,
+      "name": "On or near Sussex Gardens"
+    },
+    "longitude": "-0.157827"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "be155560554c85599039c5016672dc652fcc945668fb5367545117b43975cccd",
+  "id": 29186881,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.582028",
+    "street": {
+      "id": 974747,
+      "name": "On or near Aylmer Road"
+    },
+    "longitude": "-0.161364"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-02"
+  },
+  "persistent_id": "c99146be4e7cd13cd98ebe28a53ce0a18e3562f88cd8854212f499724751b248",
+  "id": 29186206,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572518",
+    "street": {
+      "id": 974871,
+      "name": "On or near Cholmeley Crescent"
+    },
+    "longitude": "-0.144488"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "3da11cf5c9aad1ea65893f1ead69b5e7b36566b8e60f4a41c3fa54a54f5bfb7e",
+  "id": 29184349,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569890",
+    "street": {
+      "id": 972232,
+      "name": "On or near Gladsmuir Road"
+    },
+    "longitude": "-0.134696"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "aa7c7472a4ae325be6d4817c0357d23bf816be4908f043854e0310d8daee5747",
+  "id": 29183457,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571133",
+    "street": {
+      "id": 972157,
+      "name": "On or near Winchester Place"
+    },
+    "longitude": "-0.141644"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "a032b0edc80f69a938586358d24b84cc484796239471c8e3bda67738d3e63a19",
+  "id": 29180657,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.574642",
+    "street": {
+      "id": 974709,
+      "name": "On or near Southwood Lawn Road"
+    },
+    "longitude": "-0.146278"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "0da2978afd8b60299534aaf2920183f963f1df28a6a68d59cf010aa768a4ac82",
+  "id": 29180335,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.582743",
+    "street": {
+      "id": 974836,
+      "name": "On or near Wood Vale"
+    },
+    "longitude": "-0.138269"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "1ffbfb58883c81c5aa99b15a5bea8372694bb101bfe5efdc2011ab37ffdc0246",
+  "id": 29230420,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.570071",
+    "street": {
+      "id": 972294,
+      "name": "On or near Bisham Gardens"
+    },
+    "longitude": "-0.147272"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "1cf04b5f183a3afc69d25485b4613aecec2d6453bfe8f737e9e6dc664b2511ae",
+  "id": 29198781,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572292",
+    "street": {
+      "id": 974864,
+      "name": "On or near Ridings Close"
+    },
+    "longitude": "-0.135348"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "acc473c29e1fce919aa793e582993a30e2d62879257a963b3b78115ffbe4e30d",
+  "id": 29191783,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.579473",
+    "street": {
+      "id": 974655,
+      "name": "On or near Winnington Close"
+    },
+    "longitude": "-0.173951"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "88c31555eaaeb43822a0bbe4073f52a2185ace5ed2db7c1fd57ba00bf854d72c",
+  "id": 29185859,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576324",
+    "street": {
+      "id": 974745,
+      "name": "On or near Denewood Road"
+    },
+    "longitude": "-0.158318"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-03"
+  },
+  "persistent_id": "0c757ba36954d00e5c355a726550e9af8060f7111adc8d4d4d9da0a4037c63e5",
+  "id": 29183782,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571023",
+    "street": {
+      "id": 972288,
+      "name": "On or near Highgate High Street"
+    },
+    "longitude": "-0.148921"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-03"
+  },
+  "persistent_id": "c1897dcb72a0f31200cfce58e5157a5d07420fc875bdd81ef21998fed570e68f",
+  "id": 29181361,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "burglary",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567804",
+    "street": {
+      "id": 972142,
+      "name": "On or near Pauntley Street"
+    },
+    "longitude": "-0.135258"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "ec9ac2bb7410ff36ae8f096ce27e3196a89cce24f4b93db74229731ad792f722",
+  "id": 29186282,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "BTP",
+  "location": {
+    "latitude": "51.577700",
+    "street": {
+      "id": 1488698,
+      "name": "Highgate"
+    },
+    "longitude": "-0.145833"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "",
+  "id": 32431675,
+  "location_subtype": "LU STATION",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "BTP",
+  "location": {
+    "latitude": "51.577700",
+    "street": {
+      "id": 1488698,
+      "name": "Highgate"
+    },
+    "longitude": "-0.145833"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "",
+  "id": 32431665,
+  "location_subtype": "LU STATION",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "7351fd6328e9f3b136758003a30cb3f370f60dfb56215baf2926d2074f6d09f4",
+  "id": 29190468,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572292",
+    "street": {
+      "id": 974864,
+      "name": "On or near Ridings Close"
+    },
+    "longitude": "-0.135348"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "0c479e806a89ad145cfa104e68a4600ca1b6513a9e1a1f0cd700d425ff63fc9a",
+  "id": 29193367,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575655",
+    "street": {
+      "id": 974723,
+      "name": "On or near Hillcrest"
+    },
+    "longitude": "-0.149527"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "961db99aae421fe5b53a833f99c24281c9da5bd8dddaa5a1a24af286e7359771",
+  "id": 29198300,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "BTP",
+  "location": {
+    "latitude": "51.577700",
+    "street": {
+      "id": 1488698,
+      "name": "Highgate"
+    },
+    "longitude": "-0.145833"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "",
+  "id": 32431669,
+  "location_subtype": "LU STATION",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576560",
+    "street": {
+      "id": 974838,
+      "name": "On or near Stanhope Gardens"
+    },
+    "longitude": "-0.138522"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "6b003d973f6fb99cf44ba38522ac535db07a5b41a5ad1d360b8ea5ec7d7b9004",
+  "id": 29229802,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.565757",
+    "street": {
+      "id": 972121,
+      "name": "On or near Magdala Avenue"
+    },
+    "longitude": "-0.138905"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "0db2d4041e9b2c48b3a6ddbc5bf0a15c05c57ea5f9bdb50f757e55b9de467cb4",
+  "id": 29232594,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "criminal-damage-arson",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571023",
+    "street": {
+      "id": 972288,
+      "name": "On or near Highgate High Street"
+    },
+    "longitude": "-0.148921"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "a698fce6bb2b233cbb1f46f89758c388846bc906129cad417c84fa87d3be2067",
+  "id": 29194115,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569642",
+    "street": {
+      "id": 972295,
+      "name": "On or near Bacon's Lane"
+    },
+    "longitude": "-0.149728"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-05"
+  },
+  "persistent_id": "2a00cf0504498413293ffec3d7eef35305b312720213f03a103171435e434033",
+  "id": 29180165,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564519",
+    "street": {
+      "id": 972108,
+      "name": "On or near Raydon Street"
+    },
+    "longitude": "-0.142505"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "ff5df1d1c0e64020d4efc45bb4c525787a04d9c8ac0dc022e2db454d733bd7dd",
+  "id": 29191368,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567301",
+    "street": {
+      "id": 972124,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.137010"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-03"
+  },
+  "persistent_id": "dc52edbcf3868b08a95476e4e8914578501b8a4eaca9a8224d21933c602b31fd",
+  "id": 29189678,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.565995",
+    "street": {
+      "id": 972303,
+      "name": "On or near Swain's Lane"
+    },
+    "longitude": "-0.146557"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "7528bdfc948442d9cf0cac5c6ccc13c81408dac414be56d3f62099f8b3360ddd",
+  "id": 29183823,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.566681",
+    "street": {
+      "id": 972136,
+      "name": "On or near Hospital"
+    },
+    "longitude": "-0.138175"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "af3d5b2a5aa74ac8f1cbc1fccec0326f7b010f5e52694815c9c82662bcee6273",
+  "id": 29189820,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.580593",
+    "street": {
+      "id": 974730,
+      "name": "On or near Baker's Lane"
+    },
+    "longitude": "-0.154768"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "bf2217d6a5f0f22a78c07ec8a2a42468f65b35471c7411f9bef2658daad6c9c9",
+  "id": 29206506,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.573551",
+    "street": {
+      "id": 974799,
+      "name": "On or near Hornsey Lane"
+    },
+    "longitude": "-0.131400"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "59592661643330dd3efbe5bb61460f12b43210df355dd949bf72db15663614e1",
+  "id": 29207608,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575180",
+    "street": {
+      "id": 974712,
+      "name": "On or near Southwood Avenue"
+    },
+    "longitude": "-0.145058"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "e5ae15e1ecb89bdd8345011793a190ca0dbe19e1d44271861fa8c13515e57f86",
+  "id": 29235995,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572185",
+    "street": {
+      "id": 974879,
+      "name": "On or near Ashmount Road"
+    },
+    "longitude": "-0.132539"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "2cd938c23bf4ccdeabb7a1de53bfe1cc82fb0f201060e5e7317bfa4f682a6e52",
+  "id": 29185708,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569642",
+    "street": {
+      "id": 972295,
+      "name": "On or near Bacon's Lane"
+    },
+    "longitude": "-0.149728"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "b870c7ef425f01ec6cb089b0805c751925a0c889c4ad758ff567015d06d55b96",
+  "id": 29186664,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576294",
+    "street": {
+      "id": 974732,
+      "name": "On or near Theatre\/concert Hall"
+    },
+    "longitude": "-0.144450"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "973cd878b000d8ea439dadcf766bcfff8e92b0c753894a47f59eddb3508ebe9e",
+  "id": 29198412,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575407",
+    "street": {
+      "id": 974821,
+      "name": "On or near Avenue Road"
+    },
+    "longitude": "-0.131613"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "9dcd8e516e68dfb00f36cd586e0bb2d68802aca610bff291684413e642add135",
+  "id": 29236879,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.566814",
+    "street": {
+      "id": 972268,
+      "name": "On or near Haversham Place"
+    },
+    "longitude": "-0.156278"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "36f78f62b1fe4781ed14fef1a5fee0ca53cd2e65b46047ae54ddbd52ee2986a2",
+  "id": 29230335,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577387",
+    "street": {
+      "id": 974701,
+      "name": "On or near Pedestrian Subway"
+    },
+    "longitude": "-0.145906"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "506c46ad86bcba6d10650e5f0012b4cf4c0f2ef80eb670ab1a59f5d39ec798d6",
+  "id": 29196325,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571757",
+    "street": {
+      "id": 972296,
+      "name": "On or near Theatre\/concert Hall"
+    },
+    "longitude": "-0.150378"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "92ae3546c6805733e8c6411feee0077953f5fc6ad398678ce6ead534bb6a1d50",
+  "id": 29240515,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576560",
+    "street": {
+      "id": 974838,
+      "name": "On or near Stanhope Gardens"
+    },
+    "longitude": "-0.138522"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-04"
+  },
+  "persistent_id": "492fc96c289bd1fd5265eb65244b135c2db47da4d7375aefb866696ae36fa376",
+  "id": 29191173,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.568823",
+    "street": {
+      "id": 972284,
+      "name": "On or near Witanhurst Lane"
+    },
+    "longitude": "-0.151377"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "49a44b4f9ef067c2da0d27b384b4aad1ce2729eda85daa9e8ca451259c038599",
+  "id": 29191858,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "b45cb03742b172826c76a85ccc8cd61771f8cc54ddf66d5cc1e64446a2b0ef23",
+  "id": 29241844,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571549",
+    "street": {
+      "id": 974877,
+      "name": "On or near Gresley Road"
+    },
+    "longitude": "-0.133257"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "efb854f6f3c77c81a5e60333d6e311d069a3401cd036776d40eeb5c708bcbcf4",
+  "id": 29190435,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576294",
+    "street": {
+      "id": 974732,
+      "name": "On or near Theatre\/concert Hall"
+    },
+    "longitude": "-0.144450"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "9cb4f76347029c2e8aa2c9ca2268c5cfeef39347768ff13bcbdfe8ac2cda7558",
+  "id": 29191986,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577653",
+    "street": {
+      "id": 974729,
+      "name": "On or near Bishops Road"
+    },
+    "longitude": "-0.149619"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "a43dbc71c10bfd5b5facd58d22d74dfd53c53e02530e922c7ae03ce064e95159",
+  "id": 29190477,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575655",
+    "street": {
+      "id": 974723,
+      "name": "On or near Hillcrest"
+    },
+    "longitude": "-0.149527"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "f68f015f12205c1ec13dd92a16379a618dc656ad18fc2dc3f7d8109662b89c5d",
+  "id": 29204329,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564855",
+    "street": {
+      "id": 972280,
+      "name": "On or near Hillway"
+    },
+    "longitude": "-0.149504"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "39db9493c43a2283499651c8023bd21e5949bb6de4574262ad3fc1e6129047c2",
+  "id": 29204217,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.580593",
+    "street": {
+      "id": 974730,
+      "name": "On or near Baker's Lane"
+    },
+    "longitude": "-0.154768"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "a52a84223c7b5cd398c02ff42098864e724fa9bee834474717ce4c68042ca109",
+  "id": 29208805,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.580593",
+    "street": {
+      "id": 974730,
+      "name": "On or near Baker's Lane"
+    },
+    "longitude": "-0.154768"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "b830fb682f37e8a522784787d770ac23abcb8fb21ff3fed16d43dcf4b0716016",
+  "id": 29211230,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572321",
+    "street": {
+      "id": 974863,
+      "name": "On or near Tudor Close"
+    },
+    "longitude": "-0.138320"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "dd16f87419eafc63827d9e7bba9f8227351375dcca862f795c6e5d83db9e784e",
+  "id": 29218782,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576560",
+    "street": {
+      "id": 974838,
+      "name": "On or near Stanhope Gardens"
+    },
+    "longitude": "-0.138522"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "b5071f18ec7a3b24baa0835007390bbf252083ea256274fb5c9f0e553e65e696",
+  "id": 29220028,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569708",
+    "street": {
+      "id": 972327,
+      "name": "On or near Spaniards Road"
+    },
+    "longitude": "-0.174011"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "25acac1c64f39e4505ba272547afccb2a9083888cea22a18f0473f45b24291a1",
+  "id": 29202553,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.566681",
+    "street": {
+      "id": 972136,
+      "name": "On or near Hospital"
+    },
+    "longitude": "-0.138175"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "ebd47668935df1fea4adfd7301b4c81c649ae0e91bb24d0688cc365029f7dc29",
+  "id": 29225367,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.574376",
+    "street": {
+      "id": 974843,
+      "name": "On or near Northwood Road"
+    },
+    "longitude": "-0.140300"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "fce0d982b6fdfbcd8dca89b00bc3558e9cb169cc5cc3e695fa7d68f4d43d0267",
+  "id": 29225173,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564519",
+    "street": {
+      "id": 972108,
+      "name": "On or near Raydon Street"
+    },
+    "longitude": "-0.142505"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-01"
+  },
+  "persistent_id": "1a4451a24b56c5836917798b21e168a224edb4ad35f6a66d5e5ff41353870150",
+  "id": 29217866,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-theft",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576560",
+    "street": {
+      "id": 974838,
+      "name": "On or near Stanhope Gardens"
+    },
+    "longitude": "-0.138522"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "9313b71ab440359e752c62fbed0de01e8358b9cacf6f7a85dd895115045ba4a2",
+  "id": 29188153,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "public-order",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572521",
+    "street": {
+      "id": 974754,
+      "name": "On or near Hampstead Lane"
+    },
+    "longitude": "-0.165268"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "67e0befd5332a39bbeeb4bc88720165613238834debfe95ec9a45d24aa228d32",
+  "id": 29236250,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "public-order",
+  "location_type": "BTP",
+  "location": {
+    "latitude": "51.587200",
+    "street": {
+      "id": 1488689,
+      "name": "East Finchley"
+    },
+    "longitude": "-0.164847"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "",
+  "id": 32431578,
+  "location_subtype": "LU STATION",
+  "month": "2014-01"
+}, {
+  "category": "public-order",
+  "location_type": "BTP",
+  "location": {
+    "latitude": "51.587200",
+    "street": {
+      "id": 1488689,
+      "name": "East Finchley"
+    },
+    "longitude": "-0.164847"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "",
+  "id": 32431583,
+  "location_subtype": "LU STATION",
+  "month": "2014-01"
+}, {
+  "category": "public-order",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.573473",
+    "street": {
+      "id": 974861,
+      "name": "On or near Wembury Road"
+    },
+    "longitude": "-0.140062"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "060e98ff5be800910d1051a15396d122a1826b0080e7c1c98c17791972a12aab",
+  "id": 29241282,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "public-order",
+  "location_type": "BTP",
+  "location": {
+    "latitude": "51.577700",
+    "street": {
+      "id": 1488698,
+      "name": "Highgate"
+    },
+    "longitude": "-0.145833"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "",
+  "id": 32431681,
+  "location_subtype": "LU STATION",
+  "month": "2014-01"
+}, {
+  "category": "robbery",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.562374",
+    "street": {
+      "id": 972272,
+      "name": "On or near St Anne's Close"
+    },
+    "longitude": "-0.150701"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "0ed3ea39301be5eda3b442724ef0de1853b8e401a2e023f6715b4f394f4dbe5a",
+  "id": 29191443,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "robbery",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.563044",
+    "street": {
+      "id": 972107,
+      "name": "On or near Winscombe Street"
+    },
+    "longitude": "-0.142493"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "18cd5ed1b44a5a29eb1a28043ffadcfdd0b3ba4ac90f6eea2c80a200cfaf523e",
+  "id": 29227617,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "robbery",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.563044",
+    "street": {
+      "id": 972107,
+      "name": "On or near Winscombe Street"
+    },
+    "longitude": "-0.142493"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "18cd5ed1b44a5a29eb1a28043ffadcfdd0b3ba4ac90f6eea2c80a200cfaf523e",
+  "id": 29227615,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "robbery",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.570931",
+    "street": {
+      "id": 972291,
+      "name": "On or near Dukes Point"
+    },
+    "longitude": "-0.145375"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "e92e9e314b80ed87e335539968ae38bbc513b42e79502afbcc0146b4840f70e6",
+  "id": 29188749,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "robbery",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577387",
+    "street": {
+      "id": 974701,
+      "name": "On or near Pedestrian Subway"
+    },
+    "longitude": "-0.145906"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-03"
+  },
+  "persistent_id": "557ee9b007b3bf7dc30a280af66cc1a9de771f724e64e218486ae2a58df5d4b1",
+  "id": 29203738,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "shoplifting",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571023",
+    "street": {
+      "id": 972288,
+      "name": "On or near Highgate High Street"
+    },
+    "longitude": "-0.148921"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-03"
+  },
+  "persistent_id": "210757cb7465d9ed5eaaeda1662680c91bc6adfb52280252bed905ad8bb5bdbb",
+  "id": 29186527,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "theft-from-the-person",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571023",
+    "street": {
+      "id": 972288,
+      "name": "On or near Highgate High Street"
+    },
+    "longitude": "-0.148921"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "d47913c76b0eee5a934ad2c7747d9449fd3643ff9f2b4e88458d41277ffceb15",
+  "id": 29222368,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "theft-from-the-person",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564519",
+    "street": {
+      "id": 972108,
+      "name": "On or near Raydon Street"
+    },
+    "longitude": "-0.142505"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "df03ef93ab8e01d0ee4482d8a33d73c33592483dbd687044c289d84f049686fe",
+  "id": 29216456,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "theft-from-the-person",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.562374",
+    "street": {
+      "id": 972272,
+      "name": "On or near St Anne's Close"
+    },
+    "longitude": "-0.150701"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "6108aee8782f3e6e2e8a17a7e8afee14e060bf9cc61f38b1e619cdf8af44a606",
+  "id": 29198782,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "theft-from-the-person",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.568450",
+    "street": {
+      "id": 972154,
+      "name": "On or near Archway Road"
+    },
+    "longitude": "-0.136328"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "d98d4f1234e1fa271c75ead56c648c471b710e4bd0449857ea9d95d5aed8b28d",
+  "id": 29222370,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "theft-from-the-person",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577476",
+    "street": {
+      "id": 974702,
+      "name": "On or near Parking Area"
+    },
+    "longitude": "-0.145830"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-03"
+  },
+  "persistent_id": "dc1575572d5f5b7ed04b6e634b10c9f0aa0d03d1df7657ecbe2ad3752de39849",
+  "id": 29203974,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "theft-from-the-person",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.585679",
+    "street": {
+      "id": 978600,
+      "name": "On or near Muswell Hill Road"
+    },
+    "longitude": "-0.147113"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "e2e5a51490e73c68785905a53fe48fda376bd0ad4544ae34bcc79c8ea6e44d66",
+  "id": 29231482,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.580182",
+    "street": {
+      "id": 974767,
+      "name": "On or near Summersby Road"
+    },
+    "longitude": "-0.145807"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "d28b03cf75d946ef8b42cb0d5ebce3a7853e1d22a32e8932d7c8c193e0dee604",
+  "id": 29225333,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576560",
+    "street": {
+      "id": 974838,
+      "name": "On or near Stanhope Gardens"
+    },
+    "longitude": "-0.138522"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "39266f77465bab72c58c9e3d95d2b1fed84b2e5af4eae29fbcac9446d3ba9b3d",
+  "id": 29225335,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.563863",
+    "street": {
+      "id": 972276,
+      "name": "On or near Millfield Place"
+    },
+    "longitude": "-0.153353"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "4674fd7e2fd6efad44cfed76c1eb2ca7048b4de3531fd9456e3dd9fba81f2fe8",
+  "id": 29180013,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569177",
+    "street": {
+      "id": 972144,
+      "name": "On or near Netherleigh Close"
+    },
+    "longitude": "-0.140757"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "c5a71e17183b7078e18e8a0efcb741c4b611569344a738d7b2dd4c44e28c0180",
+  "id": 29242872,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576209",
+    "street": {
+      "id": 974735,
+      "name": "On or near View Close"
+    },
+    "longitude": "-0.156129"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "0960b6575900d818c83240685dea30b9847a70518a4d74a7b37b53750ac3ac59",
+  "id": 29179858,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.568450",
+    "street": {
+      "id": 972154,
+      "name": "On or near Archway Road"
+    },
+    "longitude": "-0.136328"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "79fdaf968534e772a18edd9b8878e9549694968c933ecbb595417c6937c20fc8",
+  "id": 29187724,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.581825",
+    "street": {
+      "id": 974748,
+      "name": "On or near Aylmer Road"
+    },
+    "longitude": "-0.158196"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "63e9919b7dd908ae83e6d787fca56aaa35ceec45985b9f58e2a93d56c882bb77",
+  "id": 29238291,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571597",
+    "street": {
+      "id": 972330,
+      "name": "On or near Hampstead Lane"
+    },
+    "longitude": "-0.172925"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "ac147586ed1b24741ce716cc91facbe156b4abf73b38a5884a7475882a7211c7",
+  "id": 29237948,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.566681",
+    "street": {
+      "id": 972136,
+      "name": "On or near Hospital"
+    },
+    "longitude": "-0.138175"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "9272dca280e262980321ec56818035693a4a0f391e9c9902e666bb1a3daeb997",
+  "id": 29188752,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.586677",
+    "street": {
+      "id": 978598,
+      "name": "On or near Pedestrian Subway"
+    },
+    "longitude": "-0.147058"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "dfb50e79aa321c33514c6d36daaa7806bafc26338fd2536f39427c92d7102804",
+  "id": 29237449,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.565995",
+    "street": {
+      "id": 972303,
+      "name": "On or near Swain's Lane"
+    },
+    "longitude": "-0.146557"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "3344c2ea2abe82f510ca8c6e5267f2c7e56f3785f21ca66a9c3b146147ed0ea4",
+  "id": 29186397,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.576714",
+    "street": {
+      "id": 974855,
+      "name": "On or near Shepherd's Close"
+    },
+    "longitude": "-0.141979"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "346b565d3dede39e1f34ac4cce08904baa9e68945f1daaa66b81bfa6321332d7",
+  "id": 29225601,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572185",
+    "street": {
+      "id": 974879,
+      "name": "On or near Ashmount Road"
+    },
+    "longitude": "-0.132539"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "acbe960ce471861c2894cdb0836cd751d0ca4275c0997ba8896bf468e39ddb79",
+  "id": 29229961,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.570935",
+    "street": {
+      "id": 972146,
+      "name": "On or near Hornsey Lane"
+    },
+    "longitude": "-0.137669"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "d8e7ac4c9bef709a338c47980639158e32bf71869d539bad3d77999ae885f754",
+  "id": 29198956,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572518",
+    "street": {
+      "id": 974871,
+      "name": "On or near Cholmeley Crescent"
+    },
+    "longitude": "-0.144488"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "e3f51429e8ae12c87119c73c7f565225d3f692aa349241b52d5e175028813093",
+  "id": 29233360,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.573473",
+    "street": {
+      "id": 974861,
+      "name": "On or near Wembury Road"
+    },
+    "longitude": "-0.140062"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "092b26721b98b7889ac1cd186be3894877f10725df0d7a57d7ae4cd4a605f858",
+  "id": 29201569,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575180",
+    "street": {
+      "id": 974712,
+      "name": "On or near Southwood Avenue"
+    },
+    "longitude": "-0.145058"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "0f4f892a80690aaa0a56e3cd52ce5e4bd13f21e1e7a28beb4014ef5fbaa6c247",
+  "id": 29230139,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.586279",
+    "street": {
+      "id": 978607,
+      "name": "On or near Beaumont Close"
+    },
+    "longitude": "-0.164642"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "fb0bbc273adb301d3bb13117e9741d3735fc456a307bc7075d3df7764bba6005",
+  "id": 29221599,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.566681",
+    "street": {
+      "id": 972136,
+      "name": "On or near Hospital"
+    },
+    "longitude": "-0.138175"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "1fc6f8f54b5963c24872b1aff3571e5a2dc0e1775c7a4c37f626bd5b97d56ddd",
+  "id": 29203094,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.587400",
+    "street": {
+      "id": 978524,
+      "name": "On or near Ingram Road"
+    },
+    "longitude": "-0.162749"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "4c88c8e1c6f0d9dfde7f285227454db87c9477403e82110a7d6bf47e9e6af35c",
+  "id": 29202893,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.573510",
+    "street": {
+      "id": 974762,
+      "name": "On or near Castle Yard"
+    },
+    "longitude": "-0.149210"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "aebcbc9f54d74333edf66ed67e0752f182dc63cbe101d0baccb6c6c6b0679bd2",
+  "id": 29203396,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564519",
+    "street": {
+      "id": 972108,
+      "name": "On or near Raydon Street"
+    },
+    "longitude": "-0.142505"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "964bf906cfe4a0269d743565449d86e549dd6f323f3009a21772c1dbf261713d",
+  "id": 29190363,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.570690",
+    "street": {
+      "id": 972297,
+      "name": "On or near Sports\/recreation Area"
+    },
+    "longitude": "-0.146049"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "3e72ca078b32f96e9c0ba7f293fd833e181ce5071bd26a28c260bf7296cd7e23",
+  "id": 29196328,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571549",
+    "street": {
+      "id": 974877,
+      "name": "On or near Gresley Road"
+    },
+    "longitude": "-0.133257"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "79b7c6d17c542e94651763cc29af19a39f336202e266761755631e45f368e8e4",
+  "id": 29205751,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.570180",
+    "street": {
+      "id": 972287,
+      "name": "On or near South Grove"
+    },
+    "longitude": "-0.149605"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "0aadd1c9f8aa07a6078b1b4783812e0439d385a124bd62367f41c90744a73dca",
+  "id": 29206536,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569883",
+    "street": {
+      "id": 972138,
+      "name": "On or near Whitehall Park"
+    },
+    "longitude": "-0.135981"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "ec3ef1e83491db37d3776df75fc5195844c11e2b9d14c61743e8218e320c6dcc",
+  "id": 29182848,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.581495",
+    "street": {
+      "id": 974740,
+      "name": "On or near Sheldon Avenue"
+    },
+    "longitude": "-0.157777"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "52d4dd9c0d9ebcf166e2150172abf038df8875cc8889dc151c8edb4c1f1c108f",
+  "id": 29180768,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.563323",
+    "street": {
+      "id": 972128,
+      "name": "On or near Dartmouth Park Hill"
+    },
+    "longitude": "-0.140765"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "60b5a9b9e3e9c72176de500546a211ba24327e83ae3e8d158d7269b08300a76e",
+  "id": 29206127,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567786",
+    "street": {
+      "id": 972145,
+      "name": "On or near Lidyard Road"
+    },
+    "longitude": "-0.136990"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "d1fd4b2093250fae1325a447a3b4f8cd133f866793bf04f86e79c25e6cc4f870",
+  "id": 29207199,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567301",
+    "street": {
+      "id": 972124,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.137010"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "6a3e3f4edc57db784702729de1d33a72b6d770d6b95b56e391c3586414c5214d",
+  "id": 29184647,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569890",
+    "street": {
+      "id": 972232,
+      "name": "On or near Gladsmuir Road"
+    },
+    "longitude": "-0.134696"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "884dfc8c2cf77f06b6f6605d939a9273a067ae23b213939c985fcc3be77e4f29",
+  "id": 29216347,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575356",
+    "street": {
+      "id": 974725,
+      "name": "On or near Broadlands Road"
+    },
+    "longitude": "-0.153926"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "ab0a41893888c7e4254b368a26312fa717d3c50806838965acae4c504e30ecc6",
+  "id": 29218373,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "vehicle-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577987",
+    "street": {
+      "id": 974656,
+      "name": "On or near White Lodge Close"
+    },
+    "longitude": "-0.169205"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "13257997d5bb314f2c9c6404a038df9d3b8086bca62fdbce49748fa289c24950",
+  "id": 29235343,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569273",
+    "street": {
+      "id": 972231,
+      "name": "On or near Harberton Road"
+    },
+    "longitude": "-0.134346"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-01"
+  },
+  "persistent_id": "edab4b94eddda836e88af4c2b8c9843ef48f4fc24d2c64687369938df7379cfc",
+  "id": 29229433,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.563776",
+    "street": {
+      "id": 972112,
+      "name": "On or near Chester Road"
+    },
+    "longitude": "-0.143286"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "13dfba6c7c0a600cf10b2b815da3e8640fa9dc11c97ff4f5e938592dad905034",
+  "id": 29186324,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572321",
+    "street": {
+      "id": 974863,
+      "name": "On or near Tudor Close"
+    },
+    "longitude": "-0.138320"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "f931f54d366233d0955469518fa59b4f90894bfd7dc9abdca9edd2a14c6c74a5",
+  "id": 29181115,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.580602",
+    "street": {
+      "id": 974736,
+      "name": "On or near Toyne Way"
+    },
+    "longitude": "-0.156471"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Offender given a caution",
+    "date": "2014-01"
+  },
+  "persistent_id": "7b9938283a5b39f891609fd339b2223e90988d13c1ef49d5a4bcba20d07f93a2",
+  "id": 29203973,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.582755",
+    "street": {
+      "id": 974737,
+      "name": "On or near Sussex Gardens"
+    },
+    "longitude": "-0.157827"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Offender given a caution",
+    "date": "2014-02"
+  },
+  "persistent_id": "8665d5016082a6771385a6641b21a0d3b73980fdc0748aa880d3e4159649cb35",
+  "id": 29191567,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571757",
+    "street": {
+      "id": 972296,
+      "name": "On or near Theatre\/concert Hall"
+    },
+    "longitude": "-0.150378"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "0255a7d7feffd5c4b2f7a10b1df7c9f90ba69a4e3415b64085ee11f46258c720",
+  "id": 29191896,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.585715",
+    "street": {
+      "id": 978602,
+      "name": "On or near Ash Grove"
+    },
+    "longitude": "-0.144802"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "a5419e3c8277cd30cfcd8d9063a3c74ff834321385532d170c73e4f9b5eb9ecb",
+  "id": 29239812,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577674",
+    "street": {
+      "id": 923608,
+      "name": "On or near Hurst Avenue"
+    },
+    "longitude": "-0.133901"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "d7a9ec3114074e0e426b349216e40191de3d23e6a1517784352ab04a72275c6d",
+  "id": 29238199,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571757",
+    "street": {
+      "id": 972296,
+      "name": "On or near Theatre\/concert Hall"
+    },
+    "longitude": "-0.150378"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "5e93421c6e19e089a2cfff151f5ad88dcb1d9a321549a8016c0182f169ab4245",
+  "id": 29198662,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575398",
+    "street": {
+      "id": 974858,
+      "name": "On or near Holmesdale Road"
+    },
+    "longitude": "-0.141788"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "16fdde39f40cb68d49b790263249f93dcc947ee4b34c2727a5f14a6f3a6b7c53",
+  "id": 29234090,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572321",
+    "street": {
+      "id": 974863,
+      "name": "On or near Tudor Close"
+    },
+    "longitude": "-0.138320"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "f351bde08a410e3e636215366a92ff7a16b5dbeb1db010bc9ab47118cc899d4e",
+  "id": 29230165,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569890",
+    "street": {
+      "id": 972232,
+      "name": "On or near Gladsmuir Road"
+    },
+    "longitude": "-0.134696"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "39fcc8d04f28095ce6d173a67803b3ce014bf47ee548bde047bfb72e5d877119",
+  "id": 29229761,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "0f1a5b7cd464929e398dd76d939d18ccf7ef5f05e3635a46213d32c224653775",
+  "id": 29209769,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577493",
+    "street": {
+      "id": 974728,
+      "name": "On or near Bloomfield Road"
+    },
+    "longitude": "-0.148615"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "87036b849302ae18aa7802213297c42b55e17d312dd40821e4aba4ce6af61972",
+  "id": 29188313,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.575535",
+    "street": {
+      "id": 974847,
+      "name": "On or near Claremont Road"
+    },
+    "longitude": "-0.137972"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "21106e85b8e01c0450c0a6f560e966a8885cea5f58b5548ab9b88791f3a42672",
+  "id": 29205270,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.573551",
+    "street": {
+      "id": 974799,
+      "name": "On or near Hornsey Lane"
+    },
+    "longitude": "-0.131400"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "636600cc08e6c63805f66034a98b6aed9b1c12ec2f4606a96ceaed3957027200",
+  "id": 29230164,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567301",
+    "street": {
+      "id": 972124,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.137010"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-02"
+  },
+  "persistent_id": "8afcc5c2e7f70cd5df5e8dc776f3632319debdcf30d22c6bcb6fdd87093acd54",
+  "id": 29188946,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.578259",
+    "street": {
+      "id": 974848,
+      "name": "On or near Broughton Gardens"
+    },
+    "longitude": "-0.136187"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-03"
+  },
+  "persistent_id": "bdbaff7ea8d4c2b098125806848b3d48a12080a5bd69000c8d40fff49afa0fa7",
+  "id": 29208586,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.577493",
+    "street": {
+      "id": 974728,
+      "name": "On or near Bloomfield Road"
+    },
+    "longitude": "-0.148615"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "1a67944f3a8d9dd34c0d88923fe28a9baa3386eb6a60e0fa54600a8127626197",
+  "id": 29220036,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.564519",
+    "street": {
+      "id": 972108,
+      "name": "On or near Raydon Street"
+    },
+    "longitude": "-0.142505"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-05"
+  },
+  "persistent_id": "a89314f8e2626b971a743656e059d1b4d8266fed8c301145a12e6eb6520bc783",
+  "id": 29183834,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569708",
+    "street": {
+      "id": 972327,
+      "name": "On or near Spaniards Road"
+    },
+    "longitude": "-0.174011"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-05"
+  },
+  "persistent_id": "ab844b080255f9679ee000b9eb618b801a960bf8eb38ad2466536ad61964d3e6",
+  "id": 29225036,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.571757",
+    "street": {
+      "id": 972296,
+      "name": "On or near Theatre\/concert Hall"
+    },
+    "longitude": "-0.150378"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-01"
+  },
+  "persistent_id": "5e93421c6e19e089a2cfff151f5ad88dcb1d9a321549a8016c0182f169ab4245",
+  "id": 29198663,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569890",
+    "street": {
+      "id": 972232,
+      "name": "On or near Gladsmuir Road"
+    },
+    "longitude": "-0.134696"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Under investigation",
+    "date": "2014-01"
+  },
+  "persistent_id": "39fcc8d04f28095ce6d173a67803b3ce014bf47ee548bde047bfb72e5d877119",
+  "id": 29229760,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.567552",
+    "street": {
+      "id": 972147,
+      "name": "On or near Highgate Hill"
+    },
+    "longitude": "-0.138659"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-04"
+  },
+  "persistent_id": "5e6c30c360e1c1012b08144c713449c44a517497ce9409cab1dfe4ec19ce6428",
+  "id": 29236249,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.572821",
+    "street": {
+      "id": 974763,
+      "name": "On or near Petrol Station"
+    },
+    "longitude": "-0.149988"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Awaiting court outcome",
+    "date": "2014-04"
+  },
+  "persistent_id": "c33c5c00ad84a99ddca5762180bbe0060645a50a21a42ca34d46778e02b78eb4",
+  "id": 29233810,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "violent-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.566681",
+    "street": {
+      "id": 972136,
+      "name": "On or near Hospital"
+    },
+    "longitude": "-0.138175"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Offender fined",
+    "date": "2014-01"
+  },
+  "persistent_id": "5437ddaf950e4a3baf7050ee427a2f97c8193562b2c8e28348d0ab8f0c479b7a",
+  "id": 29232734,
+  "location_subtype": "",
+  "month": "2014-01"
+}, {
+  "category": "other-crime",
+  "location_type": "Force",
+  "location": {
+    "latitude": "51.569273",
+    "street": {
+      "id": 972231,
+      "name": "On or near Harberton Road"
+    },
+    "longitude": "-0.134346"
+  },
+  "context": "",
+  "outcome_status": {
+    "category": "Investigation complete; no suspect identified",
+    "date": "2014-03"
+  },
+  "persistent_id": "20a6459025f87f070ce5451f015ca1d2eaec8ed48a2b2c65a62195808f8729df",
+  "id": 29212598,
+  "location_subtype": "",
+  "month": "2014-01"
+}]

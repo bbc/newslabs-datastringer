@@ -7,29 +7,67 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  <style>
+  div {
+    display: inline-block;
+  }
+  table td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  </style>
 </head>
+<div id="jan">
+  <h4>Jan 2014</h4>
+</div>
+<div id="feb">
+  <h4>Feb 2014</h4>
+</div>
+<div id="april">
+  <h4>April 2014</h4>
+</div>
+<div id="may">
+  <h4>May 2014</h4>
+</div>
 
 <body>
   <script>
-  var data = $.getJSON("dataprops/data.json", foo);
+  function stats(path_json, div_id) {
+    var data = $.getJSON(path_json, foo);
 
-  function foo(data) {
-    var categories = new Array();
-    var crimeNumbers = new Array(); //will be filled with total numbers for each crime category
+    function foo(data) {
+      var categories = new Array();
+      var crimeNumbers = new Array(); //will be filled with total numbers for each crime category
 
-    var categories = _.pluck(data, 'category'); //list all values
-    var categories = _.uniq(categories); //boils down to unique values
+      var categories = _.pluck(data, 'category'); //list all values
+      var categories = _.uniq(categories); //boils down to unique values
 
-    for (var i = 0; i < categories.length; i++) {
-      var totalByCategory = _.filter(data, function(data) {
-        return data.category == categories[i]
-      });
-      crimeNumbers.push(totalByCategory.length);
+      for (var i = 0; i < categories.length; i++) {
+        var totalByCategory = _.filter(data, function(data) {
+          return data.category == categories[i]
+        });
+        crimeNumbers.push(totalByCategory.length);
+      }
+
+      var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
+      console.log(crime);
+
+      var tableData = crime;
+      var $table = $("<table></table>");
+
+      for (var y = 0; y < tableData.length; y++) {
+        var $line = $("<tr></tr>");
+        $line.append($("<td></td>").html(tableData[y][0]));
+        $line.append($("<td></td>").html(tableData[y][1]));
+        $table.append($line);
+      }
+      $table.appendTo($(div_id));
     }
-
-    var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
-    console.log(crime);
   }
+  stats("dataprops/jan2014-crimelevel-geopoint.json", "#jan");
+  stats("dataprops/feb2014-crimelevel-geopoint.json", "#feb");
+  stats("dataprops/april2014-crimelevel-geopoint.json", "#april");
+  stats("dataprops/may2014-crimelevel-geopoint.json", "#may");
   </script>
 </body>
 

@@ -1,11 +1,21 @@
 #Police.uk
 
-This is the first source we're going to use. 
+This is the first source we're going to use.
 Classic API, returns very simple and clear JSON.
 
 ##Todo
 - Run some stats analysis on the data-props so we know which story we would be pursuing
 - From there, list the criteria we will give to the datastringer
+
+##What we're after
+
+For each crime category (*anti-social behaviour, curglary, robbery, bicycle theft...*):
+
+- What is the number of arrests this month, and how does it compare to the 6-months average (raw number and +/- percentage)
+
+##Queries model
+
+[Postman Client API collection here](https://gist.github.com/basilesimon/dd2cad1db159e423d888)
 
 ###Local stories about police forces
 
@@ -21,7 +31,7 @@ Combining these four queries would hopefully create a nice and very basic set of
 
 ###Crime statistics
 
-Then, another set of queries about street-level crime and outcomes. Several methods are available in the Postman collection, and we need to think about how to make them interact. 
+Then, another set of queries about street-level crime and outcomes. Several methods are available in the Postman collection, and we need to think about how to make them interact.
 The idea being less to produce simple alerts, but to actually harvest numbers from the API and to do our own stats with them, in order to generate second-level alerts (we are not notified about a *change in the dataset itself*, but about a *change in a trend caused by the latest numbers.*
 
 - ``GET data.police.uk/api/crimes-street/all-crime?lat=51.5749601&lng=-0.1544628&date=2014-05`` is the street-level crime, and a good start to run some stats.

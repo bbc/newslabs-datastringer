@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>test</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+</head>
+
+<body>
+  <script>
+  var data = $.getJSON("dataprops/data.json", foo);
+
+  function foo(data) {
+    var categories = new Array();
+    var crimeNumbers = new Array(); //will be filled with total numbers for each crime category
+
+    var categories = _.pluck(data, 'category'); //list all values
+    var categories = _.uniq(categories); //boils down to unique values
+
+    for (var i = 0; i < categories.length; i++) {
+      var totalByCategory = _.filter(data, function(data) {
+        return data.category == categories[i]
+      });
+      crimeNumbers.push(totalByCategory.length);
+    }
+
+    var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
+    console.log(crime);
+  }
+  </script>
+</body>
+
+</html>

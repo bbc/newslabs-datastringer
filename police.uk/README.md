@@ -3,6 +3,10 @@
 This is the first source we're going to use. 
 Classic API, returns very simple and clear JSON.
 
+##Todo
+- Run some stats analysis on the data-props so we know which story we would be pursuing
+- From there, list the criteria we will give to the datastringer
+
 ###Local stories about police forces
 
 - ``GET data.police.uk/api/forces/leicestershire/people`` lists senior officers. I'd like to be notified when there's a change in the team.

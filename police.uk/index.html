@@ -45,6 +45,9 @@
     <div id="march">
       <h4>April 2014</h4>
     </div>
+    <div id="results">
+      <h4>Results</h4>
+    </div>
     <div id="april">
       <h4>May 2014</h4>
     </div>
@@ -103,7 +106,9 @@
           //and thus ready for stat analysis
           if (gVar.crimeArrays[1] && gVar.crimeArrays[2] && gVar.crimeArrays[3] && gVar.crimeArrays[4] != null) {
             stats();
-          } else { console.log("All JSON requests have not yet been made. Please wait.");}
+          } else {
+            console.log("All JSON requests have not yet been made. Please wait.");
+          }
 
           var tableData = crime;
           var $table = $("<table></table>");
@@ -125,7 +130,25 @@
   });
 
   function stats() {
-    console.log("YO GO BRO");
+    //Functions
+    function stuff(month1, month2, month3, month4, total) {
+      var av = (month1 + month2 + month3 + month4) / total;
+      var diff = (month4 / av * 100) - 100;
+      return {
+        average: av,
+        monthDiff: diff
+      };
+    };
+
+    var stat1 = gVar.crimeArrays[1];
+    var stat2 = gVar.crimeArrays[2];
+    var stat3 = gVar.crimeArrays[3];
+    var stat4 = gVar.crimeArrays[4];
+
+    var averageASB = stuff(stat1[0][1], stat2[0][1], stat3[0][1], stat4[0][1], 4);
+    console.log("The average ASB arrests is: " + Math.round(averageASB.average));
+    console.log("This month, ASB arrests changed by: " + Math.round(averageASB.monthDiff) + "%");
+    $("#results").append("<p></p>").html("The average of anti-social behaviour arrests is " + Math.round(averageASB.average) + "<br>" + "This month, ASB arrests changed by " + Math.round(averageASB.monthDiff) + "%");
   }
   </script>
 </body>

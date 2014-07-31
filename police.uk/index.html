@@ -77,7 +77,7 @@
       gVar.coordinates.lng = event.latLng.lng();
       $('#latlng').val(gVar.coordinates.lat + ', ' + gVar.coordinates.lng);
 
-      function stats(path_json, div_id, no) {
+      function crimeQueries(path_json, div_id, no) {
         var data = $.getJSON(path_json, foo);
 
         function foo(data) {
@@ -96,8 +96,14 @@
           }
 
           var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
-          console.log(crime);
+          //console.log(crime);
           gVar.crimeArrays[no] = crime; //sends to global scope to be used for stats
+
+          //Check if global variables have been populated
+          //and thus ready for stat analysis
+          if (gVar.crimeArrays[1] && gVar.crimeArrays[2] && gVar.crimeArrays[3] && gVar.crimeArrays[4] != null) {
+            stats();
+          } else { console.log("All JSON requests have not yet been made. Please wait.");}
 
           var tableData = crime;
           var $table = $("<table></table>");
@@ -111,12 +117,16 @@
           $table.appendTo($(div_id));
         }
       }
-      stats("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-01", "#jan", "1");
-      stats("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-02", "#feb", "2");
-      stats("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-03", "#march", "3");
-      stats("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-04", "#april", "4");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-01", "#jan", "1");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-02", "#feb", "2");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-03", "#march", "3");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-04", "#april", "4");
     }
   });
+
+  function stats() {
+    console.log("YO GO BRO");
+  }
   </script>
 </body>
 

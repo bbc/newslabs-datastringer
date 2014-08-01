@@ -43,13 +43,16 @@
       <h4>Feb 2014</h4>
     </div>
     <div id="march">
+      <h4>March 2014</h4>
+    </div>
+    <div id="april">
       <h4>April 2014</h4>
+    </div>
+    <div id="may">
+      <h4>May 2014</h4>
     </div>
     <div id="results">
       <h4>Results</h4>
-    </div>
-    <div id="april">
-      <h4>May 2014</h4>
     </div>
   </div>
   <script>
@@ -126,14 +129,15 @@
       crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-02", "#feb", "2");
       crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-03", "#march", "3");
       crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-04", "#april", "4");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-05", "#may", "5");
     }
   });
 
   function stats() {
     //Functions
-    function stuff(month1, month2, month3, month4, total) {
-      var av = (month1 + month2 + month3 + month4) / total;
-      var diff = (month4 / av * 100) - 100;
+    function stuff(month1, month2, month3, month4, month5, total) {
+      var av = (month1 + month2 + month3 + month4 + month5) / total;
+      var diff = (month5 / av * 100) - 100;
       return {
         average: av,
         monthDiff: diff
@@ -144,11 +148,29 @@
     var stat2 = gVar.crimeArrays[2];
     var stat3 = gVar.crimeArrays[3];
     var stat4 = gVar.crimeArrays[4];
+    var stat5 = gVar.crimeArrays[5];
+    var numberOfMonths = 5;
 
-    var averageASB = stuff(stat1[0][1], stat2[0][1], stat3[0][1], stat4[0][1], 4);
-    console.log("The average ASB arrests is: " + Math.round(averageASB.average));
-    console.log("This month, ASB arrests changed by: " + Math.round(averageASB.monthDiff) + "%");
-    $("#results").append("<p></p>").html("The average of anti-social behaviour arrests is " + Math.round(averageASB.average) + "<br>" + "This month, ASB arrests changed by " + Math.round(averageASB.monthDiff) + "%");
+    var average1 = stuff(stat1[0][1], stat2[0][1], stat3[0][1], stat4[0][1], stat5[0][1], 5);
+    console.log("The average " + stat1[0][0] + " arrests is: " + Math.round(average1.average));
+    console.log("This month, " + stat1[0][0] + "  arrests changed by: " + Math.round(average1.monthDiff) + "%");
+    $("#results").append("<p></p>").html("The average of" + stat1[0][0] + "  arrests per month is " + Math.round(average1.average) + "<br>" + "This month, " + stat1[0][0] + " arrests changed by " + Math.round(average1.monthDiff) + "%");
+
+    /*@TODO in stats()
+      function stuff( as many parameters as we have gVar.crimeArrays ) {
+        calculate average
+        valculate diff
+        return {
+          average: av,
+          monthDiff: diff
+        }
+      } see line 138 and following
+
+      append to #results:
+      "The average of " + stat5[i][0] + (...) + average
+      Same thing for diff
+      see line 157 for example
+    */
   }
   </script>
 </body>

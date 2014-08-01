@@ -1,0 +1,10 @@
+[{
+  "attributes": [{
+    "name": "datasource.name",
+    "dataSourceInputs": "url"
+  }]
+}, {
+  "methods": [{
+    "check": "function"
+  }]
+}]

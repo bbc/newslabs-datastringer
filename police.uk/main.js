@@ -47,13 +47,11 @@ function crimeQuery(path_json, div_id, crimeIndex) {
     var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
     crimeArray[crimeIndex] = crime;
 
-    var tableData = crime;
     var $table = $("<table></table>");
-
-    for (var y = 0; y < tableData.length; y++) {
+    for (var y = 0; y < crime.length; y++) {
       var $line = $("<tr></tr>");
-      $line.append($("<td></td>").html(tableData[y][0]));
-      $line.append($("<td></td>").html(tableData[y][1]));
+      $line.append($("<td></td>").html(crime[y][0]));
+      $line.append($("<td></td>").html(crime[y][1]));
       $table.append($line);
     }
     $table.appendTo($(div_id));

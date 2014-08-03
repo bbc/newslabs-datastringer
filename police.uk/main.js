@@ -27,7 +27,7 @@ var map = new GMaps({
   }
 });
 
-function crimeQuery(path_json, div_id, crimeIndex) {
+function crimeQuery(path_json, div_id, crimeArrayIndex) {
   $.getJSON(path_json, function(data) {
     $("#map").remove();
     var categories = new Array();
@@ -45,7 +45,7 @@ function crimeQuery(path_json, div_id, crimeIndex) {
     }
 
     var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
-    crimeArray[crimeIndex] = crime;
+    crimeArray[crimeArrayIndex] = crime;
 
     var $table = $("<table></table>");
     for (var y = 0; y < crime.length; y++) {

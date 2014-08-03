@@ -58,12 +58,7 @@
   <script>
   //I LIKE GLOBALS
   window.globalVar = {
-    crimeArrays: {
-      1: null,
-      2: null,
-      3: null,
-      4: null,
-    }
+    crimeArray: new Array()
   };
   var gVar = window.globalVar;
 
@@ -79,11 +74,16 @@
       var lng = event.latLng.lng();
       $('#latlng').val(lat + ', ' + lng);
 
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-01", "#jan", "1");
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-02", "#feb", "2");
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-03", "#march", "3");
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-04", "#april", "4");
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-05", "#may", "5");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+        lat + "&lng=" + lng + "&date=2014-01", "#jan", 0);
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+        lat + "&lng=" + lng + "&date=2014-02", "#feb", 1);
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+        lat + "&lng=" + lng + "&date=2014-03", "#march", 2);
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+        lat + "&lng=" + lng + "&date=2014-04", "#april", 3);
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+        lat + "&lng=" + lng + "&date=2014-05", "#may", 4);
     }
   });
 
@@ -105,11 +105,12 @@
 
       var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
       //console.log(crime);
-      gVar.crimeArrays[no] = crime; //sends to global scope to be used for stats
+      gVar.crimeArray[no] = crime; //sends to global scope to be used for stats
 
       //Check if global variables have been populated
       //and thus ready for stat analysis
-      if (gVar.crimeArrays[1] && gVar.crimeArrays[2] && gVar.crimeArrays[3] && gVar.crimeArrays[4] != null) {
+      if (gVar.crimeArray[0] && gVar.crimeArray[1] && gVar.crimeArray[2] &&
+          gVar.crimeArray[3] && gVar.crimeArray[4]) {
         stats();
       } else {
         console.log("All JSON requests have not yet been made. Please wait.");
@@ -139,11 +140,11 @@
       };
     };
 
-    var stat1 = gVar.crimeArrays[1];
-    var stat2 = gVar.crimeArrays[2];
-    var stat3 = gVar.crimeArrays[3];
-    var stat4 = gVar.crimeArrays[4];
-    var stat5 = gVar.crimeArrays[5];
+    var stat1 = gVar.crimeArray[0];
+    var stat2 = gVar.crimeArray[1];
+    var stat3 = gVar.crimeArray[2];
+    var stat4 = gVar.crimeArray[3];
+    var stat5 = gVar.crimeArray[4];
     var numberOfMonths = 5;
 
     var average1 = stuff(stat1[0][1], stat2[0][1], stat3[0][1], stat4[0][1], stat5[0][1], 5);
@@ -152,7 +153,7 @@
     $("#results").append("<p></p>").html("The average of" + stat1[0][0] + "  arrests per month is " + Math.round(average1.average) + "<br>" + "This month, " + stat1[0][0] + " arrests changed by " + Math.round(average1.monthDiff) + "%");
 
     /*@TODO in stats()
-      function stuff( as many parameters as we have gVar.crimeArrays ) {
+      function stuff( as many parameters as we have gVar.crimeArray ) {
         calculate average
         valculate diff
         return {

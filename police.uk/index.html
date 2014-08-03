@@ -56,12 +56,6 @@
     </div>
   </div>
   <script>
-  //I LIKE GLOBALS
-  window.globalVar = {
-    crimeArray: new Array()
-  };
-  var gVar = window.globalVar;
-
   //Defines map
   //Attaches event to "click"
   var map = new GMaps({
@@ -74,20 +68,22 @@
       var lng = event.latLng.lng();
       $('#latlng').val(lat + ', ' + lng);
 
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+      crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" +
         lat + "&lng=" + lng + "&date=2014-01", "#jan", 0);
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+      crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" +
         lat + "&lng=" + lng + "&date=2014-02", "#feb", 1);
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+      crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" +
         lat + "&lng=" + lng + "&date=2014-03", "#march", 2);
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+      crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" +
         lat + "&lng=" + lng + "&date=2014-04", "#april", 3);
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" +
+      crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" +
         lat + "&lng=" + lng + "&date=2014-05", "#may", 4);
     }
   });
 
-  function crimeQueries(path_json, div_id, no) {
+  var crimeArray = new Array(5);
+
+  function crimeQuery(path_json, div_id, crimeIndex) {
     $.getJSON(path_json, function(data) {
       $("#map").remove();
       var categories = new Array();
@@ -104,17 +100,7 @@
       }
 
       var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
-      //console.log(crime);
-      gVar.crimeArray[no] = crime; //sends to global scope to be used for stats
-
-      //Check if global variables have been populated
-      //and thus ready for stat analysis
-      if (gVar.crimeArray[0] && gVar.crimeArray[1] && gVar.crimeArray[2] &&
-          gVar.crimeArray[3] && gVar.crimeArray[4]) {
-        stats();
-      } else {
-        console.log("All JSON requests have not yet been made. Please wait.");
-      }
+      crimeArray[crimeIndex] = crime;
 
       var tableData = crime;
       var $table = $("<table></table>");
@@ -126,6 +112,17 @@
         $table.append($line);
       }
       $table.appendTo($(div_id));
+
+      var ok = true;
+      for (var i = 0; i < crimeArray.length; i++) {
+        if(!crimeArray[i]) {
+          ok = false;
+          break;
+        }
+      }
+      if(ok) {
+        stats();
+      }
     });
   }
 
@@ -140,11 +137,11 @@
       };
     };
 
-    var stat1 = gVar.crimeArray[0];
-    var stat2 = gVar.crimeArray[1];
-    var stat3 = gVar.crimeArray[2];
-    var stat4 = gVar.crimeArray[3];
-    var stat5 = gVar.crimeArray[4];
+    var stat1 = crimeArray[0];
+    var stat2 = crimeArray[1];
+    var stat3 = crimeArray[2];
+    var stat4 = crimeArray[3];
+    var stat5 = crimeArray[4];
     var numberOfMonths = 5;
 
     var average1 = stuff(stat1[0][1], stat2[0][1], stat3[0][1], stat4[0][1], stat5[0][1], 5);

@@ -58,10 +58,6 @@
   <script>
   //I LIKE GLOBALS
   window.globalVar = {
-    coordinates: {
-      lat: null,
-      lng: null
-    },
     crimeArrays: {
       1: null,
       2: null,
@@ -79,9 +75,9 @@
     lng: -0.1015987,
     zoom: 12,
     click: function(event) {
-      gVar.coordinates.lat = event.latLng.lat();
-      gVar.coordinates.lng = event.latLng.lng();
-      $('#latlng').val(gVar.coordinates.lat + ', ' + gVar.coordinates.lng);
+      var lat = event.latLng.lat();
+      var lng = event.latLng.lng();
+      $('#latlng').val(lat + ', ' + lng);
 
       function crimeQueries(path_json, div_id, no) {
         var data = $.getJSON(path_json, foo);
@@ -125,11 +121,11 @@
           $table.appendTo($(div_id));
         }
       }
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-01", "#jan", "1");
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-02", "#feb", "2");
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-03", "#march", "3");
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-04", "#april", "4");
-      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + gVar.coordinates.lat + "&lng=" + gVar.coordinates.lng + "&date=2014-05", "#may", "5");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-01", "#jan", "1");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-02", "#feb", "2");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-03", "#march", "3");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-04", "#april", "4");
+      crimeQueries("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-05", "#may", "5");
     }
   });
 

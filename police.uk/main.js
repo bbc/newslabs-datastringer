@@ -1,7 +1,7 @@
 window.onload = function() {
 
 var crimeArray = new Array(5);
-var crimeTypeIndex = 0; // could be modified from the browser through a combobox.
+var crimeTypeName = 'anti-social-behaviour';
 
 //Defines map
 //Attaches event to "click"
@@ -31,30 +31,28 @@ var map = new GMaps({
 function crimeQuery(path_json, div_id, crimeArrayIndex) {
   $.getJSON(path_json, function(data) {
     $("#map").remove();
-    var categories = new Array();
-    //will be filled with total numbers for each crime category
-    var crimeNumbers = new Array();
 
-    var categories = _.pluck(data, 'category'); //list all values
-    var categories = _.uniq(categories); //boils down to unique values
+    var crime = {};
 
-    for (var i = 0; i < categories.length; i++) {
-      var totalByCategory = _.filter(data, function(data) {
-        return data.category == categories[i]
-      });
-      crimeNumbers.push(totalByCategory.length);
-    }
+    data.forEach(function(item) {
+      if (!(item.category in crime)) {
+        crime[item.category] = 1; // 1st crime seen for this category
+      }
+      else {
+        crime[item.category] += 1;
+      }
+    })
 
-    var crime = _.zip(categories, crimeNumbers); //assembles the two arrays
     crimeArray[crimeArrayIndex] = crime;
 
+    var crimeTypes = Object.keys(crime).sort();
     var $table = $("<table></table>");
-    for (var y = 0; y < crime.length; y++) {
+    crimeTypes.forEach(function(type) {
       var $line = $("<tr></tr>");
-      $line.append($("<td></td>").html(crime[y][0]));
-      $line.append($("<td></td>").html(crime[y][1]));
+      $line.append($("<td></td>").html(type));
+      $line.append($("<td></td>").html(crime[type]));
       $table.append($line);
-    }
+    });
     $table.appendTo($(div_id));
 
     var ok = true;
@@ -65,12 +63,12 @@ function crimeQuery(path_json, div_id, crimeArrayIndex) {
       }
     }
     if(ok) {
-      stats(0);
+      stats(crimeTypeName);
     }
   });
 }
 
-function stats(crimeTypeIndex) {
+function stats(crimeType) {
   var average = function(valueArray) {
     var average = 0;
     valueArray.forEach(function(v) { average += v; } );
@@ -78,19 +76,20 @@ function stats(crimeTypeIndex) {
   }
 
   // extract the relevant data from crimeArray
-  // number of crimes per month for the given crimeTypeIndex.
+  // number of crimes per month for the given crimeTypeName.
   var statsArray = [];
   for (var i = 0; i < crimeArray.length; i++) {
-    statsArray.push(crimeArray[i][crimeTypeIndex][1]);
+    if (crimeType in crimeArray[i]) {
+      statsArray.push(crimeArray[i][crimeType]);
+    }
   }
 
   var av = average(statsArray);
   var diff = (statsArray[statsArray.length - 1] / av * 100) - 100;
 
-  var crimeName = crimeArray[0][crimeTypeIndex][0];
-  $("#results").append("<p></p>").html("The average of " + crimeName +
+  $("#results").append("<p></p>").html("The average of " + crimeTypeName +
     "  arrests per month is " + Math.round(av) + "<br>" + "This month, " +
-    crimeName + " arrests changed by " + Math.round(diff) + "%");
+    crimeTypeName + " arrests changed by " + Math.round(diff) + "%");
 }
 
 }

@@ -1,6 +1,7 @@
 window.onload = function() {
 
 var crimeArray = new Array(5);
+var crimeTypeIndex = 0; // could be modified from the browser through a combobox.
 
 //Defines map
 //Attaches event to "click"
@@ -64,49 +65,32 @@ function crimeQuery(path_json, div_id, crimeArrayIndex) {
       }
     }
     if(ok) {
-      stats();
+      stats(0);
     }
   });
 }
 
-function stats() {
-  //Functions
-  function stuff(month1, month2, month3, month4, month5, total) {
-    var av = (month1 + month2 + month3 + month4 + month5) / total;
-    var diff = (month5 / av * 100) - 100;
-    return {
-      average: av,
-      monthDiff: diff
-    };
-  };
+function stats(crimeTypeIndex) {
+  var average = function(valueArray) {
+    var average = 0;
+    valueArray.forEach(function(v) { average += v; } );
+    return average / valueArray.length;
+  }
 
-  var stat1 = crimeArray[0];
-  var stat2 = crimeArray[1];
-  var stat3 = crimeArray[2];
-  var stat4 = crimeArray[3];
-  var stat5 = crimeArray[4];
-  var numberOfMonths = 5;
+  // extract the relevant data from crimeArray
+  // number of crimes per month for the given crimeTypeIndex.
+  var statsArray = [];
+  for (var i = 0; i < crimeArray.length; i++) {
+    statsArray.push(crimeArray[i][crimeTypeIndex][1]);
+  }
 
-  var average1 = stuff(stat1[0][1], stat2[0][1], stat3[0][1], stat4[0][1], stat5[0][1], 5);
-  console.log("The average " + stat1[0][0] + " arrests is: " + Math.round(average1.average));
-  console.log("This month, " + stat1[0][0] + "  arrests changed by: " + Math.round(average1.monthDiff) + "%");
-  $("#results").append("<p></p>").html("The average of" + stat1[0][0] + "  arrests per month is " + Math.round(average1.average) + "<br>" + "This month, " + stat1[0][0] + " arrests changed by " + Math.round(average1.monthDiff) + "%");
+  var av = average(statsArray);
+  var diff = (statsArray[statsArray.length - 1] / av * 100) - 100;
 
-  /*@TODO in stats()
-    function stuff( as many parameters as we have gVar.crimeArray ) {
-      calculate average
-      valculate diff
-      return {
-        average: av,
-        monthDiff: diff
-      }
-    } see line 138 and following
-
-    append to #results:
-    "The average of " + stat5[i][0] + (...) + average
-    Same thing for diff
-    see line 157 for example
-  */
+  var crimeName = crimeArray[0][crimeTypeIndex][0];
+  $("#results").append("<p></p>").html("The average of " + crimeName +
+    "  arrests per month is " + Math.round(av) + "<br>" + "This month, " +
+    crimeName + " arrests changed by " + Math.round(diff) + "%");
 }
 
 }

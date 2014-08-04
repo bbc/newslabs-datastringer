@@ -59,7 +59,7 @@ the `DataSource` used by the Output.
 
 #####Methods
 
-- check(): this method will use the datasources to check if there is a reason
+- `check()`: this method will use the datasources to check if there is a reason
 to trigger the output (generate a peg).
 
 

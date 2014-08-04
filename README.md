@@ -16,7 +16,14 @@ We will select three different data sources. Ideally, they will return data in t
 
 ####DataSource
 
-That's an object describing a data source (i.e. input) for datastringer.
+That's an object describing a data source (i.e. input) for datastringer. It is
+defined in the `datasource.js` file. Please refer to the docstrings for more
+details.
+
+```
+var DS = require('./datasource.js');
+var source = DS.makeDataSource(...);
+```
 
 #####Attributes
 
@@ -35,7 +42,17 @@ in which case getData will return all the data from 'from' to the present time.
 
 ####DataFrame
 
-That's an object representing a data point in time. It has two attributes.
+
+That's an object representing a data point in time. It is defined in the
+`dataframe.js` file.
+
+
+```
+var DF = require('./dataframe.js');
+var frame = DF.makeDataFrame(new Date(Date.now()), {'crime-count': 51});
+```
+
+It has two attributes.
 
 - `date`: the date of the data.
 - `data`: the data itself. It is stored as a string. The real underlying format
@@ -111,3 +128,24 @@ DataSource and Output can be serialized from and to JSON. One file can hold the
 sources and another one the outputs, or one file could do both. Either ways,
 the location of the file(s) is written in the configuration file and has a
 sensible default value (e.g. ~/.local/share/datastringer.rc)
+
+### Testing
+
+A crude unit test framework is defined in `test.js`. Just run `node test.js` to
+see if everything is going well.
+
+To define a new test, append an object to the `tests` array defined at the top
+of the file.
+
+```
+tests.push({
+  name: 'my new awesome unit test',
+  fun: function(){
+    assert.equal(true, false, 'Nope!');
+  }
+});
+```
+
+The `name` field is the name of the test, for bookkeeping and display purpose.
+The `fun` field is the actual test body, where you can use NodeJS assert
+functionalities to make sure everything is happening as you are expecting it.

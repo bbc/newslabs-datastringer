@@ -1,10 +1,8 @@
-var jsonfn = require('jsonfn');
-
 /**
  * @brief makeDataSourceManager builds a DataSourceManager object.
  * @param JSONData the JSON string holding the DataSource objects to be parsed.
  */
-function makeDataSourceManager(JSONData) {
+function makeDataSourceManager() {
 
   var dataSourcesDict = {};
 
@@ -42,6 +40,20 @@ function makeDataSourceManager(JSONData) {
       }
       return false;
     }
+
+    /**
+     * @brief loadFromJSON load the data sources from a given JSON string and
+     * populate the datasource dict.
+     * @param JSONString the JSON
+     */
+    loadFromJSON: function(JSONString) {
+      dataSourcesDict = {};
+
+      var parsedJSON = JSON.parse(JSONString);
+      for (var i = 0; i < parsedJSON.length; i++) {
+        this.addDataSource(require(parsedJSON[i]).dataSource);
+      }
+    },
 
     /**
      * @brief exportToJSON exports the current managed list to a JSON string

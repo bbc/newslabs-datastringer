@@ -12,7 +12,7 @@ for (var i = 0; i < parsedJSON.length; i++) {
 
 // load outputs
 var parsedJSONOutput = JSON.parse(fs.readFileSync('outputs.json', 'utf8'));
-for (var i = 0; i < parsedJSONOutput.length; ++) {
+for (var i = 0; i < parsedJSONOutput.length; i++) {
   var O = require(parsedJSONOutput[i]);
   outputs.push(O.output);
 }
@@ -27,3 +27,6 @@ for (var i = 0; i < dataSources.length; i++) {
     news.push(dataSources[i].name);
   }
 }
+
+console.log();
+console.log('News in: ' + news);

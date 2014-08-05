@@ -42,7 +42,6 @@ tests.push({
   }
 });
 
-
 console.log('running ' + tests.length + ' unit tests...');
 console.log();
 

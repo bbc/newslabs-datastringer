@@ -23,9 +23,10 @@
       success: getStuff
     });
 
-    function getStuff(xml) {
+    var keyword = "immigration";
+
+    function getStuff(xml, keyword) {
       console.log(xml);
-      //stuff
       var linksArray = new Array();
 
       $(xml).find("link").each(function() {
@@ -33,25 +34,33 @@
         var link = $link.attr("href");
         linksArray.push(link);
       })
-      //console.log(linksArray); //ok
 
       var entries = new Array();
-      $(xml).find("content").each(function() {
-        var $entries = $(this);
-        //console.log($entries.text());
-        entries.push($entries);
+      var title = new Array();
+      $(xml).find("entry").each(function() {
+        //console.log(this);
+        $(this).find("title").each(function() {
+          var $title = $(this);
+          title.push($title);
+        });
+        $(this).find("content").each(function() {
+          var $entries = $(this);
+          entries.push($entries);
+        });
       })
-      //method to get full text of entries:
-      //entries[i][0].textContent
-      //console.log(entries[0][0].textContent);
-      $("body").append(entries[1][0].textContent)
+      //console.log(title[1][0].textContent);
+      //console.log(entries[1][0].textContent);
 
       //parser
       for (var i = 0; i < entries.length; i++) {
         var splits = entries[i][0].textContent.split(" ");
-        var test = _.contains(splits, "immigration");
-        console.log(test); //if true, word is present
-        //to do: if true, trigger something
+        var test = _.contains(splits, keyword);
+
+        if (test = true) {
+          //if true, word is present
+          //to do: if true, trigger something
+          //return only entries[i] in which the word is present. BRAINFUCK
+        }
       }
 
       //CROS problem

@@ -17,8 +17,12 @@ for (var i = 0; i < parsedJSONOutput.length; i++) {
   outputs.push(O.output);
 }
 
-var news = [];
+console.log('DataSources: ' + parsedJSON);
+console.log('Outputs: ' + parsedJSONOutput);
+console.log();
 
+// check which datasource has some new data to offer since last time.
+var news = [];
 for (var i = 0; i < dataSources.length; i++) {
   console.log('checking for news for ' + dataSources[i].name);
 
@@ -30,3 +34,28 @@ for (var i = 0; i < dataSources.length; i++) {
 
 console.log();
 console.log('News in: ' + news);
+
+// check which outputs have to be re-checked, based on which datasources have
+// new data.
+var outputsToCheck = [];
+for (var i = 0; i < news.length; i++) {
+  for (var j = 0; j < outputs.length; j++) {
+
+    if (outputs[j].sources.indexOf(news[i]) != -1 &&
+        outputsToCheck.indexOf(outputs[j]) == -1) {
+
+      outputsToCheck.push(outputs[j]);
+    }
+  }
+}
+
+console.log();
+console.log('Outputs inpacted by the news: ' + outputsToCheck);
+
+// now just run the 'check' method of every outputs that needs to be checked.
+for (var i = 0; i < outputs.length; i++) {
+  if (outputs[i].check(dataSources)) {
+    // send a mail, faire tourner un girophare, etc.
+    console.log('ALERT, ouput ' + outputs[i].name + ' was triggered!');
+  }
+}

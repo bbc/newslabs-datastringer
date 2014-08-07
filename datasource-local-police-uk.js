@@ -1,6 +1,6 @@
 var DS = require("./datasource.js")
 
-module.exports.datasource = DS.makeDataSource(
+module.exports.dataSource = DS.makeDataSource(
   "local-police-uk", //name
   "News from local force", //description
 

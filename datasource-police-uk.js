@@ -6,24 +6,19 @@ module.exports.dataSource = DS.makeDataSource(
   'Some crime stats', // description
 
   function hasNewsSince(date) {
-    var treshold = new Date('2014-05-01');
-    return date > treshold;
+    var threshold = new Date('2014-05-01');
+    return date > threshold;
   },
 
-  function getData(from, to) {
+  function getData(from, to, lat, lng) {
     var crimeArray = new Array(5);
     var crimeTypeName = "anti-social-behaviour";
-
-    //props to replace with user input values
-    var lat = 52.5286417;
-    var lng = -0.1015987;
 
     crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-01", "#jan", 0);
     crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-02", "#feb", 1);
     crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-03", "#march", 2);
     crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-04", "#april", 3);
     crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-05", "#may", 4);
-    getNeighbourhood("http://data.police.uk/api/locate-neighbourhood?q=" + lat + "," + lng);
 
     function crimeQuery(path_json, div_id, crimeArrayIndex) {
       $.getJSON(path_json, function(data) {
@@ -83,50 +78,6 @@ module.exports.dataSource = DS.makeDataSource(
       console.log("This month, " + crimeTypeName + "arrests changed by " + Math.round(diff) + "%");
     }
 
-    var yourNeighbourhood = new Array();
-
-    function getNeighbourhood(path_json) {
-      $.getJSON(path_json, function(data) {
-
-        yourNeighbourhood.push(data.force, data.neighbourhood);
-
-        if (yourNeighbourhood.length > 1) {
-          getNeighbourhoodData()
-        };
-      });
-
-      function getNeighbourhoodData() {
-        var baseJSON = "http://data.police.uk/api/" + yourNeighbourhood[0] + "/" + yourNeighbourhood[1];
-
-        //people
-        $.getJSON(baseJSON + "/people", function(data) {
-          var yourofficers = "";
-          for (var i = 0; i < data.length; i++) {
-            yourofficers += " " + data[i].name + ", ";
-          }
-          console.log("Your police officers are:" + yourofficers);
-        });
-
-        //events
-        $.getJSON(baseJSON + "/events", function(data) {
-          if (data.length == 0) {
-            console.log("There are no announced events in your neighbourhood.");
-          } else {
-            for (var i = 0; i < data.length; i++) {
-              console.log("Events announced: " + data[i].title);
-            }
-          }
-        });
-
-        //priorities
-        $.getJSON(baseJSON + "/priorities", function(data) {
-          var priorities = "";
-          for (var i = 0; i < data.length; i++) {
-            priorities += " " + data[i].issue + ", ";
-          }
-          console.log("Your local force's priorities are" + priorities);
-        })
-      }
-    }
+    //SHOULD RETURN ARRAY OF DATA FRAMES - WTF THAT IS
   }
 );

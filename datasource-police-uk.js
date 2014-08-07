@@ -14,17 +14,22 @@ module.exports.dataSource = DS.makeDataSource(
     var crimeArray = new Array(5);
     var crimeTypeName = "anti-social-behaviour";
 
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-01", "#jan", 0);
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-02", "#feb", 1);
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-03", "#march", 2);
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-04", "#april", 3);
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-05", "#may", 4);
+    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-01", 0);
+    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-02", 1);
+    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-03", 2);
+    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-04", 3);
+    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-05", 4);
 
-    function crimeQuery(path_json, div_id, crimeArrayIndex) {
+    function crimeQuery(path_json, crimeArrayIndex) {
       var dataFinal = new Array();
 
-      $.getJSON(path_json, function(data) {
-        $("#map").remove();
+      $.ajax({
+        url: path_json,
+        async: false,
+        success: doStuff(result)
+      });
+
+      function doStuff(data) {
 
         var crime = {};
 
@@ -50,7 +55,7 @@ module.exports.dataSource = DS.makeDataSource(
         if (ok) {
           stats(crimeTypeName);
         }
-      });
+      };
     }
 
     function stats(crimeType) {

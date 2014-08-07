@@ -18,14 +18,20 @@ module.exports.dataSource = DS.makeDataSource(
     var yourNeighbourhood = new Array();
 
     function getNeighbourhood(path_json) {
-      $.getJSON(path_json, function(data) {
+      $.ajax({
+        url: path_json,
+        async: false,
+        success: doStuff(result)
+      });
+    }
+      function doStuff(data) {
 
         yourNeighbourhood.push(data.force, data.neighbourhood);
 
         if (yourNeighbourhood.length > 1) {
           getNeighbourhoodData()
         };
-      });
+      };
 
       function getNeighbourhoodData() {
         var baseJSON = "http://data.police.uk/api/" + yourNeighbourhood[0] + "/" + yourNeighbourhood[1];

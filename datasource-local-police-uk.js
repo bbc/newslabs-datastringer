@@ -60,4 +60,4 @@ module.exports.datasource = DS.makeDataSource(
     }
     //SHOULD RETURN ARRAY OF DATA FRAMES - WTF THAT IS
   }
-)
+);

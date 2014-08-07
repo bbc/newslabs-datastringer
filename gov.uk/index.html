@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>test</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <ul id="list"></ul>
+  </div>
+  <script>
+  $(document).ready(function() {
+    $.ajax({
+      type: "GET",
+      url: "dataprops/no10.xml",
+      dataType: "xml",
+      success: getStuff
+    });
+
+    function getStuff(xml) {
+      console.log(xml);
+      //stuff
+      var linksArray = new Array();
+
+      $(xml).find("link").each(function() {
+        var $link = $(this);
+        var link = $link.attr("href");
+        linksArray.push(link);
+      })
+      //console.log(linksArray); //ok
+
+      var entries = new Array();
+      $(xml).find("content").each(function() {
+        var $entries = $(this);
+        //console.log($entries.text());
+        entries.push($entries);
+      })
+      //method to get full text of entries:
+      //entries[i][0].textContent
+      console.log(entries[0][0].textContent);
+      $("body").append(entries[1][0].textContent)
+
+      //CROS problem
+      /*var juicerCall = "http://juicer.herokuapp.com/api/article?url=";
+      for (var i = 0; i < linksArray.length; i++) {
+        $.ajax({
+          type: "GET",
+          url: juicerCall + linksArray[i],
+          dataType: "jsonp",
+          crossDomain: true,
+          success: pouet
+        });
+      }
+
+      function pouet(json) {
+        //console.log(json);
+        var parsedJson = JSON.parse(json);
+        console.log(parsedJson);
+      }*/
+    }
+  });
+  </script>
+</body>
+
+</html>

@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
 </head>
 
 <body>
@@ -42,8 +43,16 @@
       })
       //method to get full text of entries:
       //entries[i][0].textContent
-      console.log(entries[0][0].textContent);
+      //console.log(entries[0][0].textContent);
       $("body").append(entries[1][0].textContent)
+
+      //parser
+      for (var i = 0; i < entries.length; i++) {
+        var splits = entries[i][0].textContent.split(" ");
+        var test = _.contains(splits, "immigration");
+        console.log(test); //if true, word is present
+        //to do: if true, trigger something
+      }
 
       //CROS problem
       /*var juicerCall = "http://juicer.herokuapp.com/api/article?url=";

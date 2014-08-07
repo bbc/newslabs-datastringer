@@ -11,6 +11,8 @@ module.exports.datasource = DS.makeDataSource(
 
   function getData(from, to, lat, lng) {
 
+    var dataFinal = new Array();
+
     getNeighbourhood("http://data.police.uk/api/locate-neighbourhood?q=" + lat + "," + lng);
 
     var yourNeighbourhood = new Array();
@@ -35,16 +37,20 @@ module.exports.datasource = DS.makeDataSource(
             yourofficers += " " + data[i].name + ", ";
           }
           console.log("Your police officers are:" + yourofficers);
+          dataFinal.push({"officers": yourofficers});
         });
 
         //events
         $.getJSON(baseJSON + "/events", function(data) {
+          var events = new Array();
           if (data.length == 0) {
             console.log("There are no announced events in your neighbourhood.");
           } else {
             for (var i = 0; i < data.length; i++) {
               console.log("Events announced: " + data[i].title);
+              events.push(data[i].title);
             }
+            dataFinal.push({"events": events});
           }
         });
 
@@ -55,9 +61,11 @@ module.exports.datasource = DS.makeDataSource(
             priorities += " " + data[i].issue + ", ";
           }
           console.log("Your local force's priorities are" + priorities);
+          dataFinal.push({"priorities": priorities});
         })
       }
     }
     //SHOULD RETURN ARRAY OF DATA FRAMES - WTF THAT IS
+    return dataFinal;
   }
 );

@@ -21,6 +21,8 @@ module.exports.dataSource = DS.makeDataSource(
     crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-05", "#may", 4);
 
     function crimeQuery(path_json, div_id, crimeArrayIndex) {
+      var dataFinal = new Array();
+
       $.getJSON(path_json, function(data) {
         $("#map").remove();
 
@@ -76,8 +78,14 @@ module.exports.dataSource = DS.makeDataSource(
 
       console.log("The average of " + crimeTypeName + "arrests per month is " + Math.round(av));
       console.log("This month, " + crimeTypeName + "arrests changed by " + Math.round(diff) + "%");
+
+      //TODO: fix that so it takes into account the several crimeTypeName we have.
+      //see opened issue on Github
+      dataFinal.push({"average-arrests-per-month": Math.round(av)});
+      dataFinal.push({"delta-to-6-months": Math.round(diff)});
     }
 
     //SHOULD RETURN ARRAY OF DATA FRAMES - WTF THAT IS
+    return datafinal;
   }
 );

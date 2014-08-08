@@ -54,9 +54,8 @@
       //parser
       for (var i = 0; i < entries.length; i++) {
         var splits = entries[i][0].textContent.split(" ");
-        var test = _.contains(splits, keyword);
 
-        if (test = true) {
+        if (_.contains(splits, keyword)) {
           //if true, word is present
           //to do: if true, trigger something
           //return only entries[i] in which the word is present. BRAINFUCK

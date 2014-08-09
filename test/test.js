@@ -1,7 +1,8 @@
 var ass = require('assert'); // huh huh
 var fs = require('fs');
-var jsonfn = require('jsonfn');
+var jsonfn = require('jsonfn').JSONfn;
 
+    var policeUK = require('../datasource-police-uk.js').dataSource;
 var tests = new Array();
 
 // ACTUAL TEST DEFINITIONS ////////////////////////////////////////////////////
@@ -62,6 +63,29 @@ tests.push({
       return;
     }
     testFinishedCB(testName);
+  }
+});
+
+tests.push({
+  name: 'use datasource-police-uk',
+  fun: function(testFinishedCB) {
+    var name = this.name;
+    var jsonString = fs.readFileSync('result-datasource-police-uk.json');
+    var reference = jsonfn.parse(jsonString, true);
+
+    var policeUK = require('../datasource-police-uk.js').dataSource;
+    policeUK.getData(new Date('02-01-2014'), new Date('03-01-2014'),
+      51.529251355189885, -0.1490020751953125, function(data) {
+
+      try {
+        ass.deepEqual(data, reference);
+      }
+      catch(e) {
+        testFinishedCB(name, e);
+        return;
+      }
+      testFinishedCB(name);
+    });
   }
 });
 

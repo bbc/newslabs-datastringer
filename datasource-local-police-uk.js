@@ -70,7 +70,6 @@ module.exports.dataSource = DS.makeDataSource(
           dataFinal.push({"priorities": priorities});
         })
       }
-    }
     //SHOULD RETURN ARRAY OF DATA FRAMES - WTF THAT IS
     return dataFinal;
   }

@@ -24,52 +24,53 @@ module.exports.dataSource = DS.makeDataSource(
         success: doStuff(result)
       });
     }
-      function doStuff(data) {
 
-        yourNeighbourhood.push(data.force, data.neighbourhood);
+    function doStuff(data) {
+      yourNeighbourhood.push(data.force, data.neighbourhood);
 
-        if (yourNeighbourhood.length > 1) {
-          getNeighbourhoodData()
-        };
+      if (yourNeighbourhood.length > 1) {
+        getNeighbourhoodData()
       };
+    };
 
-      function getNeighbourhoodData() {
-        var baseJSON = "http://data.police.uk/api/" + yourNeighbourhood[0] + "/" + yourNeighbourhood[1];
+    function getNeighbourhoodData() {
+      var baseJSON = "http://data.police.uk/api/" + yourNeighbourhood[0] + "/" + yourNeighbourhood[1];
 
-        //people
-        $.getJSON(baseJSON + "/people", function(data) {
-          var yourofficers = "";
+      //people
+      $.getJSON(baseJSON + "/people", function(data) {
+        var yourofficers = "";
+        for (var i = 0; i < data.length; i++) {
+          yourofficers += " " + data[i].name + ", ";
+        }
+        console.log("Your police officers are:" + yourofficers);
+        dataFinal.push({"officers": yourofficers});
+      });
+
+      //events
+      $.getJSON(baseJSON + "/events", function(data) {
+        var events = new Array();
+        if (data.length == 0) {
+          console.log("There are no announced events in your neighbourhood.");
+        } else {
           for (var i = 0; i < data.length; i++) {
-            yourofficers += " " + data[i].name + ", ";
+            console.log("Events announced: " + data[i].title);
+            events.push(data[i].title);
           }
-          console.log("Your police officers are:" + yourofficers);
-          dataFinal.push({"officers": yourofficers});
-        });
+          dataFinal.push({"events": events});
+        }
+      });
 
-        //events
-        $.getJSON(baseJSON + "/events", function(data) {
-          var events = new Array();
-          if (data.length == 0) {
-            console.log("There are no announced events in your neighbourhood.");
-          } else {
-            for (var i = 0; i < data.length; i++) {
-              console.log("Events announced: " + data[i].title);
-              events.push(data[i].title);
-            }
-            dataFinal.push({"events": events});
-          }
-        });
+      //priorities
+      $.getJSON(baseJSON + "/priorities", function(data) {
+        var priorities = "";
+        for (var i = 0; i < data.length; i++) {
+          priorities += " " + data[i].issue + ", ";
+        }
+        console.log("Your local force's priorities are" + priorities);
+        dataFinal.push({"priorities": priorities});
+      })
+    }
 
-        //priorities
-        $.getJSON(baseJSON + "/priorities", function(data) {
-          var priorities = "";
-          for (var i = 0; i < data.length; i++) {
-            priorities += " " + data[i].issue + ", ";
-          }
-          console.log("Your local force's priorities are" + priorities);
-          dataFinal.push({"priorities": priorities});
-        })
-      }
     //SHOULD RETURN ARRAY OF DATA FRAMES - WTF THAT IS
     return dataFinal;
   }

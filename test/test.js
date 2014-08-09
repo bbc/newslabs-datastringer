@@ -1,23 +1,38 @@
 var ass = require('assert'); // huh huh
+var fs = require('fs');
+var jsonfn = require('jsonfn');
 
 var tests = new Array();
 
+// ACTUAL TEST DEFINITIONS ////////////////////////////////////////////////////
+
 tests.push({
   name: 'build a dataframe',
-  fun: function() {
+  fun: function(testFinishedCB) {
+    var testName = this.name;
     var DF = require('../dataframe.js');
 
     var now = new Date(Date.now());
     var data = {'antisocial-behavior': 42, 'bike-theft': 51};
     var df = DF.makeDataFrame(now, data);
-    ass.deepEqual(df.data, data);
-    ass.deepEqual(df.date, now);
+
+    try{
+      ass.deepEqual(df.data, data);
+      ass.deepEqual(df.date, now);
+    }
+    catch(e) {
+      testFinishedCB(testName, e);
+      return;
+    }
+
+    testFinishedCB(testName);
   }
 });
 
 tests.push({
   name: 'build a datasource',
-  fun: function() {
+  fun: function(testFinishedCB) {
+    var testName = name;
     var DS = require('../datasource.js');
 
     var name = 'crime-stats';
@@ -35,38 +50,51 @@ tests.push({
     }
 
     var ds = DS.makeDataSource(name, desc, hasNewsSince, getData);
-    ass.equal(ds.name, name);
-    ass.equal(ds.description, desc);
-    ass.deepEqual(ds.hasNewDataSince, hasNewsSince);
-    ass.deepEqual(ds.getData, getData);
+
+    try {
+      ass.equal(ds.name, name);
+      ass.equal(ds.description, desc);
+      ass.deepEqual(ds.hasNewDataSince, hasNewsSince);
+      ass.deepEqual(ds.getData, getData);
+    }
+    catch(e) {
+      testFinishedCB(testName, e);
+      return;
+    }
+    testFinishedCB(testName);
   }
 });
+
+// END OF TEST DEFINITIONS ////////////////////////////////////////////////////
 
 console.log('running ' + tests.length + ' unit tests...');
 console.log();
 
-var fails = new Array();
+var testsSuccessful = 0;
+var testsFailed = 0;
+var fails = [];
+
 for (var i = 0; i < tests.length; i++) {
-  try {
-    process.stdout.write(tests[i].name + ' ... ');
-    tests[i].fun();
-    console.log('OK');
-  }
-  catch(e) {
-    console.log('KO');
-    fails.push({name: tests[i].name, except: e});
-  }
+  console.log('Running ' + tests[i].name + '...');
+  tests[i].fun(onTestFinished);
 }
 
-console.log()
-console.log('success: ' + (tests.length - fails.length));
-console.log('failures:  ' + fails.length);
+function onTestFinished(name, error) {
+  if (!error) {
+    testsSuccessful++;
+  }
+  else {
+    testsFailed++;
+    fails.push({testName: name, err: error});
+  }
 
-for(var i = 0; i < fails.length; i++) {
-  console.log();
-  console.log(fails[i].name + ':');
-  var e = fails[i].except;
-  console.log(e.message);
-  console.log('Got ' + e.actual + ', expected ' + e.expected);
+  if ((testsFailed + testsSuccessful) == tests.length) {
+    console.log();
+    console.log('All tests ran.');
+    console.log('Success: ' + testsSuccessful);
+    console.log('Failures: ' + testsFailed);
+    if (fails.length) {
+      console.log(fails);
+    }
+  }
 }
-

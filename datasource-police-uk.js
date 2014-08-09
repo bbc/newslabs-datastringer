@@ -1,4 +1,5 @@
-var DS = require('./datasource.js')
+var DS = require('./datasource.js');
+var makeDataFrame = require('./dataframe.js').makeDataFrame;
 
 module.exports.dataSource = DS.makeDataSource(
   'police-uk', // name
@@ -6,91 +7,60 @@ module.exports.dataSource = DS.makeDataSource(
   'Some crime stats', // description
 
   function hasNewsSince(date) {
+    // TODO use http://data.police.uk/api/crime-last-updated and compare date to
+    // the returned timestamp
     var threshold = new Date('2014-05-01');
     return date > threshold;
   },
 
   function getData(from, to, lat, lng) {
-    var crimeArray = new Array(5);
-    var crimeTypeName = "anti-social-behaviour";
-
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-01", 0);
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-02", 1);
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-03", 2);
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-04", 3);
-    crimeQuery("http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng + "&date=2014-05", 4);
-
-    function crimeQuery(path_json, crimeArrayIndex) {
-      var dataFinal = new Array();
-
-      $.ajax({
-        url: path_json,
-        async: false,
-        success: doStuff(result)
-      });
-
-      function doStuff(data) {
-
-        var crime = {};
-
-        data.forEach(function(item) {
-          if (!(item.category in crime)) {
-            crime[item.category] = 1; // 1st crime seen for this category
-          } else {
-            crime[item.category] += 1;
-          }
-        })
-
-        crimeArray[crimeArrayIndex] = crime;
-
-        var crimeTypes = Object.keys(crime).sort();
-
-        var ok = true;
-        for (var i = 0; i < crimeArray.length; i++) {
-          if (!crimeArray[i]) {
-            ok = false;
-            break;
-          }
-        }
-        if (ok) {
-          stats(crimeTypeName);
-        }
-      };
+    // let currDate be the 1st of current month if day <= 15, 1st of next month
+    // otherwise
+    var currDate = from;
+    if (currDate.getDay() <= 15) {
+      currDate.setDate(1);
+    }
+    else {
+      currDate.setDate(32) // will go to 1st of next month
     }
 
-    function stats(crimeType) {
-      var average = function(valueArray) {
-        var average = 0;
-        valueArray.forEach(function(v) {
-          average += v;
-        });
-        return average / valueArray.length;
-      }
+    var crimeArray = new Array();
+    var baseQuery =
+        "http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng;
 
-      // extract the relevant data from crimeArray
-      // number of crimes per month for the given crimeTypeName.
-      var statsArray = [];
-      for (var i = 0; i < crimeArray.length; i++) {
-        if (crimeType in crimeArray[i]) {
-          statsArray.push(crimeArray[i][crimeType]);
-        } else {
-          statsArray.push(0);
-        }
-      }
+    while (currDate <= to) {
+      var currMonth = currDate.getMonth() + 1; // months start at 0 ¬_¬
+      currMonth = currMonth > 9 ? String(currMonth) : '0' + String(currMonth);
+      var timeQuery = "&date=" + currDate.getFullYear() + "-" + currMonth;
 
-      var av = average(statsArray);
-      var diff = (statsArray[statsArray.length - 1] / av * 100) - 100;
+      var data = crimeQuery(baseQuery + timeQuery);
+      crimeArray.push(makeDataFrame(currDate, data));
 
-      console.log("The average of " + crimeTypeName + "arrests per month is " + Math.round(av));
-      console.log("This month, " + crimeTypeName + "arrests changed by " + Math.round(diff) + "%");
-
-      //TODO: fix that so it takes into account the several crimeTypeName we have.
-      //see opened issue on Github
-      dataFinal.push({"average-arrests-per-month": Math.round(av)});
-      dataFinal.push({"delta-to-6-months": Math.round(diff)});
+      currDate.setMonth(currDate.getMonth() + 1); // go to the next dataframe
     }
 
-    //SHOULD RETURN ARRAY OF DATA FRAMES - WTF THAT IS
-    return datafinal;
+    return crimeArray;
   }
 );
+
+function crimeQuery(path_json, crimeArrayIndex) {
+  var monthCrimeStat = {};
+
+  $.ajax({
+    url: path_json,
+    async: false,
+    success: process(result)
+  });
+
+  function process(data) {
+    for(var i = 0; i < data.length; i++) {
+      if (!(data[i].category in crime)) {
+        monthCrimeStat[data[i].category] = 0; // 1st crime seen for this category
+      }
+      monthCrimeStat[data[i].category] += 1;
+    }
+  };
+
+  return monthCrimeStat;
+}
+

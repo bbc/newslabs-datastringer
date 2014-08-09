@@ -4,7 +4,19 @@ var makeDataFrame = require('./dataframe.js').makeDataFrame;
 module.exports.dataSource = DS.makeDataSource(
   'police-uk', // name
 
-  'Some crime stats', // description
+  "#Police-uk\n" +
+  "This sources return the monthly crime statistiques for a given localisation.\n" +
+
+  "##getData parameters\n" +
+  "In addition to the mandatory (from, to) time parameters, getData takes two\n" +
+  "parameters for the localisation of the crime statistic: latitude and\n" +
+  "longitude GPS coordinates.\n" +
+
+  "##returned data format\n" +
+  "The source returns a dataframe per month. The date attribute of the frame is\n" +
+  "set to the first day of the month, and the data attribute carries an object.\n" +
+  "This object has a field of each crime type (eg. `antisocial-behaviour` or \n" +
+  "`bike-theft`), and the field's value is the monthly arrest count for this crime.",
 
   function hasNewsSince(date) {
     // TODO use http://data.police.uk/api/crime-last-updated and compare date to

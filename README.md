@@ -131,7 +131,7 @@ sensible default value (e.g. ~/.local/share/datastringer.rc)
 
 ### Testing
 
-A crude unit test framework is defined in `test.js`. Just run `node test.js` to
+A crude unit test framework is defined in `test/test.js`. Just run `node test.js` to
 see if everything is going well.
 
 To define a new test, append an object to the `tests` array defined at the top

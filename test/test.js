@@ -5,7 +5,7 @@ var tests = new Array();
 tests.push({
   name: 'build a dataframe',
   fun: function() {
-    var DF = require('./dataframe.js');
+    var DF = require('../dataframe.js');
 
     var now = new Date(Date.now());
     var data = {'antisocial-behavior': 42, 'bike-theft': 51};
@@ -18,7 +18,7 @@ tests.push({
 tests.push({
   name: 'build a datasource',
   fun: function() {
-    var DS = require('./datasource.js');
+    var DS = require('../datasource.js');
 
     var name = 'crime-stats';
     var desc = 'Crime statistics from police.uk';

@@ -1,5 +1,7 @@
 var DS = require('./datasource.js');
 var makeDataFrame = require('./dataframe.js').makeDataFrame;
+var sync = require('synchronize');
+var getTheFuckingJSON = require('./utils.js').getTheFuckingJSON;
 
 module.exports.dataSource = DS.makeDataSource(
   'police-uk', // name
@@ -25,7 +27,7 @@ module.exports.dataSource = DS.makeDataSource(
     return date > threshold;
   },
 
-  function getData(from, to, lat, lng) {
+  function getData(from, to, lat, lng, callback) {
     // let currDate be the 1st of current month if day <= 15, 1st of next month
     // otherwise
     var currDate = from;
@@ -40,39 +42,46 @@ module.exports.dataSource = DS.makeDataSource(
     var baseQuery =
         "http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng;
 
-    while (currDate <= to) {
-      var currMonth = currDate.getMonth() + 1; // months start at 0 ¬_¬
-      currMonth = currMonth > 9 ? String(currMonth) : '0' + String(currMonth);
-      var timeQuery = "&date=" + currDate.getFullYear() + "-" + currMonth;
+    sync.fiber(function() {
+      while (currDate <= to) {
+        var currMonth = currDate.getMonth() + 1; // months start at 0 ¬_¬
+        currMonth = currMonth > 9 ? String(currMonth) : '0' + String(currMonth);
+        var timeQuery = "&date=" + currDate.getFullYear() + "-" + currMonth;
 
-      var data = crimeQuery(baseQuery + timeQuery);
-      crimeArray.push(makeDataFrame(currDate, data));
-
-      currDate.setMonth(currDate.getMonth() + 1); // go to the next dataframe
-    }
-
-    return crimeArray;
+        console.log('police-uk: fetching data for ' + timeQuery);
+        try {
+          var data = sync.await(crimeQuery(baseQuery + timeQuery, sync.defer()));
+          crimeArray.push(makeDataFrame(new Date(currDate), data));
+        }
+        catch(e) {
+          console.log('caught exception while fetching data for ' + currDate +
+            ', skipping to next month');
+        }
+        currDate.setMonth(currDate.getMonth() + 1); // go to the next dataframe
+      }
+      callback(crimeArray);
+    });
   }
 );
 
-function crimeQuery(path_json, crimeArrayIndex) {
-  var monthCrimeStat = {};
+function crimeQuery(path_json, callback) {
+  getTheFuckingJSON(path_json, process);
 
-  $.ajax({
-    url: path_json,
-    async: false,
-    success: process(result)
-  });
+  function process(err, json) {
+    if (err) {
+      callback(err);
+      return;
+    }
 
-  function process(data) {
+    var data = JSON.parse(json);
+    var monthCrimeStat = {};
     for(var i = 0; i < data.length; i++) {
-      if (!(data[i].category in crime)) {
+      if (!(data[i].category in monthCrimeStat)) {
         monthCrimeStat[data[i].category] = 0; // 1st crime seen for this category
       }
       monthCrimeStat[data[i].category] += 1;
     }
+    callback(undefined, monthCrimeStat);
   };
-
-  return monthCrimeStat;
 }
 

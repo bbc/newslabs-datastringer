@@ -7,12 +7,18 @@ module.exports.dataSource = DS.makeDataSource(
   'police-uk', // name
 
   "#Police-uk\n" +
-  "This sources return the monthly crime statistiques for a given localisation.\n" +
+  "This source return the monthly crime statistics for a given localisation. It can " +
+  "cover several months and will accordingly return several data points.\n" +
 
-  "##getData parameters\n" +
-  "In addition to the mandatory (from, to) time parameters, getData takes two\n" +
-  "parameters for the localisation of the crime statistic: latitude and\n" +
-  "longitude GPS coordinates.\n" +
+  "##getData parameters\n" + // TODO add the callback parameter
+  "`getData` returns an array of data covering a temporal range. It accepts 4 " +
+  "parameters:\n\n" +
+  "- `from`: a `Date` object marking the start of the range" +
+  "- `to`: a `Date` object marking the end of the range" +
+  "- `lat`: the latitude of the localisation" +
+  "- `lng`: the longitude of the localisation" +
+  "- `getDataCallback`: the callback called when getData is done. Its signature is " +
+  "`(error, data)`. The `error` parameter is `undefined` when no error happened.\n" +
 
   "##returned data format\n" +
   "The source returns a dataframe per month. The date attribute of the frame is\n" +

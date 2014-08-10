@@ -35,10 +35,10 @@ module.exports.dataSource = DS.makeDataSource(
       currDate.setDate(1);
     }
     else {
-      currDate.setDate(32) // will go to 1st of next month
+      currDate.setDate(32); // will go to 1st of next month
     }
 
-    var crimeArray = new Array();
+    var crimeArray = [];
     var baseQuery =
         "http://data.police.uk/api/crimes-street/all-crime?lat=" + lat + "&lng=" + lng;
 
@@ -82,6 +82,6 @@ function crimeQuery(path_json, callback) {
       monthCrimeStat[data[i].category] += 1;
     }
     callback(undefined, monthCrimeStat);
-  };
+  }
 }
 

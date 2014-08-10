@@ -9,11 +9,6 @@ module.exports.output = O.makeOutput(
   ['police-uk'], // array containing the names of datasources used by output
 
   function check(datasourcesDict, callback) {
-    // TODO in fact, should choose the right datasources from the given array
-    // (return false or throw if needed sources are absent), query them for the
-    // needed data (over the good range of time, with the right lat/lng etc.),
-    // make stats and return true/false based on the outcome.
-
     // check that all the datasources that we need are here.
     for (var i = 0; i < this.sources.length; i++) {
       if (!(sources[i] in datasourcesDict)) {

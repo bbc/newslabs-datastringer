@@ -16,7 +16,7 @@ module.exports.output = O.makeOutput(
 
     // check that all the datasources that we need are here.
     for (var i = 0; i < this.sources.length; i++) {
-      if (!(sources[i] in datasourcesDict)) {
+      if (!(this.sources[i] in datasourcesDict)) {
         callback("Datasource '" + sources[i] + "' not found in " + datasourcesDict);
         return;
       }

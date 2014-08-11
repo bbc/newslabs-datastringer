@@ -9,38 +9,17 @@
   <script src="lib/bootstrap.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
   rel="stylesheet">
-  <style type="text/css">
-  #head {
-    background-color: #eee;
-  }
-  #getstarted {
-    margin-top: 35px;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    padding-top: 1em;
-    width: 100%;
-    height: 50px;
-    background-color: #f5f5f5;
-  }
-  .muted {
-    color: #fafafa;
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
   <div class="container-fluid" id="head">
     <div class="col-md-9">
       <div class="page-header">
-        <h1>Datastringer -
-          <small>A tool for hacker-journos</small>
+        <h1 style="color: #232323">Datastringer -
+          <small style="color: #4C4C4C">A tool for hacker-journos</small>
         </h1>
       </div>
-    </div>
-    <div class="col-md-2" id="getstarted">
-      <a class="muted" href="editor.html"><button type="button" class="btn btn-success btn-lg">Get started!</button></a>
     </div>
   </div>
 
@@ -52,15 +31,29 @@
     </div>
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+          As journalists, we're spending an awful amount of time reading the news. Going through
+          the papers, our favourite news websites, our Twitter lists, and our RSS
+          feeds, is part of our morning routine. At work, the familiar ticking of
+          wires coming in never stops.
+          <br>Some of us now work with data too, considering it a source in itself; a
+          source which can give us tips, leads, and stories, just like our informat
+          working in the Home office.
+        </p>
+        <p>
+          <strong>Problem is: data is harder to consume.</strong>It often comes in formats
+          not as easily readable as a block of text or a phone conversation. It is
+          regularly updated, and sometimes, it is a stream of numbers.
+        </p>
+        <p>
+          <strong>Datastringer will help you subscribe to data sources, and will notify you
+            when patterns arise ot thresholds are broken.</strong>
+          <br>Just like your local correspondent will give you a call when there's a
+          story to write.
+        </p>
       </div>
       <div class="col-md-4 col-md-offset-2">
-        <i class="fa fa-exclamation-triangle fa-5x"></i>
+        <i class="fa fa-exclamation-triangle fa-5x" style="margin-top: 65px"></i>
       </div>
     </div>
   </div>
@@ -73,25 +66,58 @@
     </div>
     <div class="row">
       <div class="col-md-4 col-md-offset-2">
-        <i class="fa fa-code fa-5x"></i>
+        <i class="fa fa-code fa-5x" style="margin-top: 20px"></i>
       </div>
       <div class="col-md-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+          That's fine.
+          <br>The whole point of Datastringer is to provide you with re-usable tools
+          written in Javascript and Node.js that you will partly configure through
+          a graphical interface.
+        </p>
+        <p>
+          Even though some skills in Javascript would be helpful to configure your alerts according
+          to your needs, you will not have to go through esoteric sysadmin procedures.
+          We tried to keep the product as simple as possible.
+        </p>
+        <p>
+          If you need support, give us a shout.
+        </p>
       </div>
     </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-1">
+        <h1>Get started: install Datastringer</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <p>
+          The code is available <a href="https://github.com/basilesimon/datastringer">on Github</a>,
+          and that's where you should start.
+          <br>Run
+          <code>git clone (...)</code>or download the ZIP folder .</p>
+        <div class="alert alert-danger" role="alert">WRITE INSTALL INSTRUCTIONS</div>
+      </div>
+      <div class="col-md-4 col-md-offset-2">
+        <i class="fa fa-cogs fa-5x"></i>
+      </div>
+    </div>
+  </div>
   </div>
   <div class="footer">
     <div class="container">
       <p class="text-muted">A project by <a href="http://twitter.com/basilesimon">Basile Simon</a> and
         <a href="http://twitter.com/5c2v">Clément Geiger</a>for <a href="http://twitter.com/BBC_News_Labs">BBC News Labs</a>,
-        under MIT License.</p>
+        under <a href="https://tldrlegal.com/license/mit-license">MIT License</a>.</p>
     </div>
   </div>
 </body>
 
 </html>
+<!-- <div class="col-md-2" id="getstarted">
+      <a class="muted" href="intro.html">
+        <button type="button" class="btn btn-success btn-lg">Get started!</button>
+      </a>
+    </div> -->

@@ -7,11 +7,14 @@ module.exports.output = O.makeOutput(
 
   ['local-police-uk'], // array containing the names of datasources used by output
 
-  function check(datasourcesDict, callback) {
+  function check(datasourcesDict, checkDoneCallback) {
+    var outputName = this.name;
+
     // check that all the datasources that we need are here.
     for (var i = 0; i < this.sources.length; i++) {
       if (!(this.sources[i] in datasourcesDict)) {
-        callback("Datasource '" + sources[i] + "' not found in " + datasourcesDict);
+        checkDoneCallback("Datasource '" + sources[i] + "' not found in " +
+            datasourcesDict, outputName);
         return;
       }
     }
@@ -21,42 +24,33 @@ module.exports.output = O.makeOutput(
     // TODO get the lat lng parameters from the GUI
     var force = "metropolitan";
     var neighbourhood = "00ACGD";
-    var lat = 51.529251355189885;
-    var lng = -0.1490020751953125;
 
-    local_police_uk.getData(force, neighbourhood, checkChange);
+    var pendingReq = 2;
+    var localData;
+    var remoteData;
 
-    function checkChange(dataFinal) {
-      console.log(dataFinal);
+    fs.readFile(path_to_JSON, 'utf8', function(err, data) {
+      if (!err && data) {
+        localData = JSON.parse(data);
+      }
+      pendingReq--;
+      compareData();
+    });
+
+    local_police_uk.getData(force, neighbourhood, function(err, data) {
+      if (!err) {
+        remoteData = data;
+      }
+      pendingReq--;
+      compareData();
+    });
+
+    function compareData() {
+      // TODO deep equality test of remote data and local data
+      // if (remote data != local data)
+      //   store remote data as the next local data for reference
+      //   fire the call back with a summary of the changes
     }
-
-    /*function processStats(crimeStats) {
-      // compute the total amount of crime for each crime
-      var totCrimes = [];
-      for (var i = 0; i < crimeStats.length; i++) {
-        var totalCrime = 0;
-        var types = Object.keys(crimeStats[i]);
-        for (var t = 0; t < types.length; t++) {
-          totalCrime += crimeStats[i][t];
-        }
-        totCrimes.push(totalCrime);
-      }
-
-      // compute the average of crimes per month
-      var avg = 0;
-      for (var m = 0; m < totCrimes.length; m++) {
-        avg += totCrimes[m];
-      }
-      avg /= totCrimes.length;
-
-      var dif = (totCrimes[totCrimes.length - 1] / avg * 100) - 100;
-
-      // TODO that 10 percents also are here for the sake of the example and
-      // should be parametrized somehow.
-      if (Math.abs(dif) >= 10) {
-        callback(undefined, dif);
-      }
-    }*/
   }
 );
 

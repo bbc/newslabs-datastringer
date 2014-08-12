@@ -97,6 +97,11 @@
         $('#res').html('<p>Your query will use the GPS coordinates ' + values.lat + ',' +
           values.lng + '</p>');
         console.log(values);
+        function getForce(params) {
+          console.log(params);
+          $("#res").html("<p>Add these lines to file <code>xxx</code>:<br><pre>var params = " + JSON.stringify(values) + "</pre>");
+        }
+        var params = $.getJSON("http://data.police.uk/api/locate-neighbourhood?q=" + values.lat + "," + values.lng, getForce);
       }
     }
   });

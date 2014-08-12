@@ -18,7 +18,7 @@ module.exports.output = O.makeOutput(
     }
 
     var police_uk = datasourcesDict['police-uk'];
-    var to = new Date(Date.now());
+    var to = new Date("2014-06-01");
     var from = new Date(to);
     from.setMonth(from.getMonth() - 5); // query data for the past 6 months.
 
@@ -52,7 +52,7 @@ module.exports.output = O.makeOutput(
 
       // TODO that 10 percents also are here for the sake of the example and
       // should be parametrized somehow.
-      if (Math.abs(dif) >= 10) {
+      if (Math.abs(dif) >= 10 || Math.abs(dif) <= -10) {
         callback(undefined, dif);
       }
     }

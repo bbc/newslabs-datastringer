@@ -9,10 +9,13 @@ module.exports.output = O.makeOutput(
   ['police-uk'], // array containing the names of datasources used by output
 
   function check(datasourcesDict, callback) {
+    var outputName = this.name;
+
     // check that all the datasources that we need are here.
     for (var i = 0; i < this.sources.length; i++) {
       if (!(this.sources[i] in datasourcesDict)) {
-        callback("Datasource '" + sources[i] + "' not found in " + datasourcesDict);
+        callback("Datasource '" + sources[i] + "' not found in " + datasourcesDict,
+          outputName);
         return;
       }
     }
@@ -53,7 +56,7 @@ module.exports.output = O.makeOutput(
       // TODO that 10 percents also are here for the sake of the example and
       // should be parametrized somehow.
       if (Math.abs(dif) >= 10) {
-        callback(undefined, dif);
+        callback(undefined, outputName, dif);
       }
     }
   }

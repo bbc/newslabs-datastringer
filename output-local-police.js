@@ -1,4 +1,6 @@
 var O = require('./output.js');
+var fs = require('fs');
+var diff = require('lodash.difference');
 
 module.exports.output = O.makeOutput(
   'output-local-police', // name
@@ -26,14 +28,15 @@ module.exports.output = O.makeOutput(
     var neighbourhood = "00ACGD";
 
     var pendingReq = 2;
-    var localData;
-    var remoteData;
+    var localData = {};
+    var remoteData = {};
 
-    fs.readFile(path_to_JSON, 'utf8', function(err, data) {
+    var referenceDataFilePath = 'assets/local-police-reference.json';
+
+    fs.readFile(referenceDataFilePath, 'utf8', function(err, data) {
       if (!err && data) {
         localData = JSON.parse(data);
       }
-      pendingReq--;
       compareData();
     });
 
@@ -41,15 +44,34 @@ module.exports.output = O.makeOutput(
       if (!err) {
         remoteData = data;
       }
-      pendingReq--;
       compareData();
     });
 
     function compareData() {
-      // TODO deep equality test of remote data and local data
-      // if (remote data != local data)
-      //   store remote data as the next local data for reference
-      //   fire the call back with a summary of the changes
+      pendingReq--;
+      if (pendingReq > 0) {
+        return; // all data isnt there yet.
+      }
+
+      var differenceSummary = {
+        people: diff(remoteData.people, localData.people),
+        events: diff(remoteData.events, localData.events),
+        priorities: diff(remoteData.priorities, localData.priorities)
+      };
+      var difference = (
+          differenceSummary.people.length ||
+          differenceSummary.events.length ||
+          differenceSummary.priorities.length);
+
+      if (difference) {
+        fs.writeFile(referenceDataFilePath, JSON.stringify(remoteData), 'utf8',
+        function(err) {
+          console.log('Error while writing reference data for local-police to ' +
+              referenceDataFilePath + ': ' + err);
+        });
+
+        checkDoneCallback(undefined, outputName, differenceSummary);
+      }
     }
   }
 );

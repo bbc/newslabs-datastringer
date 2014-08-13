@@ -3,7 +3,7 @@
 ##Source 1: Crime statistics in my region
 
 * Source: Police.uk Rest API
-* User input: GPS location (clickable map?)
+* User input: GPS location (clickable map)
 
 **What I want:**
 
@@ -29,14 +29,3 @@ That means there's a story to write, as the number is significant enough (though
 
 *Note: I might want to monitor several neighbourhoods.*
 
-##Source 3: Government's official publications
-
-* Source: Gov.uk list of Atom feeds
-* User input: list of keywords
-
-**What I want:**
-
-* Give a bunch of keywords to search in a list of publications that I can't read myself
-* And if possible, use operators (OR, AND, NOT...)
-
-**Alert me when:** these words are mentioned in the big lot of communications published every day (the list can be augmented, btw). Ideally, I would receive a list of headlines, extracts, and maybe full text of the communications that satisfy the terms of my search.  I'm a bit lazy to read all these PRs, so you better make my life easier.

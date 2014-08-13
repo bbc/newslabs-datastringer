@@ -18,5 +18,8 @@ Getting started with Datastringer is easy:
 #Do more with Datastringer
 
 Datastringer is built on Javascript and Node.js, making it super easy to configure, run, and customise.
-Refer to the documentation to understand the architecture, rummage the examples and... build your own stringer!
+[Refer to the documentation](https://github.com/basilesimon/datastringer/wiki) to understand the architecture, rummage the examples and... build your own stringer!
 
+##About the license
+
+Datastringer is distributed under the MIT License, and developed by [Basile Simon](http://twitter.com/basilesimon), [Clément Geiger](http://twitter.com/5c2v), for [BBC News Labs](http://twitter.com/bbc_news_labs). [Read more about the MIT License](https://tldrlegal.com/license/mit-license).

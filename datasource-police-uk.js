@@ -79,6 +79,11 @@ function crimeQuery(path_json, callback) {
       return;
     }
 
+    if (!json) {
+      callback('No JSON could be fetched for ' + path_json);
+      return;
+    }
+
     var data = JSON.parse(json);
     var monthCrimeStat = {};
     for(var i = 0; i < data.length; i++) {

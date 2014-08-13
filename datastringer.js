@@ -59,8 +59,12 @@ console.log('Outputs inpacted by the news: ' + outputsToCheck);
 // now just run the 'check' method of every outputs that needs to be checked.
 for (var i = 0; i < outputsToCheck.length; i++) {
   var oKey = outputsToCheck[i];
-  if (outputs[oKey].check(dataSources)) {
-    // send a mail, faire tourner un girophare, etc.
-    console.log('ALERT, ouput ' + oKey + ' was triggered!');
+  outputs[oKey].check(dataSources, onCheckDone);
+}
+
+function onCheckDone(error, name, checkResult) {
+  // send a mail, faire tourner un girophare, etc.
+  if(!error && checkResult) {
+    console.log('ALERT, output ' + name + ' was triggered with value ' + checkResult);
   }
 }

@@ -9,10 +9,13 @@ module.exports.output = O.makeOutput(
   ['police-uk'], // array containing the names of datasources used by output
 
   function check(datasourcesDict, callback) {
+    var outputName = this.name;
+
     // check that all the datasources that we need are here.
     for (var i = 0; i < this.sources.length; i++) {
       if (!(this.sources[i] in datasourcesDict)) {
-        callback("Datasource '" + sources[i] + "' not found in " + datasourcesDict);
+        callback("Datasource '" + sources[i] + "' not found in " + datasourcesDict,
+          outputName);
         return;
       }
     }
@@ -29,14 +32,14 @@ module.exports.output = O.makeOutput(
 
     police_uk.getData(from, to, lat, lng, processStats);
 
-    function processStats(crimeStats) {
+    function processStats(crimeStatsFrames) {
       // compute the total amount of crime for each crime
       var totCrimes = [];
-      for (var i = 0; i < crimeStats.length; i++) {
+      for (var i = 0; i < crimeStatsFrames.length; i++) {
         var totalCrime = 0;
-        var types = Object.keys(crimeStats[i]);
+        var types = Object.keys(crimeStatsFrames[i].data);
         for (var t = 0; t < types.length; t++) {
-          totalCrime += crimeStats[i][t];
+          totalCrime += crimeStatsFrames[i].data[types[t]];
         }
         totCrimes.push(totalCrime);
       }

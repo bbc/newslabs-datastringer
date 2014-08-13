@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Crime stats - Datastringer</title>
+  <title>Local police - Datastringer</title>
   <script src="lib/jquery.js"></script>
   <link rel="stylesheet" href="lib/bootstrap.css">
   <script src="lib/bootstrap.js"></script>
@@ -16,7 +16,7 @@
   <div class="container-fluid" id="head">
     <div class="col-md-9">
       <div class="page-header">
-        <h1>Police statitstics parameters builder</h1>
+        <h1 style="color:#fafafa">Local police force parameters builder</h1>
       </div>
     </div>
   </div>
@@ -26,24 +26,22 @@
     <div class="col-md-6" style="padding: 1em">
       <h3>Input your parameters</h3>
       <p>
-        Start by filling the two dates,
-        <code>from</code>and
-        <code>to</code>. A 6-month interval would do just fine.
-        <br>Then use the map on the right-hand side to locate the area you want to get
-        stats from. A click somewhere will give you the latitude and longitude of
-        the place you clicked to. Input those in
+        You've done that before: use the map on the right-hand side to locate the area you
+        want to get information from. A click somewhere will give you the latitude
+        and longitude of the place you clicked to. Input those in
         <code>latitude</code>and
         <code>longitude</code>.
         <br>
-        <em>Note: The area selected will be a one-mile radius around the GPS coordinates.</em>
+        <em>Note: The coordinates you select will be extrapolated to the local force
+          neighbourhood automatically.</em>
       </p>
       <form></form>
-      <div id="res" class="alert"></div>
+      <div id="res" class="hide" class="alert alert-info"></div>
       <h3><i class="fa fa-thumbs-o-up"></i> Done?</h3>
       <div class="text-center">
-        <strong>Let's jump to the next data source, shall we?</strong>
-        <a class="muted" href="intro-bis.html">
-          <button type="button" class="btn btn-success btn-lg">Let's go</button>
+        <strong>We're done configuring!</strong>
+        <a class="muted" href="done.html">
+          <button type="button" class="btn btn-success btn-lg">What's next?</button>
         </a>
       </div>
     </div>
@@ -77,21 +75,22 @@
       var lng = event.latLng.lng();
       $('#jsonform-0-elt-lat').val(lat);
       $('#jsonform-0-elt-lng').val(lng);
+
+      function append(params) {
+        $("#res").removeClass("hide").addClass("alert alert-info");
+        $("#res").html("<p>Looks like you selected the <strong>" + params.force +
+          "</strong> Force, and the neighbourhood code <strong>" + params.neighbourhood +
+          "</strong>.<br>If that's what you want, hit \"Submit\".</p>");
+      };
+      var params = $.getJSON(
+        "http://data.police.uk/api/locate-neighbourhood?q=" + lat + "," +
+        lng, append);
     }
   });
 
+
   $('form').jsonForm({
     schema: {
-      from: {
-        type: 'date',
-        title: 'From (date YYYY-MM-DD):',
-        required: true
-      },
-      to: {
-        type: 'date',
-        title: 'To (date):',
-        required: true
-      },
       lat: {
         type: 'number',
         title: 'Latitude:',
@@ -107,10 +106,20 @@
       if (errors) {
         $('#res').html('<p>I beg your pardon?</p>');
       } else {
-        $('#res').html('<p>Your query will go from ' + values.from + ' to ' +
-          values.to + ',<br/>for the GPS coordinates ' + values.lat + ',' +
+        $('#res').html('<p>Your query will use the GPS coordinates ' + values
+          .lat + ',' +
           values.lng + '</p>');
         console.log(values);
+
+        function getForce(params) {
+          console.log(params);
+          $("#res").html(
+            "<p>Add these lines to file <code>xxx</code>:<br><pre>var params = " +
+            JSON.stringify(values) + "</pre>");
+        }
+        var params = $.getJSON(
+          "http://data.police.uk/api/locate-neighbourhood?q=" + values.lat +
+          "," + values.lng, getForce);
       }
     }
   });

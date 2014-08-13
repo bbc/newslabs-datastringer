@@ -1,9 +1,9 @@
  #head {
-   background-color: #3d9970;
+   background-color: #0074d9;
    border-bottom: 1px solid #BFBFBF;
  }
  .page-header {
-  border-bottom: none;
+   border-bottom: none;
  }
  .footer {
    position: relative;
@@ -17,14 +17,27 @@
    color: #fafafa;
  }
  #map {
-  margin-top: 3em;
+   margin-top: 3em;
    display: inline-block;
    width: 600px;
    height: 450px;
  }
-.form-actions {
-  margin-top: 1em;
-}
-.fa {
-  color: #3d9970;
-}
+ .form-actions {
+   margin-top: 1em;
+ }
+ .fa {
+   color: #0074d9;
+ }
+ .hide {
+   display: none !important;
+ }
+ #res {
+   margin-top: 1em;
+ }
+ .circle {
+/*   height: 200px;
+   width: 200px;*/
+   border-radius: 50%;
+   background-color: blue;
+   opacity: 0.2;
+ }

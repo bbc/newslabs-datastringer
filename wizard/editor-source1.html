@@ -37,7 +37,7 @@
         <br>
         <em>Note: The area selected will be a one-mile radius around the GPS coordinates.</em>
       </p>
-      <form></form>
+      <form name="configure" method="post" action="/configure"></form>
       <div id="res" class="alert"></div>
       <h3><i class="fa fa-thumbs-o-up"></i> Done?</h3>
       <div class="text-center">
@@ -114,14 +114,24 @@
       }
     },
     onSubmit: function(errors, values) {
-      if (errors) {
-        $('#res').html('<p>I beg your pardon?</p>');
-      } else {
-        $('#res').html('<p>Your query will go from ' + values.from + ' to ' +
-          values.to + ',<br/>for the GPS coordinates ' + values.lat + ',' +
-          values.lng + '</p>');
-        console.log(values);
-      }
+        if (errors) {
+            $('#res').html('<p>Input invalid.</p>');
+        } else {
+            $.ajax({
+                url : "/configure",
+                type: "POST",
+                data: values,
+                dataType: "json",
+                success: function(response, textStatus, jqXHR) {
+                    $('#res').html('<p>Your query will go from ' + values.from + ' to ' +
+                      values.to + ',<br/>for the GPS coordinates ' + values.lat + ',' +
+                      values.lng + '</p>');
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    $('#res').html('<p>Unable to save config.</p>');
+                }
+            });
+        }
     }
   });
   </script>

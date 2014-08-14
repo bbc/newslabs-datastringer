@@ -11,8 +11,8 @@ Except that here, that's a software living in a dataset, not in Iran, that's goi
 Getting started with Datastringer is easy:
 
 * `git clone` the repo
-* Run `install.sh`
-* Run `node config.js` and go through the wizard
+* Run `install.sh` to setup the crontab
+* Run `npm install` followed by `node app.js` to start the server
 
 *Voilà!* You just set up your first datastringers, and you will be notified when these example alerts are triggered.
 [Here is what these examples do](https://github.com/basilesimon/datastringer/blob/master/what-we-want.md)

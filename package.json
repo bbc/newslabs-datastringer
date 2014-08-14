@@ -1,0 +1,9 @@
+{
+  "name": "datastringer",
+  "description": "Datastringer",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.*"
+  }
+}

@@ -1,4 +1,4 @@
-![logo](http://basilesimon.fr)
+![logo](https://raw.githubusercontent.com/basilesimon/datastringer/master/logo-comp.png)
 
 #Data-stringer
 

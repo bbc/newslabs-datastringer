@@ -1,3 +1,5 @@
+![logo](http://basilesimon.fr)
+
 #Data-stringer
 
 ###Was ist das?

@@ -1,15 +1,7 @@
 var express = require('express'),
-    fs = require('fs'),
-    config = {};
+    cfg = require('./config.js');
 
-// Attempt to load config file
-try {
-    config = require(__dirname + '/assets/config.json');
-    console.log("Existing config file found");
-} catch (e) {
-    console.log("No config file found, or invalid file: ", e,
-        ". A new file will be created");
-}
+var config = cfg.readConfig();
 
 var app = express();
 app.set('port', process.env.PORT || 3000);
@@ -27,7 +19,7 @@ app.post('/configure/police-uk-crime-stats', function(req, res, next) {
     to: req.body.to
   };
   // Write config file
-  fs.writeFile(__dirname + '/assets/config.json', JSON.stringify(config), function (err) {
+  cfg.writeConfig(config, function (err) {
     if (err) {
       console.log("Unable to write to config file: ", err);
       res.json(false);
@@ -46,7 +38,7 @@ app.post('/configure/police-uk-local-info', function(req, res, next) {
     neighbourhood: req.body.neighbourhood
   };
   // Write config file
-  fs.writeFile(__dirname + '/assets/config.json', JSON.stringify(config), function (err) {
+  cfg.writeConfig(config, function (err) {
     if (err) {
       console.log("Unable to write to config file: ", err);
       res.json(false);

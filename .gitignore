@@ -1,3 +1,4 @@
 *.swp
 data-props/
 test-datagovuk/
+node_modules/

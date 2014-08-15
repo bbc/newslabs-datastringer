@@ -9,6 +9,9 @@ echo "Installing postfix"
 # not found.
 sudo apt-get install postfix
 
+echo "Installing needed node modules"
+npm install
+
 # execute the job at 12:00 each day
 (crontab -l ; echo "0 12 * * * node $(pwd)/datastringer.js") 2>&1 | sed "s/no crontab for $(whoami)//" | sort | uniq | crontab -
 

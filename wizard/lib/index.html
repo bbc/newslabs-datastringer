@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Datastringer</title>
+  <script src="lib/jquery.js"></script>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <script src="lib/bootstrap.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+  rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid" id="head">
+    <div class="col-md-9">
+      <div class="page-header">
+        <h1 style="color: #fafafa">Datastringer
+          <small style="color: #D0D0D0">A tool for hacker-journos</small>
+        </h1>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="text-center" style="margin-top:12%">
+        <a class="muted" href="intro.html">
+          <button type="button" class="btn btn-success btn-lg">Get started!</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-1">
+        <h1>Alerts for the stuff you care about</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <p>
+          As journalists, we're spending an awful amount of time reading the news. Going through
+          the papers, our favourite news websites, our Twitter lists, and our RSS
+          feeds, is part of our morning routine. At work, the familiar ticking of
+          wires coming in never stops.
+          <br>Some of us now work with data too, considering it a source in itself; a
+          source which can give us tips, leads, and stories, just like our informat
+          working in the Home office.
+        </p>
+        <p>
+          <strong>Problem is: data is hard to consume.</strong>It often comes in formats
+          not as easily readable as a block of text or a phone conversation. It is
+          regularly updated, and sometimes, it is a stream of numbers.
+        </p>
+        <p>
+          <strong>Datastringer will help you subscribe to data sources, and will notify you
+            when patterns arise ot thresholds are broken.</strong>
+          <br>Just like your local correspondent will give you a call when there's a
+          story to write.
+        </p>
+      </div>
+      <div class="col-md-4 col-md-offset-2">
+        <i class="fa fa-exclamation-triangle fa-5x" style="margin-top: 65px"></i>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-6">
+        <h1>Don't know how to code?</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-2">
+        <i class="fa fa-code fa-5x" style="margin-top: 20px"></i>
+      </div>
+      <div class="col-md-5">
+        <p>
+          That's fine.
+          <br>The whole point of Datastringer is to provide you with re-usable tools
+          written in Javascript and Node.js that you will partly configure through
+          a graphical interface.
+        </p>
+        <p>
+          Even though some skills in Javascript would be helpful to configure your alerts according
+          to your needs, you will not have to go through esoteric sysadmin procedures.
+          We tried to keep the product as simple as possible.
+        </p>
+        <p>
+          If you need support, give us a shout.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-1">
+        <h1>Get started: install Datastringer</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <p>
+          The code is available <a href="https://github.com/basilesimon/datastringer">on Github</a>,
+          and that's where you should start.
+          <br>Just clone the repo and run the installation script located at root. You
+          only have to do that once:
+          <pre>
+$ git clone http://github.com/basilesimon/datastringer.git
+$ cd datastringer
+$ ./install.sh</pre>
+          Then configure the whole shebang by running <pre>node app.js</pre>
+          and pointing your browser to the indicated address. It will take you through the
+          config wizard and help you set up your first data sources.
+      </div>
+      <div class="col-md-4 col-md-offset-2">
+        <i class="fa fa-cogs fa-5x"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h3>All set?</h3>
+          <a class="muted" href="intro.html">
+            <button type="button" class="btn btn-success btn-lg">Get started!</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p class="text-muted">A project by <a href="http://twitter.com/basilesimon">Basile Simon</a> and
+        <a href="http://twitter.com/5c2v">Clément Geiger</a>for <a href="http://twitter.com/BBC_News_Labs">BBC News Labs</a>,
+        under <a href="https://tldrlegal.com/license/mit-license">MIT License</a>.</p>
+    </div>
+  </div>
+</body>
+
+</html>

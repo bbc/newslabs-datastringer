@@ -1,0 +1,43 @@
+ #head {
+   background-color: #00549E;
+   border-bottom: 1px solid #BFBFBF;
+ }
+ .page-header {
+   border-bottom: none;
+ }
+ .footer {
+   position: relative;
+   bottom: 0;
+   padding-top: 1em;
+   width: 100%;
+   height: 50px;
+   background-color: #f5f5f5;
+ }
+ .muted {
+   color: #fafafa;
+ }
+ #map {
+   margin-top: 3em;
+   display: inline-block;
+   width: 600px;
+   height: 450px;
+ }
+ .form-actions {
+   margin-top: 1em;
+ }
+ .fa {
+   color: #00549E;
+ }
+ .hide {
+   display: none !important;
+ }
+ #res {
+   margin-top: 1em;
+ }
+ .circle {
+/*   height: 200px;
+   width: 200px;*/
+   border-radius: 50%;
+   background-color: blue;
+   opacity: 0.2;
+ }

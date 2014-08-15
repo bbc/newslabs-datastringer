@@ -1,13 +1,14 @@
 var express = require('express'),
     fs = require('fs'),
-    config = null;
+    config = {};
 
 // Attempt to load config file
 try {
-    config = require(__dirname + '/config.json');
+    config = require(__dirname + '/assets/config.json');
     console.log("Existing config file found");
 } catch (e) {
-    console.log("No config file found");
+    console.log("No config file found, or invalid file: ", e,
+        ". A new file will be created");
 }
 
 var app = express();
@@ -26,7 +27,7 @@ app.post('/configure', function(req, res, next) {
     to: req.body.to
   };
   // Write config file
-  fs.writeFile(__dirname + '/config.json', JSON.stringify(newConfig), function (err) {
+  fs.writeFile(__dirname + '/assets/config.json', JSON.stringify(newConfig), function (err) {
     if (err) {
       console.log("Unable to write to config file: ", err);
       res.json(false);

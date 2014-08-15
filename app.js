@@ -20,20 +20,19 @@ app.use(express.urlencoded());
 app.post('/configure/police-uk-crime-stats', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   // Get new config option
-  var newConfig = {
+  config["police-uk-crime-stats"] = {
     lat: req.body.lat,
     lng: req.body.lng,
     from: req.body.from,
     to: req.body.to
   };
   // Write config file
-  fs.writeFile(__dirname + '/assets/config.json', JSON.stringify(newConfig), function (err) {
+  fs.writeFile(__dirname + '/assets/config.json', JSON.stringify(config), function (err) {
     if (err) {
       console.log("Unable to write to config file: ", err);
       res.json(false);
     } else {
       console.log("Wrote new config file");
-      config = newConfig; // Use new config
       res.json(true);
     }
   });
@@ -42,18 +41,17 @@ app.post('/configure/police-uk-crime-stats', function(req, res, next) {
 app.post('/configure/police-uk-local-info', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   // Get new config option
-  var newConfig = {
+  config["police-uk-local-info"] = {
     force: req.body.force,
     neighbourhood: req.body.neighbourhood
   };
   // Write config file
-  fs.writeFile(__dirname + '/assets/config.json', JSON.stringify(newConfig), function (err) {
+  fs.writeFile(__dirname + '/assets/config.json', JSON.stringify(config), function (err) {
     if (err) {
       console.log("Unable to write to config file: ", err);
       res.json(false);
     } else {
       console.log("Wrote new config file");
-      config = newConfig; // Use new config
       res.json(true);
     }
   });

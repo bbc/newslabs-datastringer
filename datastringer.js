@@ -21,7 +21,7 @@ for (var i = 0; i < stringerUseCases.length; i++) {
 
   var stringer;
   try {
-    stringer = require(useCase.stringer);
+    stringer = require("./" + useCase.stringer);
   }
   catch (e) {
     console.log('Error while loading ' + useCase.stringer + ': ', e);
@@ -39,10 +39,10 @@ for (var i = 0; i < stringerUseCases.length; i++) {
 // the callback if a stringer use case is positive
 function onAlert(stringerName, alertData) {
   if (stringerName) {
-    mailer.sendAlert(name, checkResult);
+    mailer.sendAlert(stringerName, alertData);
   }
   else {
-    console.log('Got an alert with some data but no stringer name. ' + 
-        'Here is the data anyway: ', checkResult);
+    console.log('Got an alert with some data but no stringer name. ' +
+        'Here is the data anyway: ', alertData);
   }
 }

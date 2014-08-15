@@ -39,6 +39,26 @@ app.post('/configure/police-uk-crime-stats', function(req, res, next) {
   });
 });
 
+app.post('/configure/police-uk-local-info', function(req, res, next) {
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  // Get new config option
+  var newConfig = {
+    force: req.body.force,
+    neighbourhood: req.body.neighbourhood
+  };
+  // Write config file
+  fs.writeFile(__dirname + '/assets/config.json', JSON.stringify(newConfig), function (err) {
+    if (err) {
+      console.log("Unable to write to config file: ", err);
+      res.json(false);
+    } else {
+      console.log("Wrote new config file");
+      config = newConfig; // Use new config
+      res.json(true);
+    }
+  });
+});
+
 app.listen(app.get('port'), function() {
   console.log('Server started on port %d', app.get('port'));
 });

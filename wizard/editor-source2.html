@@ -109,17 +109,32 @@
         $('#res').html('<p>Your query will use the GPS coordinates ' + values
           .lat + ',' +
           values.lng + '</p>');
-        console.log(values);
 
-        function getForce(params) {
-          console.log(params);
-          $("#res").html(
-            "<p>Add these lines to file <code>xxx</code>:<br><pre>var params = " +
-            JSON.stringify(values) + "</pre>");
-        }
         var params = $.getJSON(
           "http://data.police.uk/api/locate-neighbourhood?q=" + values.lat +
-          "," + values.lng, getForce);
+          "," + values.lng,
+        function(dataIn) {
+          if(dataIn.force && dataIn.neighbourhood) {
+            // make ajax post request to send config
+            $.ajax({
+              url: "configure/police-uk-local-info",
+              type: "POST",
+              data: dataIn,
+              dataType: "json",
+              success: function(response, textStatus, jqXHR) {
+                  $('#res').html('<p>Your query will use force <strong>' + dataIn.force +
+                    '</strong> and neighbourhood <strong>' +
+                    dataIn.neighbourhood + '</strong>.');
+              },
+              error: function(jqXHR, textStatus, errorThrown) {
+                $('#res').html('<p>Unable to save config.</p>');
+              }
+            });
+          }
+          else {
+            $('#res').html('<p>ERROR</p>');
+          }
+        });
       }
     }
   });

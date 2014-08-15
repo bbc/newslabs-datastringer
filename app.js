@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/wizard'));
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.post('/configure', function(req, res, next) {
+app.post('/configure/police-uk-crime-stats', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   // Get new config option
   var newConfig = {

@@ -33,8 +33,11 @@
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <p>
-          <strong>We have (successfully?) configured your first datastringers.</strong>
+          <strong>We have (successfully?) configured your first datastringers.</strong><br>
+          From which email address do you want to receive notifications from? (it can be absolutely any address, even one you don't possess!) <!-- UNCLEAR -->
         </p>
+        <form></form>
+        <div id="res"></div>
         <h4 style="margin-top:2em">What's going to happen now?</h4>
         <p>
           Well, the program is going to live its life close to your datasets. Every once in
@@ -92,6 +95,38 @@
         under <a href="https://tldrlegal.com/license/mit-license">MIT License</a>.</p>
     </div>
   </div>
+    <script type="text/javascript" src="lib/underscore.js"></script>
+  <script type="text/javascript" src="lib/opt/jsv.js"></script>
+  <script type="text/javascript" src="lib/jsonform.js"></script>
+  <script type="text/javascript">
+  $('form').jsonForm({
+    schema: {
+      from: {
+        type: 'email',
+        title: 'Email (e.g. foo@bar.com)',
+        required: true
+      }
+    },
+    onSubmit: function(errors, values) {
+        if (errors) {
+            $('#res').html('<p>Input invalid.</p>');
+        } else {
+            $.ajax({
+                url : "/configure/police-uk-crime-stats",//TO CHANGE
+                type: "POST",
+                data: values,
+                dataType: "json",
+                success: function(response, textStatus, jqXHR) {
+                    $('#res').html('<p>Thank you! You may want to add' + values.email + ' to your anti-spam filter.</p>');
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    $('#res').html('<p>Unable to save config.</p>');
+                }
+            });
+        }
+    }
+  });
+  </script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 var fs = require('fs');
+var mailer = require('mailer.js');
 
 var dataSources = {};
 var outputs = {};
@@ -63,8 +64,10 @@ for (var i = 0; i < outputsToCheck.length; i++) {
 }
 
 function onCheckDone(error, name, checkResult) {
-  // send a mail, faire tourner un girophare, etc.
   if(!error && checkResult) {
-    console.log('ALERT, output ' + name + ' was triggered with value ' + checkResult);
+    mailer.sendAlert(name, checkResult);
+  }
+  else if (error) {
+    mailer.sendError(name, error);
   }
 }

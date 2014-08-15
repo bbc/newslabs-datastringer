@@ -1,3 +1,4 @@
+//todo: mettre le mois dans le triggerResult et stocker le dernier lastUpdated dans un JSON dans assets.
 var sync = require('synchronize');
 var getTheFuckingJSON = require('./utils.js').getTheFuckingJSON;
 

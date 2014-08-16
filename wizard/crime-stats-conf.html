@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sources</title>
+  <script src="lib/jquery.js"></script>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <script src="lib/bootstrap.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+  rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid" id="head">
+    <div class="col-md-9">
+      <div class="page-header">
+        <h1 style="color: #fafafa">Datastringer
+          <small style="color: #D0D0D0">A tool for hacker-journos</small>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1><i class="fa fa-question-circle"></i> Crime statistics</h1>
+        <h3>Input your parameters</h3>
+        <p>We need a bit more info here.
+        <ul>
+          <li>Let's start by defining the <strong>area</strong> you want to monitor, by clicking on the map.</li>
+          <li>Then, in order for Datastringer to calculate the averages and do the maths, tell it how many months your <strong>reference period</strong> should be (6 months seems a fair choice).</li>
+          <li>Finally, define the <strong>threshold</strong> (in percents), i.e. <a href="https://c1.staticflickr.com/5/4013/4365015415_9fc44963b7.jpg">the changes you're looking for</a>.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-1" style="padding:1em">
+        <div id="map"></div>
+      </div>
+      <div class="col-md-5" style="padding:1em">
+        <form name="configure"></form>
+        <div id="res" class="alert" style="width:70%"></div>
+      </div>
+    </div>
+    <hr>
+    <!-- <div class="text-center">
+      <a class="muted" href="editor-source1.html">
+        <button type="button" class="btn btn-success btn-lg">Next page</button>
+      </a>
+    </div> --></div>
+  <div class="footer">
+    <div class="container">
+      <p class="text-muted">A project by <a href="http://twitter.com/basilesimon">Basile Simon</a> and
+        <a
+        href="http://twitter.com/5c2v">Clément Geiger</a>for <a href="http://twitter.com/BBC_News_Labs">BBC News Labs</a>,
+          under <a href="https://tldrlegal.com/license/mit-license">MIT License</a>.</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="lib/underscore.js"></script>
+  <script type="text/javascript" src="lib/jsv.js"></script>
+  <script type="text/javascript" src="lib/jsonform.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=true&.js"></script>
+  <script src="https://raw.githubusercontent.com/HPNeo/gmaps/master/gmaps.js"></script>
+  <script type="text/javascript">
+  var map = new GMaps({
+    div: '#map',
+    lat: 51.5286417,
+    lng: -0.1015987,
+    zoom: 12,
+    click: function(event) {
+      var lat = event.latLng.lat();
+      var lng = event.latLng.lng();
+      $('#jsonform-0-elt-lat').val(lat);
+      $('#jsonform-0-elt-lng').val(lng);
+      map.addMarker({
+        lat: lat,
+        lng: lng,
+        title: 'YO',
+      });
+      map.drawOverlay({
+        lat: lat,
+        lng: lng,
+        content: "<div class='circle' style='height:50px;width:50px;'></div>"
+      });
+    }
+  });
+
+  $('form').jsonForm({
+    schema: {
+      lat: {
+        type: 'number',
+        title: 'Latitude:',
+        required: true
+      },
+      lng: {
+        type: 'number',
+        title: 'Longitude:',
+        required: true
+      },
+      numberOfMonths: {
+        type: 'number',
+        title: 'Number of Months',
+        required: true
+      },
+      threshold: {
+        type: 'number',
+        title: 'Threshold',
+        required: true,
+      }
+    },
+    onSubmit: function(errors, values) {
+        if (errors) {
+            $('#res').html('<p>Input invalid.</p>');
+        } else {
+            $.ajax({
+                url : "/configure/crime-stringer",
+                type: "POST",
+                data: values,
+                dataType: "json",
+                success: function(response, textStatus, jqXHR) {
+                    $('#res').html('<p>Your query will run for the last ' + values.numberOfMonths + ' months, looking for a change of more than ' + values.threshold + ' % against the ' + values.numberOfMonths + ' average.<br>It will use the following GPS coordinates as reference area: <ul><li><code>lat: </code>' + values.lat + '</li><li><code>lng</code>: ' + values.lng + '</p>');
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    $('#res').html('<p>Unable to save config.</p>');
+                }
+            });
+        }
+    }
+  });
+  </script>
+</body>
+
+</html>

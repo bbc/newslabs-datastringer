@@ -1,5 +1,6 @@
-//todo: mettre le mois dans le triggerResult et stocker le dernier lastUpdated dans un JSON dans assets.
+//todo: mettre le mois dans le triggerResult
 var sync = require('synchronize');
+var assManager = require('./asset_manager.js');
 var getTheFuckingJSON = require('./utils.js').getTheFuckingJSON;
 
 function stringer(lat, lng, numberOfMonths, threshold, callback) {
@@ -8,7 +9,26 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
     // get last update date, so that we know where to start from.
     var dateJson = sync.await(getTheFuckingJSON(
       "http://data.police.uk/api/crime-last-updated", sync.defer()));
+
     var currentDate = new Date(JSON.parse(dateJson).date);
+
+    var lastUpdateTimeRef = new Date(0);
+    try {
+      lastUpdateTimeRef = new Date(JSON.parse(
+          sync.await(assManager.readAsset('crime-stringer-reference/lastUpdate.json', sync.defer())),
+          true));
+    }
+    catch(except) {
+    }
+
+    if (currentDate <= lastUpdateTimeRef) {
+      return;
+    }
+
+    assManager.writeAsset('crime-stringer-reference/lastUpdate.json', JSON.stringify(currentDate),
+    function(err) {
+      console.log(err);
+    });
 
     var baseQuery = "http://data.police.uk/api/crimes-street/all-crime?lat=" +
       lat + "&lng=" + lng;

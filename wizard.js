@@ -1,7 +1,5 @@
 var express = require('express'),
-    cfg = require('./config.js');
-
-var config = cfg.readConfig();
+    assetManager = require('./asset_manager.js');
 
 var app = express();
 app.set('port', process.env.PORT || 3000);
@@ -9,41 +7,39 @@ app.use(express.static(__dirname + '/wizard'));
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.post('/configure/police-uk-crime-stats', function(req, res, next) {
+var useCases = [];
+
+app.post('/configure/crime-stringer', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  // Get new config option
-  config["police-uk-crime-stats"] = {
-    lat: req.body.lat,
-    lng: req.body.lng,
-    from: req.body.from,
-    to: req.body.to
+
+  useCases[0] = {
+    stringer: 'crime-stringer.js',
+    parameters: [req.body.lat, req.body.lng, req.body.monthCount, req.body.threshold]
   };
-  // Write config file
-  cfg.writeConfig(config, function (err) {
-    if (err) {
-      console.log("Unable to write to config file: ", err);
-      res.json(false);
-    } else {
-      console.log("Wrote new config file");
-      res.json(true);
-    }
-  });
+
+  res.json(true);
 });
 
-app.post('/configure/police-uk-local-info', function(req, res, next) {
+app.post('/configure/local-police-stringer', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  // Get new config option
-  config["police-uk-local-info"] = {
-    force: req.body.force,
-    neighbourhood: req.body.neighbourhood
+
+  useCases[1] = {
+    stringer: 'local-police-stringer.js',
+    parameters: [req.body.force, req.body.neighbourhood]
   };
-  // Write config file
-  cfg.writeConfig(config, function (err) {
+
+  res.json(true);
+});
+
+app.post('/configure/write', function(req, res, next) {
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+
+  assetManager.writeAsset('stringers_use_cases.json', JSON.stringify(useCases),
+  function(err) {
     if (err) {
-      console.log("Unable to write to config file: ", err);
       res.json(false);
-    } else {
-      console.log("Wrote new config file");
+    }
+    else {
       res.json(true);
     }
   });

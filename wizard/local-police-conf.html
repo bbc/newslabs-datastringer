@@ -28,13 +28,10 @@
         <h1><i class="fa fa-question-circle"></i> Local police infos</h1>
         <h3>Input your parameters</h3>
         <p>Use the map on the left-hand side to locate the area you want to get information
-          from. A click somewhere will give you the latitude and longitude of the
-          place you clicked on. They will be set as
-          <code>latitude</code>and
-          <code>longitude</code>.
+          from. A click somewhere will give you the corresponding
+          <code>force</code>and
+          <code>neighbourhood</code>for this location.
           <br>
-          <em>Note: The coordinates you select will be extrapolated to the local force
-            neighbourhood automatically.</em>
         </p>
         <p>Yep, it's that easy.</p>
       </div>
@@ -45,7 +42,7 @@
       </div>
       <div class="col-md-5" style="padding:1em">
         <form name="configure"></form>
-        <div id="res" class="alert" style="width:50%"></div>
+        <div id="res" class="alert alert-info hide" style="width:50%"></div>
       </div>
     </div>
     <hr>
@@ -78,10 +75,8 @@
       var lng = event.latLng.lng();
 
       function append(params) {
-        $("#res").removeClass("hide").addClass("alert alert-info");
-        $("#res").html("<p>Looks like you selected the <strong>" + params.force +
-          "</strong> force, and the neighbourhood code <strong>" + params.neighbourhood +
-          "</strong>.<br>If that's what you want, hit \"Submit\".</p>");
+        $("#res").removeClass("hide");
+        $("#res").html("Looking good? If so click on Submit!");
         $('#jsonform-0-elt-lat').val(params.force);
         $('#jsonform-0-elt-lng').val(params.neighbourhood);
       };
@@ -106,37 +101,26 @@
     onSubmit: function(errors, values) {
       if (errors) {
         $('#res').html('<p>I beg your pardon?</p>');
-      } else {
-        $('#res').html('<p>Your query will use the GPS coordinates ' + values
-          .lat + ',' + values.lng + '</p>');
-        var params = $.getJSON(
-          "http://data.police.uk/api/locate-neighbourhood?q=" + values.lat +
-          "," + values.lng, function(dataIn) {
-            if (dataIn.force && dataIn.neighbourhood) {
-              // make ajax post request to send config
-              $.ajax({
-                url: "configure/local-police-stringer",
-                type: "POST",
-                data: dataIn,
-                dataType: "json",
-                success: function(response, textStatus, jqXHR) {
-                  $('#res').html('<p>Your query will use force <strong>' +
-                    dataIn.force + '</strong> and neighbourhood <strong>' +
-                    dataIn.neighbourhood + '</strong>.');
-
-                  function change() {
-                    location.href = "intro-bis.html";
-                  }
-                  change();
-                },
-                error: function(jqXHR, textStatus, errorThrown) {
-                  $('#res').html('<p>Unable to save config.</p>');
-                }
-              });
-            } else {
-              $('#res').html('<p>ERROR</p>');
-            }
-          });
+      }
+      else {
+        $('#res').html('<p>Hang on tight...</p>');
+        // make ajax post request to send config
+        $.ajax({
+          url: "configure/local-police-stringer",
+          type: "POST",
+          data: values,
+          dataType: "json",
+          success: function(response, textStatus, jqXHR) {
+            var url = document.location.href;
+            var tokenizedUrl = url.split('/');
+            tokenizedUrl.splice(tokenizedUrl.length - 1, 1,
+                'crime-stats-conf.html');
+            document.location.href = tokenizedUrl.join('/');
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            $('#res').html('<p>An error occured :(</p>');
+          }
+        });
       }
     }
   });

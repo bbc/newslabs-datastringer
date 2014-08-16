@@ -28,6 +28,12 @@ app.post('/configure/local-police-stringer', function(req, res, next) {
     parameters: [req.body.force, req.body.neighbourhood]
   };
 
+  res.json(true);
+});
+
+app.post('/configure/write', function(req, res, next) {
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+
   assetManager.writeAsset('stringers_use_cases.json', JSON.stringify(useCases),
   function(err) {
     if (err) {

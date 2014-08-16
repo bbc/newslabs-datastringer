@@ -111,32 +111,45 @@
       }
     },
     onSubmit: function(errors, values) {
-        $('#res').show();
-        if (errors) {
-            $('#res').html('<p>Input invalid.</p>');
-        }
-        else {
-          $.ajax({
-            url : "/configure/crime-stringer",
-            type: "POST",
-            data: values,
-            dataType: "json",
-            success: function(response, textStatus, jqXHR) {
-              $('#res').html('<p>Hang on tight...</p>');
-
-              var url = document.location.href;
-              var tokenizedUrl = url.split('/');
-              tokenizedUrl.splice(tokenizedUrl.length - 1, 1,
-                  'done.html');
-              document.location.href = tokenizedUrl.join('/');
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-              $('#res').html('<p>Unable to save config.</p>');
-            }
-          });
-        }
+      $('#res').show();
+      if (errors) {
+          $('#res').html('<p>Input invalid.</p>');
+      }
+      else {
+        $.ajax({
+          url : "/configure/crime-stringer",
+          type: "POST",
+          data: values,
+          dataType: "json",
+          success: function(response, textStatus, jqXHR) {
+            $('#res').html('<p>Hang on tight...</p>');
+            sendWriteRequest();
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            $('#res').html('<p>Unable to save config.</p>');
+          }
+        });
+      }
     }
   });
+
+  function sendWriteRequest() {
+    $.ajax({
+      url: "/configure/write",
+      type: "POST",
+      data: "",
+      success: function(response, textStatus, jqXHR) {
+        var url = document.location.href;
+        var tokenizedUrl = url.split('/');
+        tokenizedUrl.splice(tokenizedUrl.length - 1, 1,
+            'done.html');
+        document.location.href = tokenizedUrl.join('/');
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        $('#res').html('<p>Unable to write config.</p>');
+      }
+    });
+  }
   </script>
 </body>
 

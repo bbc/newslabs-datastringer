@@ -32,13 +32,11 @@
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <p>
-          <strong>We have (successfully?) configured your first datastringers.</strong>
-          <br>From which email address do you want to receive notifications from? (it
-          can be absolutely any address, even one you don't possess!)
-          <!-- UNCLEAR -->
+          <strong>We have configured your first datastringers.</strong>
+          <br>To which mail adress should the alerts be sent ?
         </p>
-        <form></form>
-        <div id="res"></div>
+        <form id="user_email"></form>
+        <div id="res" class="alert alert-info collapse"></div>
         <h4 style="margin-top:2em">What's going to happen now?</h4>
         <p>Well, the program is going to live its life close to your datasets. Every
           once in a while, it will be a good boy and pay you an email when the alerts
@@ -106,26 +104,26 @@
   <script type="text/javascript" src="lib/opt/jsv.js"></script>
   <script type="text/javascript" src="lib/jsonform.js"></script>
   <script type="text/javascript">
-  $('form').jsonForm({
+  $('#user_email').jsonForm({
     schema: {
-      from: {
+      user_email: {
         type: 'email',
-        title: 'Email (e.g. foo@bar.com)',
         required: true
       }
     },
     onSubmit: function(errors, values) {
+      $('#res').show();
       if (errors) {
         $('#res').html('<p>Input invalid.</p>');
       } else {
         $.ajax({
-          url: "/configure/police-uk-crime-stats", //TO CHANGE
+          url: "/configure/user-email", //TO CHANGE
           type: "POST",
           data: values,
           dataType: "json",
           success: function(response, textStatus, jqXHR) {
-            $('#res').html('<p>Thank you! You may want to add' + values.email +
-              ' to your anti-spam filter.</p>');
+            $('#res').html('<p>Ok, datastringer will send you alert on this ' +
+              'mail adress!</p>');
           },
           error: function(jqXHR, textStatus, errorThrown) {
             $('#res').html('<p>Unable to save config.</p>');

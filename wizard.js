@@ -31,11 +31,9 @@ app.post('/configure/local-police-stringer', function(req, res, next) {
   res.json(true);
 });
 
-app.post('/configure/write', function(req, res, next) {
+app.post('/configure/user-email', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-
-  assetManager.writeAsset('stringers_use_cases.json', JSON.stringify(useCases),
-  function(err) {
+  assetManager.writeAsset('user-email.json', req.body.user_email, function(err) {
     if (err) {
       res.json(false);
     }

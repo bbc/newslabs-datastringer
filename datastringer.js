@@ -1,73 +1,48 @@
 var fs = require('fs');
-var mailer = require('mailer.js');
+var mailer = require('./mailer.js');
 
-var dataSources = {};
-var outputs = {};
+var stringerUseCases = [];
 
-// load datasources
-var parsedJSON = JSON.parse(fs.readFileSync('datasources.json', 'utf8'));
-for (var i = 0; i < parsedJSON.length; i++) {
-  var DS = require(parsedJSON[i]);
-  dataSources[DS.dataSource.name] = DS.dataSource;
+// try to load the stringer use cases
+var stringerUseCasesPath = __dirname + '/assets/stringers_use_cases.json';
+try {
+  stringerUseCases = require(stringerUseCasesPath);
+}
+catch (e) {
+  console.log('Error while loading stringer use cases from ' + stringerUseCasesPath +
+      ': ', e);
+  return;
 }
 
-// load outputs
-var parsedJSONOutput = JSON.parse(fs.readFileSync('outputs.json', 'utf8'));
-for (var i = 0; i < parsedJSONOutput.length; i++) {
-  var O = require(parsedJSONOutput[i]);
-  outputs[O.output.name] = O.output;
-}
+// now just run each use case
+console.log(stringerUseCases.length + ' use case(s) to run...');
+for (var i = 0; i < stringerUseCases.length; i++) {
+  var useCase = stringerUseCases[i];
 
-console.log('DataSources: ' + parsedJSON);
-console.log('Outputs: ' + parsedJSONOutput);
-console.log();
-
-// check which datasource has some new data to offer since last time.
-var news = [];
-var dsKeys = Object.keys(dataSources);
-for (var i = 0; i < dsKeys.length; i++) {
-  var k = dsKeys[i];
-  console.log('checking for news for ' + dataSources[k].name);
-
-  // TODO store the data of last update in some JSON.
-  if (dataSources[k].hasNewDataSince(new Date(Date.now()))) {
-    news.push(dataSources[k].name);
+  var stringer;
+  try {
+    stringer = require("./" + useCase.stringer);
   }
-}
-
-console.log();
-console.log('News in: ' + news);
-
-// check which outputs have to be re-checked, based on which datasources have
-// new data.
-var outputsToCheck = [];
-var oKeys = Object.keys(outputs);
-for (var i = 0; i < news.length; i++) {
-  for (var j = 0; j < oKeys.length; j++) {
-    var k = oKeys[j];
-
-    if (outputs[k].sources.indexOf(news[i]) != -1 &&
-        outputsToCheck.indexOf(k) == -1) {
-
-      outputsToCheck.push(k);
-    }
+  catch (e) {
+    console.log('Error while loading ' + useCase.stringer + ': ', e);
+    console.log('Skipping to the next use case');
+    continue;
   }
+
+  // append the onAlert callback to the parameters array and make a call to the
+  // stringer.
+  var params = useCase.parameters;
+  params.push(onAlert);
+  stringer.apply(this, params);
 }
 
-console.log();
-console.log('Outputs inpacted by the news: ' + outputsToCheck);
-
-// now just run the 'check' method of every outputs that needs to be checked.
-for (var i = 0; i < outputsToCheck.length; i++) {
-  var oKey = outputsToCheck[i];
-  outputs[oKey].check(dataSources, onCheckDone);
-}
-
-function onCheckDone(error, name, checkResult) {
-  if(!error && checkResult) {
-    mailer.sendAlert(name, checkResult);
+// the callback if a stringer use case is positive
+function onAlert(stringerName, alertData) {
+  if (stringerName) {
+    mailer.sendAlert(stringerName, alertData);
   }
-  else if (error) {
-    mailer.sendError(name, error);
+  else {
+    console.log('Got an alert with some data but no stringer name. ' +
+        'Here is the data anyway: ', alertData);
   }
 }

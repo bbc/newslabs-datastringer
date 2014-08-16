@@ -8,6 +8,5 @@
     "nodemailer": "1.*",
     "synchronize": "0.9.*",
     "lodash.difference": "2.4.*",
-    "jsonfn": "0.31.*"
   }
 }

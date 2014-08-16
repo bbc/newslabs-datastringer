@@ -5,7 +5,7 @@ var getTheFuckingJSON = require('./utils.js').getTheFuckingJSON;
 function stringer(lat, lng, numberOfMonths, threshold, callback) {
 
   sync.fiber(function() {
-    //1. recuperer la date du dernier update
+    // get last update date, so that we know where to start from.
     var dateJson = sync.await(getTheFuckingJSON(
       "http://data.police.uk/api/crime-last-updated", sync.defer()));
     var currentDate = new Date(JSON.parse(dateJson).date);
@@ -13,6 +13,7 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
     var baseQuery = "http://data.police.uk/api/crimes-street/all-crime?lat=" +
       lat + "&lng=" + lng;
 
+    // query crime stats for each month
     var crimeArray = [];
     while (numberOfMonths) {
       // build query for current month
@@ -33,9 +34,9 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
       numberOfMonths--;
     }
 
+    // compute average for each category, over the time range
     var categories = Object.keys(crimeArray[0]);
     numberOfMonths = crimeArray.length;
-    // compute average for each category, over the time range
     var categoryAverages = {};
     for (var c = 0; c < categories.length; c++) {
       var cat = categories[c];

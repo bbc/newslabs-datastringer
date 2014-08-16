@@ -57,6 +57,13 @@ app.post('/configure/user-email', function(req, res, next) {
   });
 });
 
+app.get('/configuration', function(req, res, next) {
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  assetManager.readAsset('stringers_use_cases.json', function(err, asset) {
+    res.send(asset);
+  });
+});
+
 app.listen(app.get('port'), function() {
   console.log('Server started on port %d', app.get('port'));
 });

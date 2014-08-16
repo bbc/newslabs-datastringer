@@ -132,10 +132,18 @@
       }
     }
   });
-  $.getJSON("../assets/stringers_use_cases.json", insertBlock);
-  function insertBlock(data) {
-    $("#json").html(JSON.stringify(data));
-  }
+
+  $.ajax({
+    dataType: "json",
+    url: "/configuration",
+    type: "GET",
+    success: function(data) {
+      $("#json").html(JSON.stringify(data, null, 2));
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.log(errorThrown);
+    }
+  });
   </script>
 </body>
 

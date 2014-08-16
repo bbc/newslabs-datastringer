@@ -12,7 +12,7 @@ var useCases = [];
 app.post('/configure/crime-stringer', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
 
-  useCases[0] = {
+  useCases[1] = {
     stringer: 'crime-stringer.js',
     parameters: [req.body.lat, req.body.lng, req.body.numberOfMonths, req.body.threshold]
   };
@@ -23,7 +23,7 @@ app.post('/configure/crime-stringer', function(req, res, next) {
 app.post('/configure/local-police-stringer', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
 
-  useCases[1] = {
+  useCases[0] = {
     stringer: 'local-police-stringer.js',
     parameters: [req.body.force, req.body.neighbourhood]
   };

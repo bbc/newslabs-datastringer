@@ -36,6 +36,7 @@
           <em>Note: The coordinates you select will be extrapolated to the local force
             neighbourhood automatically.</em>
         </p>
+        <p>Yep, it's that easy.</p>
       </div>
     </div>
     <div class="row">
@@ -48,14 +49,11 @@
       </div>
     </div>
     <hr>
-    <h1><i class="fa fa-question-circle"></i> Crime statistics</h1>
-    <hr>
-    <div class="text-center">
+    <!-- <div class="text-center">
       <a class="muted" href="editor-source1.html">
-        <button type="button" class="btn btn-success btn-lg">Submit</button>
+        <button type="button" class="btn btn-success btn-lg">Next page</button>
       </a>
-    </div>
-  </div>
+    </div> --></div>
   <div class="footer">
     <div class="container">
       <p class="text-muted">A project by <a href="http://twitter.com/basilesimon">Basile Simon</a> and
@@ -78,14 +76,14 @@
     click: function(event) {
       var lat = event.latLng.lat();
       var lng = event.latLng.lng();
-      $('#jsonform-0-elt-lat').val(lat);
-      $('#jsonform-0-elt-lng').val(lng);
 
       function append(params) {
         $("#res").removeClass("hide").addClass("alert alert-info");
         $("#res").html("<p>Looks like you selected the <strong>" + params.force +
           "</strong> force, and the neighbourhood code <strong>" + params.neighbourhood +
           "</strong>.<br>If that's what you want, hit \"Submit\".</p>");
+        $('#jsonform-0-elt-lat').val(params.force);
+        $('#jsonform-0-elt-lng').val(params.neighbourhood);
       };
       var params = $.getJSON(
         "http://data.police.uk/api/locate-neighbourhood?q=" + lat + "," +
@@ -96,12 +94,12 @@
     schema: {
       lat: {
         type: 'number',
-        title: 'Latitude:',
+        title: 'Force:',
         required: true
       },
       lng: {
         type: 'number',
-        title: 'Longitude:',
+        title: 'Neighbourhood:',
         required: true
       }
     },
@@ -125,6 +123,11 @@
                   $('#res').html('<p>Your query will use force <strong>' +
                     dataIn.force + '</strong> and neighbourhood <strong>' +
                     dataIn.neighbourhood + '</strong>.');
+
+                  function change() {
+                    location.href = "intro-bis.html";
+                  }
+                  change();
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                   $('#res').html('<p>Unable to save config.</p>');

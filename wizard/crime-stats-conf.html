@@ -114,19 +114,26 @@
         $('#res').show();
         if (errors) {
             $('#res').html('<p>Input invalid.</p>');
-        } else {
-            $.ajax({
-                url : "/configure/crime-stringer",
-                type: "POST",
-                data: values,
-                dataType: "json",
-                success: function(response, textStatus, jqXHR) {
-                    $('#res').html('<p>Your query will run for the last ' + values.numberOfMonths + ' months, looking for a change of more than ' + values.threshold + ' % against the ' + values.numberOfMonths + ' average.<br>It will use the following GPS coordinates as reference area: <ul><li><code>lat: </code>' + values.lat + '</li><li><code>lng</code>: ' + values.lng + '</p>');
-                },
-                error: function(jqXHR, textStatus, errorThrown) {
-                    $('#res').html('<p>Unable to save config.</p>');
-                }
-            });
+        }
+        else {
+          $.ajax({
+            url : "/configure/crime-stringer",
+            type: "POST",
+            data: values,
+            dataType: "json",
+            success: function(response, textStatus, jqXHR) {
+              $('#res').html('<p>Hang on tight...</p>');
+
+              var url = document.location.href;
+              var tokenizedUrl = url.split('/');
+              tokenizedUrl.splice(tokenizedUrl.length - 1, 1,
+                  'done.html');
+              document.location.href = tokenizedUrl.join('/');
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+              $('#res').html('<p>Unable to save config.</p>');
+            }
+          });
         }
     }
   });

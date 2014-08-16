@@ -1,10 +1,14 @@
 var fs = require('fs');
 var sync = require('synchronize');
 var diff = require('lodash.difference');
+var assManager = require('./asset_manager.js');
 var getTheFuckingJSON = require('./utils').getTheFuckingJSON;
 
 function stringer(force, neighbourhood, triggerAlert) {
   var remoteData = {people: [], events: [], priorities:[]};
+  var refData = {people: [], events: [], priorities: []};
+  var refDataFilePath = 'local-police-stringer-reference/' + force + '-' +
+      neighbourhood + '.json';
 
   var baseQuery = "http://data.police.uk/api/" + force + '/' + neighbourhood;
 
@@ -26,21 +30,18 @@ function stringer(force, neighbourhood, triggerAlert) {
       remoteData.priorities.push(priori[i].issue);
     }
 
+    try {
+      refData = JSON.parse(
+          sync.await(assManager.readAsset(refDataFilePath, sync.defer())));
+    }
+    catch (err) {
+      console.log('woops, no reference data for ' + force + ', ' + neighbourhood + ': ', err);
+    }
+
     compareData();
   });
 
   function compareData() {
-    var refData = {people: [], events: [], priorities: []};
-    var refDataFilePath = './assets/local-police-stringer-reference-' + force + '-' +
-        neighbourhood + '.json';
-
-    try {
-      refData = require(refDataFilePath);
-    }
-    catch (e) {
-      console.log('woops, no reference data for ' + force + ', ' + neighbourhood + ': ', e);
-    }
-
     var differenceSummary = {
       people: diff(remoteData.people, refData.people),
       events: diff(remoteData.events, refData.events),
@@ -52,13 +53,12 @@ function stringer(force, neighbourhood, triggerAlert) {
         differenceSummary.priorities.length);
 
     if(difference) {
-      fs.writeFile(refDataFilePath, JSON.stringify(remoteData), 'utf8', function(err) {
+      assManager.writeAsset(refDataFilePath, JSON.stringify(remoteData), function(err) {
         if (err) {
           console.log('woops, could not write back reference data for ' + force +
               ', ' + neighbourhood + ': ', err);
         }
       });
-
       triggerAlert('local-police-stringer', differenceSummary);
     }
   }

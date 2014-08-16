@@ -14,7 +14,7 @@ app.post('/configure/crime-stringer', function(req, res, next) {
 
   useCases[0] = {
     stringer: 'crime-stringer.js',
-    parameters: [req.body.lat, req.body.lng, req.body.monthCount, req.body.threshold]
+    parameters: [req.body.lat, req.body.lng, req.body.numberOfMonths, req.body.threshold]
   };
 
   res.json(true);

@@ -101,37 +101,26 @@
     onSubmit: function(errors, values) {
       if (errors) {
         $('#res').html('<p>I beg your pardon?</p>');
-      } else {
-        $('#res').html('<p>Your query will use the GPS coordinates ' + values
-          .lat + ',' + values.lng + '</p>');
-        var params = $.getJSON(
-          "http://data.police.uk/api/locate-neighbourhood?q=" + values.lat +
-          "," + values.lng, function(dataIn) {
-            if (dataIn.force && dataIn.neighbourhood) {
-              // make ajax post request to send config
-              $.ajax({
-                url: "configure/local-police-stringer",
-                type: "POST",
-                data: dataIn,
-                dataType: "json",
-                success: function(response, textStatus, jqXHR) {
-                  $('#res').html('<p>Your query will use force <strong>' +
-                    dataIn.force + '</strong> and neighbourhood <strong>' +
-                    dataIn.neighbourhood + '</strong>.');
-
-                  function change() {
-                    location.href = "intro-bis.html";
-                  }
-                  change();
-                },
-                error: function(jqXHR, textStatus, errorThrown) {
-                  $('#res').html('<p>Unable to save config.</p>');
-                }
-              });
-            } else {
-              $('#res').html('<p>ERROR</p>');
-            }
-          });
+      }
+      else {
+        $('#res').html('<p>Hang on tight...</p>');
+        // make ajax post request to send config
+        $.ajax({
+          url: "configure/local-police-stringer",
+          type: "POST",
+          data: values,
+          dataType: "json",
+          success: function(response, textStatus, jqXHR) {
+            var url = document.location.href;
+            var tokenizedUrl = url.split('/');
+            tokenizedUrl.splice(tokenizedUrl.length - 1, 1,
+                'crime-stats-conf.html');
+            document.location.href = tokenizedUrl.join('/');
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            $('#res').html('<p>An error occured :(</p>');
+          }
+        });
       }
     }
   });

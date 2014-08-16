@@ -41,7 +41,7 @@
       </div>
       <div class="col-md-5" style="padding:1em">
         <form name="configure"></form>
-        <div id="res" class="alert" style="width:70%"></div>
+        <div id="res" class="alert alert-info collapse" style="width:70%"></div>
       </div>
     </div>
     <hr>
@@ -111,6 +111,7 @@
       }
     },
     onSubmit: function(errors, values) {
+        $('#res').show();
         if (errors) {
             $('#res').html('<p>Input invalid.</p>');
         } else {

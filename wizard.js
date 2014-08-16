@@ -28,7 +28,15 @@ app.post('/configure/local-police-stringer', function(req, res, next) {
     parameters: [req.body.force, req.body.neighbourhood]
   };
 
-  res.json(true);
+  assetManager.writeAsset('stringers_use_cases.json', JSON.stringify(useCases),
+  function(err) {
+    if (err) {
+      res.json(false);
+    }
+    else {
+      res.json(true);
+    }
+  });
 });
 
 app.post('/configure/user-email', function(req, res, next) {

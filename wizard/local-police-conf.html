@@ -77,8 +77,8 @@
       function append(params) {
         $("#res").removeClass("hide");
         $("#res").html("Looking good? If so click on Submit!");
-        $('#jsonform-0-elt-lat').val(params.force);
-        $('#jsonform-0-elt-lng').val(params.neighbourhood);
+        $('#jsonform-0-elt-force').val(params.force);
+        $('#jsonform-0-elt-neighbourhood').val(params.neighbourhood);
       };
       var params = $.getJSON(
         "http://data.police.uk/api/locate-neighbourhood?q=" + lat + "," +

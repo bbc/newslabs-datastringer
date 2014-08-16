@@ -32,22 +32,15 @@
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <p>
-          You successfully went through the installation of Datastringer, and we noticed that
-          a configuration file was missing. It means that this is the first time
-          you're launching Datastringer.
-        </p>
-        <p>We're going to take you through the configuration of <a href="https://github.com/basilesimon/datastringer/blob/master/what-we-want.md">two examples, based on Police.uk data.</a> Hopefully,
-          you will be able to write your own stringers soon. We just want you to
-          feel comfortable around here, and you to have templates to get inspiration
-          from.
+          You successfully went through the installation of Datastringer, but it
+          won't do much without some configuration.
         </p>
         <p>
-          We've already put these examples together, so you won't be asked any coding, just
-          to click on maps, don't worry.
+          But first of all, let us quickly explain how Datastringer works.
         </p>
       </div>
       <div class="col-md-4 col-md-offset-2">
-        <i class="fa fa-smile-o fa-5x" style="margin-top: 65px"></i>
+        <i class="fa fa-smile-o fa-5x"></i>
       </div>
     </div>
   </div>
@@ -64,16 +57,17 @@
       </div>
       <div class="col-md-5">
         <p>
-          <strong>Datastringer asks you two things:</strong>
+          There are three categories of things in Datastringer:
           <ul>
-            <li>To tell it how to get the data, and what to do with it - that's the
-              <code>stringer</code>file</li>
-            <li>And to define the criterias of your alerts - the
-              <code>use-case</code>file.</li>
+            <li><strong>Stringers</strong>: a stringer is essentially a
+            function. It takes some parameters. With these, it will get and
+            crunch some data and tell wether there's an alert.
+            <li><strong>Use-cases</strong>: a use-case combines a stringer's name and
+            set of parameters to feed it.
+            <li><strong>Datastringer</strong> itself, reads a list of use-cases
+            from a file. For each use-case, it runs the stringer with the given
+            parameters, and send an email if there's an alert.
           </ul>
-        </p>
-        <p>Go through this wizard. Together, we will go through two examples, and you
-          will know how these files work - to create your own.
         </p>
       </div>
     </div>
@@ -83,9 +77,9 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h1><i class="fa fa-question-circle"></i> What we're going to do</h1>
-        <p>Datastringer comes with two examples we selected and prepared for you. Both
-          are based on the fantastic <a href="http://www.police.uk/">Police.uk</a> open-government
-          API.
+        <p>Datastringer comes with two built-in stringers. Both are based on the
+        fantastic <a href="http://www.police.uk/">Police.uk</a> open-government
+        API. We are going two build to example use-cases, one for each.
         </p>
         <ul>
           <li>

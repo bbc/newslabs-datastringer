@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Source #1</title>
+  <title>Sources</title>
   <script src="lib/jquery.js"></script>
   <link rel="stylesheet" href="lib/bootstrap.css">
   <script src="lib/bootstrap.js"></script>
@@ -22,60 +22,122 @@
       </div>
     </div>
   </div>
-
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h1><i class="fa fa-question-circle"></i> What we're going to do</h1>
-        <p>
-          We are going to help you configure a data source, based on <a href="http://www.police.uk/">Police.uk</a>.
+        <h1><i class="fa fa-question-circle"></i> Local police infos</h1>
+        <h3>Input your parameters</h3>
+        <p>Use the map on the left-hand side to locate the area you want to get information
+          from. A click somewhere will give you the latitude and longitude of the
+          place you clicked on. They will be set as
+          <code>latitude</code>and
+          <code>longitude</code>.
+          <br>
+          <em>Note: The coordinates you select will be extrapolated to the local force
+            neighbourhood automatically.</em>
         </p>
-        <p>
-          Police.uk has an API, i.e. a computer we can send questions to, and get answers in
-          return. One of the questions we can ask Police.uk is
-          <blockquote>"How many crimes, and what crimes, were commited in this area, during this
-            month?"
-          </blockquote>
-          That's a rather cool question, eh? You can get these stats super easily for any place
-          in the UK. If you are a local journalist, you will probably want to write
-          stories about crime in your area. Well, I'd like to.
-        </p>
-        <hr>
-        <h3>
-          <i class="fa fa-arrow-circle-right"></i> However, the raw numbers in themselves
-          don't quite tell a story yet.
-        </h3>
-        <p>
-          Knowing that 62 bicycles were stolen last month in Leicester is rather useless without
-          context:
-          <blockquote>Is it more than before? Is this number on the rise?</blockquote>
-          To add context to these numbers, I have added some tweaking under the hood for this
-          example. Not only will it fetch this month crime, it will also have a look
-          at several months before, to compare how this month's crime numbers compare
-          to a x-months average.
-        </p>
-        <hr>
-        <h3><i class="fa fa-thumbs-o-up"></i> Ready?</h3>
-        <p>
-          We will need a set of dates, and a GPS location. The next page will help you get
-          hold of these.
-        </p>
-        <div class="text-center">
-          <strong>What are you waiting for?</strong>
-          <a class="muted" href="editor-source1.html">
-            <button type="button" class="btn btn-success btn-lg">Get started!</button>
-          </a>
-        </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-1" style="padding:1em">
+        <div id="map"></div>
+      </div>
+      <div class="col-md-5" style="padding:1em">
+        <form name="configure"></form>
+        <div id="res" class="alert" style="width:50%"></div>
+      </div>
+    </div>
+    <hr>
+    <h1><i class="fa fa-question-circle"></i> Crime statistics</h1>
+    <hr>
+    <div class="text-center">
+      <a class="muted" href="editor-source1.html">
+        <button type="button" class="btn btn-success btn-lg">Submit</button>
+      </a>
     </div>
   </div>
   <div class="footer">
     <div class="container">
       <p class="text-muted">A project by <a href="http://twitter.com/basilesimon">Basile Simon</a> and
-        <a href="http://twitter.com/5c2v">Clément Geiger</a>for <a href="http://twitter.com/BBC_News_Labs">BBC News Labs</a>,
-        under <a href="https://tldrlegal.com/license/mit-license">MIT License</a>.</p>
+        <a
+        href="http://twitter.com/5c2v">Clément Geiger</a>for <a href="http://twitter.com/BBC_News_Labs">BBC News Labs</a>,
+          under <a href="https://tldrlegal.com/license/mit-license">MIT License</a>.</p>
     </div>
   </div>
+  <script type="text/javascript" src="lib/underscore.js"></script>
+  <script type="text/javascript" src="lib/jsv.js"></script>
+  <script type="text/javascript" src="lib/jsonform.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=true&.js"></script>
+  <script src="https://raw.githubusercontent.com/HPNeo/gmaps/master/gmaps.js"></script>
+  <script type="text/javascript">
+  var map = new GMaps({
+    div: '#map',
+    lat: 51.5286417,
+    lng: -0.1015987,
+    zoom: 12,
+    click: function(event) {
+      var lat = event.latLng.lat();
+      var lng = event.latLng.lng();
+      $('#jsonform-0-elt-lat').val(lat);
+      $('#jsonform-0-elt-lng').val(lng);
+
+      function append(params) {
+        $("#res").removeClass("hide").addClass("alert alert-info");
+        $("#res").html("<p>Looks like you selected the <strong>" + params.force +
+          "</strong> force, and the neighbourhood code <strong>" + params.neighbourhood +
+          "</strong>.<br>If that's what you want, hit \"Submit\".</p>");
+      };
+      var params = $.getJSON(
+        "http://data.police.uk/api/locate-neighbourhood?q=" + lat + "," +
+        lng, append);
+    }
+  });
+  $('form').jsonForm({
+    schema: {
+      lat: {
+        type: 'number',
+        title: 'Latitude:',
+        required: true
+      },
+      lng: {
+        type: 'number',
+        title: 'Longitude:',
+        required: true
+      }
+    },
+    onSubmit: function(errors, values) {
+      if (errors) {
+        $('#res').html('<p>I beg your pardon?</p>');
+      } else {
+        $('#res').html('<p>Your query will use the GPS coordinates ' + values
+          .lat + ',' + values.lng + '</p>');
+        var params = $.getJSON(
+          "http://data.police.uk/api/locate-neighbourhood?q=" + values.lat +
+          "," + values.lng, function(dataIn) {
+            if (dataIn.force && dataIn.neighbourhood) {
+              // make ajax post request to send config
+              $.ajax({
+                url: "configure/local-police-stringer",
+                type: "POST",
+                data: dataIn,
+                dataType: "json",
+                success: function(response, textStatus, jqXHR) {
+                  $('#res').html('<p>Your query will use force <strong>' +
+                    dataIn.force + '</strong> and neighbourhood <strong>' +
+                    dataIn.neighbourhood + '</strong>.');
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                  $('#res').html('<p>Unable to save config.</p>');
+                }
+              });
+            } else {
+              $('#res').html('<p>ERROR</p>');
+            }
+          });
+      }
+    }
+  });
+  </script>
 </body>
 
 </html>

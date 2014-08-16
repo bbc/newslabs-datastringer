@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Datastringer</title>
+  <title>Wizard - DS</title>
   <script src="lib/jquery.js"></script>
   <link rel="stylesheet" href="lib/bootstrap.css">
   <script src="lib/bootstrap.js"></script>
@@ -54,37 +54,65 @@
   <hr>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 col-md-offset-1">
+      <div class="col-md-6 col-md-offset-6">
         <h1>Getting started</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-5 col-md-offset-1">
-        <p>
-          The two examples we selected are quite simple:
-          <ul>
-            <li>The first one will mash up crime statistics data for you, and ping you
-              whenever there's a significant increasing or decreasing type of crimes
-              in your neighbourhood,</li>
-            <li>The second will pay you an email every time there's a new police officer,
-              or the local force schedules an event, or there's a change in the police
-              priorities.
-            </li>
-          </ul>
-        </p>
-        <p>Go through this wizard. <a href="https://github.com/basilesimon/datastringer">Take a look at our code</a>.
-          And then <a href="https://github.com/basilesimon/datastringer/wiki">go read the wiki.</a>
-        </p>
-      </div>
       <div class="col-md-4 col-md-offset-2">
         <i class="fa fa-rocket fa-5x"></i>
       </div>
+      <div class="col-md-5">
+        <p>
+          <strong>Datastringer asks you two things:</strong>
+          <ul>
+            <li>To tell it how to get the data, and what to do with it - that's the
+              <code>stringer</code>file</li>
+            <li>And to define the criterias of your alerts - the
+              <code>use-case</code>file.</li>
+          </ul>
+        </p>
+        <p>Go through this wizard. Together, we will go through two examples, and you
+          will know how these files work - to create your own.
+        </p>
+      </div>
     </div>
+  </div>
+  <hr>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1><i class="fa fa-question-circle"></i> What we're going to do</h1>
+        <p>Datastringer comes with two examples we selected and prepared for you. Both
+          are based on the fantastic <a href="http://www.police.uk/">Police.uk</a> open-government
+          API.
+        </p>
+        <ul>
+          <li>
+            <strong>The first example will monitor a local police force</strong>, by occasionally
+            checking if a new bobby has been attached to the force, or for planned
+            events for the community, or for changes in your local force priorities</li>
+          <li>
+            <strong>The second one will alert you in case of sudden rise or fall in crime
+              in a neighbourhood. </strong>This will be done by fetching a bunch of
+            statistics from Police.uk, mashing them together, calculating averages
+            and deltas... and finally checking if the thresholds
+            <strong>you </strong>defined were crossed.</li>
+        </ul>
+        <p>You can (and should) read more about the examples <a href="https://github.com/basilesimon/datastringer/wiki/Understanding-the-examples">on the Wiki.</a></p>
+        <hr>
+        <h3>
+          <i class="fa fa-arrow-circle-right"></i> So, we will need your input to create your own alerts
+        </h3>
+      </div>
+    </div>
+  </div>
     <hr>
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="text-center">
-          <h3>All set?</h3>
+          <h3 style="margin-top: -0px">All set?</h3>
           <a class="muted" href="intro.html">
             <button type="button" class="btn btn-success btn-lg">Get started!</button>
           </a>

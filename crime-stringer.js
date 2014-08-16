@@ -14,9 +14,9 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
 
     var lastUpdateTimeRef = new Date(0);
     try {
-      lastUpdateTimeRef = new Date(JSON.parse(
-          sync.await(assManager.readAsset('crime-stringer-reference/lastUpdate.json', sync.defer())),
-          true));
+      var refJSON = sync.await(assManager.readAsset('crime-stringer-reference/lastUpdate ' +
+          lat + '-' + lng + '.json', sync.defer()));
+      lastUpdateTimeRef = new Date(JSON.parse(refJSON));
     }
     catch(except) {
     }

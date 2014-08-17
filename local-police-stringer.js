@@ -2,7 +2,7 @@ var fs = require('fs');
 var sync = require('synchronize');
 var diff = require('lodash.difference');
 var assManager = require('./asset_manager.js');
-var getTheFuckingJSON = require('./utils').getTheFuckingJSON;
+var getTheJSON = require('./utils').getTheJSON;
 
 function stringer(force, neighbourhood, triggerAlert) {
   var remoteData = {people: [], events: [], priorities:[]};
@@ -14,11 +14,11 @@ function stringer(force, neighbourhood, triggerAlert) {
 
   sync.fiber(function() {
     var people = JSON.parse(
-        sync.await(getTheFuckingJSON(baseQuery + "/people", sync.defer())));
+        sync.await(getTheJSON(baseQuery + "/people", sync.defer())));
     var events = JSON.parse(
-        sync.await(getTheFuckingJSON(baseQuery + "/events", sync.defer())));
+        sync.await(getTheJSON(baseQuery + "/events", sync.defer())));
     var priori = JSON.parse(
-        sync.await(getTheFuckingJSON(baseQuery + "/priorities", sync.defer())));
+        sync.await(getTheJSON(baseQuery + "/priorities", sync.defer())));
 
     for (var p = 0; p < people.length; p++) {
       remoteData.people.push(people[p].name);

@@ -1,13 +1,13 @@
 //todo: mettre le mois dans le triggerResult
 var sync = require('synchronize');
 var assManager = require('./asset_manager.js');
-var getTheFuckingJSON = require('./utils.js').getTheFuckingJSON;
+var getTheJSON = require('./utils.js').getTheJSON;
 
 function stringer(lat, lng, numberOfMonths, threshold, callback) {
 
   sync.fiber(function() {
     // get last update date, so that we know where to start from.
-    var dateJson = sync.await(getTheFuckingJSON(
+    var dateJson = sync.await(getTheJSON(
       "http://data.police.uk/api/crime-last-updated", sync.defer()));
 
     var currentDate = new Date(JSON.parse(dateJson).date);
@@ -87,7 +87,7 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
 } //stringer
 
 function crimeQuery(path_json, callback) {
-  getTheFuckingJSON(path_json, process);
+  getTheJSON(path_json, process);
 
   function process(err, json) {
     if (err) {

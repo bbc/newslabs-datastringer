@@ -1,6 +1,6 @@
 var h = require('http');
 
-function getTheFuckingJSON(opt, callback) {
+function getTheJSON(opt, callback) {
   var json = String();
 
   var req = h.request(opt, function(response) {
@@ -15,4 +15,4 @@ function getTheFuckingJSON(opt, callback) {
   req.end();
 }
 
-module.exports.getTheFuckingJSON = getTheFuckingJSON;
+module.exports.getTheJSON = getTheJSON;

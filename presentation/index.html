@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!--
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!--
+  If you want no numbers on the slides add a "nonumbers" class
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another.
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>1ES standup</title>
+  <!--
+  If you upload your slides to the web, ensure that you have
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+</head>
+
+<body class="list">
+  <header class="caption">
+    <h1>Datastringer</h1>
+    <p class="footer">Basile Simon, Clément Geiger
+      <br> <a href="http://twitter.com/basilesimon">@basilesimon</a>, <a href="http://twitter.com/5c2v">@5c2v</a>
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <p class="abstract"> <strong>Abstract:</strong>Monitor datasets, news sources. Define thresholds and
+      patterns. Get notified when there's a story.</p>
+  </aside>
+  <div id="cover" class="slide">
+    <div>
+      <section>
+        <header>
+          <h1>Introduction - use case</h1>
+        </header>
+        <img src="pictures/logo-comp.png" class="middle" width="700" alt="logooooo!">
+        <footer class="notes"></footer>
+      </section>
+    </div>
+  </div>
+  <div id="hook" class="slide">
+    <div>
+      <section>
+        <header>
+          <h3>Idea</h3>
+        </header>
+        <p>Your computer is going to do the work for you. You will receive alerts when
+          something <strong>you</strong> find interesting happens.</p>
+        <p><strong>You can now consume datasets without effort, and you've made your first
+            step into data-journalism and computer-assisted reporting!</strong>
+        </p>
+      </section>
+    </div>
+  </div>
+  <div id="wat" class="slide">
+    <div>
+      <section>
+        <header>
+          <h3>"Stringers" and "use cases"</h3>
+        </header>
+        <p><strong>A stringer</strong> is just a function. <pre style="font-size:15px; font-family:monospace; margin-top: -30px; margin-bottom: 10px">
+              function stringer(parameter1, parameter2, callback) {<br>
+                  &nbsp;&nbsp;// with the parameters, the stringer fetches the data and does some process over it<br>
+                  &nbsp;&nbsp;// if an alert is to be fired, the callback is called with the stringer's<br>
+                  &nbsp;&nbsp;// name and the reason for the alert.<br>
+            }
+          </pre>
+          <strong>A use case</strong> aggregates a stringer file name and a set of
+          parameters for it. With that, one can load the stringer and pass it the
+          set of parameters, plus a callback. It allows to re-use the stringer multiple
+          times with different parameters.</p>
+      </section>
+    </div>
+  </div>
+  <div id="predemo" class="slide">
+    <div>
+      <section>
+        <header>
+          <h3>What we're going to do</h3>
+        </header>
+        <p><strong>Datastringer comes with two built-in stringers based on Police.uk API</strong>
+        </p>
+        <p>
+          <ul>
+            <li>The first example will monitor a local police force, by sending new all
+              the news your editor wouldn't want you to miss
+              <br>
+            </li>
+            <li>The second one will monitor crime progression in a neighbourhood. This
+              is done by fetching a bunch of statistics from Police.uk, mashing them
+              together, calculating averages and deltas... and finally checking if
+              the thresholds you defined were crossed.</li>
+          </ul>
+        </p>
+      </section>
+    </div>
+  </div>
+  <div id="demo" class="slide">
+    <div>
+      <section>
+        <header>
+          <h1 style="padding-top:25%">Let's just demo it.</h1>
+          <h4 style="display:inline-block">because "demo or didn't happen."</h4>
+        </header>
+      </section>
+    </div>
+  </div>
+  <div id="process" class="slide">
+    <div>
+      <section>
+        <header>
+          <h3>Going beyond the examples</h3>
+        </header>
+        <p> <strong>Creating your own stringer is easy:</strong>
+        </p>
+        <ul>
+          <li>You select your favourite dataset that you want to monitor</li>
+          <li>You write some Javascript to explain how to get the data (
+            <em>GET method, $.getJSON, curl, Atom feed...</em>)</li>
+          <li>Optional: you write the operations to perform with the data (
+            <em>calculate averages...)</em>
+          </li>
+          <li> <strong>You work normally as if nothing happened</strong>
+          </li>
+          <li> <strong>Hooray! You receive an email when your alerts are triggered!</strong>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <div id="questions" class="slide oneline">
+    <div>
+      <section>
+        <header>
+          <h2>Questions ?</h2>
+        </header>
+        <footer class="notes"></footer>
+      </section>
+    </div>
+  </div>
+  <div id="thanks" class="slide ">
+    <div>
+      <section>
+        <header>
+          <h2>Merci</h2>
+        </header>
+        <p>Github repo:
+          <br><a href="http://github.com/basilesimon">github.com/<strong>basilesimon/datastringer</strong></a>
+        </p>
+        <p>Contributor (the man with a beard):
+          <br><a href="http://github.com/5c2v">Clément Geiger, github.com/<strong>cgg</strong></a>
+        </p>
+        <p>Upvote us on Hacker News now!</p>
+        <footer class="notes"></footer>
+      </section>
+    </div>
+  </div>
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress">
+    <div></div>
+  </div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+
+</html>

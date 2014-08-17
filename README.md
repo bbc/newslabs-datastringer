@@ -25,6 +25,15 @@ $ git clone http://github.com/basilesimon/datastringer.git && cd datastringer
 $ ./install.sh
 ```
 
+`install.sh` will take of installing the needed dependencies:
+* node
+* npm
+* postifx (needed to be able to send mail)
+
+It will then proceed to fetch node modules dependencies.
+
+The install script has been written and tested on Linux Ubuntu 14.04.
+
 ##Introduction tour
 
 `node wizard.js` will start a small web server. Point towards

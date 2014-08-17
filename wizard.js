@@ -34,7 +34,7 @@ app.post('/configure/local-police-stringer', function(req, res, next) {
 app.post('/configure/write', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
 
-  assetManager.writeAsset('stringers_use_cases.json', JSON.stringify(useCases),
+  assetManager.writeAsset('stringers_use_cases.json', JSON.stringify(useCases, null, 2),
   function(err) {
     if (err) {
       res.json(false);

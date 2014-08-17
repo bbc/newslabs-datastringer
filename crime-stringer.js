@@ -1,20 +1,19 @@
 //todo: mettre le mois dans le triggerResult
 var sync = require('synchronize');
-var assManager = require('./asset_manager.js');
-var getTheJSON = require('./utils.js').getTheJSON;
+var utils = require('./utils.js');
 
 function stringer(lat, lng, numberOfMonths, threshold, callback) {
 
   sync.fiber(function() {
     // get last update date, so that we know where to start from.
-    var dateJson = sync.await(getTheJSON(
+    var dateJson = sync.await(utils.getTheJSON(
       "http://data.police.uk/api/crime-last-updated", sync.defer()));
 
     var currentDate = new Date(JSON.parse(dateJson).date);
 
     var lastUpdateTimeRef = new Date(0);
     try {
-      var refJSON = sync.await(assManager.readAsset('crime-stringer-reference/lastUpdate ' +
+      var refJSON = sync.await(utils.readAsset('crime-stringer-reference/lastUpdate ' +
           lat + '-' + lng + '.json', sync.defer()));
       lastUpdateTimeRef = new Date(JSON.parse(refJSON));
     }
@@ -25,7 +24,7 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
       return;
     }
 
-    assManager.writeAsset('crime-stringer-reference/lastUpdate.json', JSON.stringify(currentDate),
+    utils.writeAsset('crime-stringer-reference/lastUpdate.json', JSON.stringify(currentDate),
     function(err) {
       console.log(err);
     });
@@ -87,7 +86,7 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
 } //stringer
 
 function crimeQuery(path_json, callback) {
-  getTheJSON(path_json, process);
+  utils.getTheJSON(path_json, process);
 
   function process(err, json) {
     if (err) {

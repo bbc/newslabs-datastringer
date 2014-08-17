@@ -1,9 +1,9 @@
 var nm = require("nodemailer");
-var assetManager = require('./asset_manager.js');
+var utils = require('./utils.js');
 var t = nm.createTransport();
 
 function sendAlert(stringerName, alertContent) {
-  assetManager.readAsset('user-email.json', function(err, data) {
+  utils.readAsset('user-email.json', function(err, data) {
     t.sendMail({
       from: "bot@data.string.er",
       to: data,

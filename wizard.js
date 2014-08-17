@@ -1,5 +1,5 @@
 var express = require('express'),
-    assetManager = require('./asset_manager.js');
+    utils = require('./utils.js');
 
 var app = express();
 app.set('port', process.env.PORT || 3000);
@@ -34,7 +34,7 @@ app.post('/configure/local-police-stringer', function(req, res, next) {
 app.post('/configure/write', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
 
-  assetManager.writeAsset('stringers_use_cases.json', JSON.stringify(useCases, null, 2),
+  utils.writeAsset('stringers_use_cases.json', JSON.stringify(useCases, null, 2),
   function(err) {
     if (err) {
       res.json(false);
@@ -47,7 +47,7 @@ app.post('/configure/write', function(req, res, next) {
 
 app.post('/configure/user-email', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  assetManager.writeAsset('user-email.json', req.body.user_email, function(err) {
+  utils.writeAsset('user-email.json', req.body.user_email, function(err) {
     if (err) {
       res.json(false);
     }
@@ -59,7 +59,7 @@ app.post('/configure/user-email', function(req, res, next) {
 
 app.get('/configuration', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  assetManager.readAsset('stringers_use_cases.json', function(err, asset) {
+  utils.readAsset('stringers_use_cases.json', function(err, asset) {
     res.send(asset);
   });
 });

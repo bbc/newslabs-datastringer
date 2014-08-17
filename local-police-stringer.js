@@ -1,7 +1,7 @@
 var fs = require('fs');
 var sync = require('synchronize');
 var diff = require('lodash.difference');
-var assManager = require('./asset_manager.js');
+var utils = require('./utils.js');
 var getTheJSON = require('./utils').getTheJSON;
 
 function stringer(force, neighbourhood, triggerAlert) {
@@ -32,7 +32,7 @@ function stringer(force, neighbourhood, triggerAlert) {
 
     try {
       refData = JSON.parse(
-          sync.await(assManager.readAsset(refDataFilePath, sync.defer())));
+          sync.await(utils.readAsset(refDataFilePath, sync.defer())));
     }
     catch (err) {
       console.log('woops, no reference data for ' + force + ', ' + neighbourhood + ': ', err);
@@ -53,7 +53,7 @@ function stringer(force, neighbourhood, triggerAlert) {
         differenceSummary.priorities.length);
 
     if(difference) {
-      assManager.writeAsset(refDataFilePath, JSON.stringify(remoteData), function(err) {
+      utils.writeAsset(refDataFilePath, JSON.stringify(remoteData), function(err) {
         if (err) {
           console.log('woops, could not write back reference data for ' + force +
               ', ' + neighbourhood + ': ', err);

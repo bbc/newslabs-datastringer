@@ -9,6 +9,20 @@ echo "Installing postfix"
 # not found.
 sudo apt-get install postfix
 
+if ! which node > /dev/null
+then
+  echo "Installing node"
+  sudo apt-get --force-yes --yes install nodejs
+fi
+echo node installed!
+
+if ! which npm > /dev/null
+then
+  echo "Installing npm"
+  sudo apt-get --force-yes install npm
+fi
+echo npm installed!
+
 echo "Installing needed node modules"
 npm install
 

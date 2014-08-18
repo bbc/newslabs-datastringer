@@ -57,4 +57,4 @@ stringers!
 
 ##About the license
 
-Datastringer is distributed under the MIT License, and developed by [Basile Simon](http://twitter.com/basilesimon), [Clément Geiger](http://twitter.com/5c2v), for [BBC News Labs](http://twitter.com/bbc_news_labs). [Read more about the MIT License](https://tldrlegal.com/license/mit-license).
+Datastringer is distributed under the MIT License, and developed by [Basile Simon](http://github.com/basilesimon), [Clément Geiger](http://github.com/Cgg), for [BBC News Labs](http://twitter.com/bbc_news_labs). [Read more about the MIT License](https://tldrlegal.com/license/mit-license).

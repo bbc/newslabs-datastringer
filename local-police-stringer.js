@@ -59,7 +59,7 @@ function stringer(force, neighbourhood, triggerAlert) {
               ', ' + neighbourhood + ': ', err);
         }
       });
-      triggerAlert('local-police-stringer', differenceSummary);
+      triggerAlert('local-police-stringer', JSON.stringify(differenceSummary, null, 2));
     }
   }
 }

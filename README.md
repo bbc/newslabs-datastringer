@@ -2,9 +2,9 @@
 
 #Data-stringer
 
-**NOTE: Datastringer is still under heavy development.** Please [check out the releases and changelog](https://github.com/basilesimon/datastringer/releases)
+**NOTE: Datastringer is still under heavy development.** Please [check out the releases and changelog](https://github.com/BBC-News-Labs/datastringer/releases)
 
-Works on Ubuntu-based OS only. [See the issue for installing on Mac OS](https://github.com/basilesimon/datastringer/issues/9)
+Works on Ubuntu-based OS only. [See the issue for installing on Mac OS](https://github.com/BBC-News-Labs/datastringer/issues/9)
 
 
 ###Was ist das?
@@ -21,7 +21,7 @@ Just clone the repo and run the installation script located at its root. You onl
 have to do this once.
 
 ```
-$ git clone http://github.com/basilesimon/datastringer.git && cd datastringer
+$ git clone http://github.com/BBC-News-Labs/datastringer.git && cd datastringer
 $ ./install.sh
 ```
 
@@ -45,13 +45,13 @@ When you are done with the configuration, you can stop the server by `CTRL-C`ing
 
 You just set up your first datastringers with two basic examples. You will be
 notified by email when alerts are triggered!
-[Here is what these examples do.](https://github.com/basilesimon/datastringer/blob/master/what-we-want.md)
+[Here is what these examples do.](https://github.com/BBC-News-Labs/datastringer/blob/master/what-we-want.md)
 
 #Do more with Datastringer
 
 Datastringer is built on Javascript and Node.js, and we make sure it won't be
 hard for you to extend it.
-[Refer to the documentation](https://github.com/basilesimon/datastringer/wiki)
+[Refer to the documentation](https://github.com/BBC-News-Labs/datastringer/wiki)
 to understand the architecture, rummage the examples and... build your own
 stringers!
 

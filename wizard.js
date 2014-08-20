@@ -68,3 +68,11 @@ app.listen(app.get('port'), function() {
   console.log('Server started on port %d', app.get('port'));
 });
 
+process.on('uncaughtException', function(err) {
+  if (err.errno === 'EADDRINUSE') {
+    console.log('Unable to start server on port %d (is something already running on that port?)', app.get('port'));
+  } else {
+    console.log(err);
+  }
+  process.exit(1);
+});

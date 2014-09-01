@@ -55,6 +55,9 @@ hard for you to extend it.
 to understand the architecture, rummage the examples and... build your own
 stringers!
 
+#Contributing
+Before submitting pull-requests, please refer to [the road-map](https://github.com/BBC-News-Labs/datastringer/wiki/Roadmap). 
+
 ##About the license
 
 Datastringer is distributed under the MIT License, and developed by [Basile Simon](http://github.com/basilesimon), [Clément Geiger](http://github.com/Cgg), for [BBC News Labs](http://twitter.com/bbc_news_labs). [Read more about the MIT License](https://tldrlegal.com/license/mit-license).

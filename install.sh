@@ -16,10 +16,20 @@ echo postfix installed!
 
 if ! which node > /dev/null
 then
-  echo "Installing node"
-  sudo apt-get --force-yes --yes install nodejs
+  if ! which nodejs > /dev/null
+  then
+    echo "Installing node"
+    sudo apt-get --force-yes --yes install nodejs
+  fi
 fi
 echo node installed!
+
+# Storing how NodeJS is meant to be called
+set NODEJS_COMMAND = 'node'
+if ! which ${NODE_COMMAND} > /dev/null
+then
+  set NODEJS_COMMAND = 'nodejs'
+fi
 
 if ! which npm > /dev/null
 then
@@ -33,6 +43,6 @@ npm install
 
 echo "Setting up CRON job"
 # execute the job at 12:00 each day
-(crontab -l ; echo "0 12 * * * node $(pwd)/datastringer.js") 2>&1 | sed "s/no crontab for $(whoami)//" | sort | uniq | crontab -
+(crontab -l ; echo "0 12 * * * ${NODEJS_COMMAND} $(pwd)/datastringer.js") 2>&1 | sed "s/no crontab for $(whoami)//" | sort | uniq | crontab -
 
 echo "Done! Sit back and relax!"

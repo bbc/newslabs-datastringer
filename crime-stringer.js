@@ -75,8 +75,8 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
     // callback if > threshold
     for (var c = 0; c < categories.length; c++) {
       var cat = categories[c];
-      var categoryDiff = (crimeArray[0][cat] / categoryAverages[cat] * 100) -
-        100;
+      var categoryDiff = (crimeArray[0][cat] - categoryAverages[cat]) / categoryAverages[cat] * 100;
+
 
       if (Math.abs(categoryDiff) > Math.abs(threshold)) {
         callback('crime-stringer', cat + ', diff: ' + categoryDiff);

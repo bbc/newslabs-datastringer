@@ -16,7 +16,7 @@ function getTheJSON(opt, callback) {
   req.end();
 }
 
-var assetsRootFolder = process.env.HOME + '/.local/share/datatringer/';
+var assetsRootFolder = process.env.HOME + '/.local/share/datastringer/';
 
 function createDirsIfNeeded(fullPath) {
   var tokenizedPath = fullPath.split('/');

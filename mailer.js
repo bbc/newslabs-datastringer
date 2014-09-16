@@ -1,6 +1,6 @@
-var nm = require("nodemailer");
 var utils = require('./utils.js');
-var t = nm.createTransport();
+var ms = require('./mailer-setup.js');
+var t = ms.createTransport();
 
 function sendAlert(stringerName, alertContent) {
   utils.readAsset('user-email.json', function(err, data) {

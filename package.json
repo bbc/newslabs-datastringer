@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "3.*",
     "nodemailer": "1.*",
+    "nodemailer-smtp-transport": "0.1.*",
     "synchronize": "0.9.*",
     "lodash.difference": "2.4.*"
   }

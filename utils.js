@@ -32,13 +32,21 @@ function createDirsIfNeeded(fullPath) {
   }
 }
 
+
+function fullPath(assetFileName) {
+  return assetsRootFolder + assetFileName;
+}
+
 // read the asset named assetFileName and return its content thru the
 // callback. Assumes the asset contains text.
 // callback signature: (err, assetContent)
 function readAsset(assetFileName, callback) {
-  var fullPath = assetsRootFolder + assetFileName;
+  fs.readFile(fullPath(assetFileName), 'utf8', callback);
+}
 
-  fs.readFile(fullPath, 'utf8', callback);
+// same as readAsset, but sync, return the content of given assetFileName;
+function readAssetSync(assetFileName) {
+  return fs.readFileSync(fullPath(assetFileName), 'utf8');
 }
 
 // write content to the asset named assetFileName. Will be overwritten if
@@ -46,14 +54,14 @@ function readAsset(assetFileName, callback) {
 // Otherwise, when done the callback is called without any parameter.
 // callback signature: (err)
 function writeAsset(assetFileName, assetContent, callback) {
-  var fullPath = assetsRootFolder + assetFileName;
-  createDirsIfNeeded(fullPath);
-
-  fs.writeFile(fullPath, assetContent, 'utf8', callback);
+  var path = fullPath(assetFileName);
+  createDirsIfNeeded(path);
+  fs.writeFile(path, assetContent, 'utf8', callback);
 }
 
 module.exports = {
   getTheJSON: getTheJSON,
   readAsset: readAsset,
+  readAssetSync: readAssetSync,
   writeAsset: writeAsset
 };

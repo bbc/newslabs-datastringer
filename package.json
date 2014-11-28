@@ -12,6 +12,8 @@
     "url": "https://github.com/BBC-News-Labs/datastringer/issues"
   },
   "dependencies": {
+    "axios": "^0.4.1",
+    "cache-client": "0.0.22",
     "express": "^3.18.4",
     "lodash.difference": "^2.4.0",
     "nodemailer": "^1.0.0",

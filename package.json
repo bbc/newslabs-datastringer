@@ -2,13 +2,21 @@
   "name": "datastringer",
   "description": "Datastringer",
   "version": "1.0.0",
-  "bin": {
-    "datastringer": "./bin/datastringer.js"
+  "bin": "./bin/datastringer.js",
+  "homepage": "http://bbc-news-labs.github.io/datastringer/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BBC-News-Labs/datastringer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BBC-News-Labs/datastringer/issues"
   },
   "dependencies": {
     "lodash.difference": "^2.4.0",
     "nodemailer": "^1.0.0",
     "synchronize": "^0.9.0",
+    "uk-crime-stringer": "git://github.com/oncletom/uk-crime-stringer",
+    "uk-local-police-stringer": "git://github.com/oncletom/uk-local-police-stringer",
     "yargs": "^1.3.3"
   }
 }

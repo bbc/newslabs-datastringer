@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "bin": "./bin/datastringer.js",
   "homepage": "http://bbc-news-labs.github.io/datastringer/",
+  "scripts": {
+    "start": "node wizard.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/BBC-News-Labs/datastringer.git"

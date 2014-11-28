@@ -62,7 +62,7 @@ datastringer --uk-local-police '{ "force": "metropolitan", "neighbourhood": "00A
 
 ##Introduction tour
 
-`node wizard.js` will start a small web server. Point towards
+`npm start` will start a small web server. Point towards
 [localhost:3000](localhost:3000) with your favourite web browser.
 
 When you are done with the configuration, you can stop the server by `CTRL-C`ing it.

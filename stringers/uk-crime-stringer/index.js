@@ -14,7 +14,7 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
     var lastUpdateTimeRef = new Date(0);
     try {
       var refJSON = sync.await(utils.readAsset('crime-stringer-reference/lastUpdate ' +
-          lat + '-' + lng + '.json', sync.defer()));
+	  lat + '-' + lng + '.json', sync.defer()));
       lastUpdateTimeRef = new Date(JSON.parse(refJSON));
     }
     catch(except) {
@@ -42,11 +42,11 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
 
       console.log('police-uk: fetching data for ' + timeQuery);
       try {
-        var data = sync.await(crimeQuery(baseQuery + timeQuery, sync.defer()));
-        crimeArray.push(data);
+	var data = sync.await(crimeQuery(baseQuery + timeQuery, sync.defer()));
+	crimeArray.push(data);
       } catch (e) {
-        console.log('caught exception while fetching data for ' + currentDate +
-          ', skipping to next month');
+	console.log('caught exception while fetching data for ' + currentDate +
+	  ', skipping to next month');
       }
 
       currentDate.setMonth(currentDate.getMonth() - 1);
@@ -62,9 +62,9 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
       categoryAverages[cat] = 0;
 
       for (var i = 0; i < crimeArray.length; i++) {
-        if (cat in crimeArray[i]) {
-          categoryAverages[cat] += crimeArray[i][cat];
-        }
+	if (cat in crimeArray[i]) {
+	  categoryAverages[cat] += crimeArray[i][cat];
+	}
       }
 
       categoryAverages[cat] /= numberOfMonths;
@@ -79,7 +79,7 @@ function stringer(lat, lng, numberOfMonths, threshold, callback) {
 
 
       if (Math.abs(categoryDiff) > Math.abs(threshold)) {
-        callback('crime-stringer', cat + ', diff: ' + categoryDiff);
+	callback('crime-stringer', cat + ', diff: ' + categoryDiff);
       }
     }
   });
@@ -103,7 +103,7 @@ function crimeQuery(path_json, callback) {
     var monthCrimeStat = {};
     for (var i = 0; i < data.length; i++) {
       if (!(data[i].category in monthCrimeStat)) {
-        monthCrimeStat[data[i].category] = 0; // 1st crime seen for this category
+	monthCrimeStat[data[i].category] = 0; // 1st crime seen for this category
       }
       monthCrimeStat[data[i].category] += 1;
     }

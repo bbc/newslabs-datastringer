@@ -56,6 +56,10 @@ The following example demonstrates how to
 datastringer --uk-crime '{ "lat": 51.52863195218981, "lng": -0.12342453002929688, "mounthCount": 6, "threshold": 10}' --email-recipient recipient@example.com
 ```
 
+```bash
+datastringer --uk-local-police '{ "force": "metropolitan", "neighbourhood": "00AGGU" }' --email-recipient recipient@example.com
+```
+
 ##Introduction tour
 
 `node wizard.js` will start a small web server. Point towards

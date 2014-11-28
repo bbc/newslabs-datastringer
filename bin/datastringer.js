@@ -4,50 +4,19 @@
 
 var mailer = require('../mailer.js');
 var argv = require('../lib/cli-configuration');
+var Stringers = require('../lib/stringers');
 
-console.log(argv);
-
-return;
-
-var stringerUseCases = [];
-
-// try to load the stringer use cases
-//var stringerUseCasesPath = __dirname + '/assets/stringers_use_cases.json';
-//try {
-//  stringerUseCases = require(stringerUseCasesPath);
-//}
-//catch (e) {
-//  console.log('Error while loading stringer use cases from ' + stringerUseCasesPath +
-//      ': ', e);
-//  return;
-//}
+var stringerUseCases = Stringers.fromObject(argv);
 
 // now just run each use case
 console.log(stringerUseCases.length + ' use case(s) to run...');
-stringerUseCases.forEach(function(useCase){
-  var stringer;
-  try {
-    stringer = require("./" + useCase.stringer);
-  }
-  catch (e) {
-    console.log('Error while loading ' + useCase.stringer + ': ', e);
-    console.log('Skipping to the next use case');
-  }
+stringerUseCases.forEach(function(stringerName){
+  var stringer = Stringers.load(stringerName);
 
-  // append the onAlert callback to the parameters array and make a call to the
-  // stringer.
-  var params = useCase.parameters;
-  params.push(onAlert);
-  stringer.apply(this, params);
-});
+  var params = JSON.parse(argv[stringerName] || '{}');
+  var alertData = stringer.apply(null, params);
 
-// the callback if a stringer use case is positive
-function onAlert(stringerName, alertData) {
-  if (stringerName) {
+  if (alertData){
     mailer.sendAlert(argv.emailRecipient, stringerName, alertData);
   }
-  else {
-    console.log('Got an alert with some data but no stringer name. ' +
-	'Here is the data anyway: ', alertData);
-  }
-}
+});

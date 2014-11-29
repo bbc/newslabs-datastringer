@@ -1,4 +1,16 @@
-var t = require("nodemailer").createTransport();
+var nm = require("nodemailer");
+var t;
+
+if (process.env.MANDRILL_USERNAME) {
+  t = nm.createTransport({ service: 'Mandrill', auth: {
+    user: process.env.MANDRILL_USERNAME,
+    pass: process.env.MANDRILL_APIKEY
+  }});
+}
+else {
+  t = nm.createTransport();
+}
+
 
 function sendAlert(recipient, stringerName, alertContent) {
   t.sendMail({

@@ -15,9 +15,14 @@ stringerUseCases.forEach(function(stringerName){
   var stringer = Stringers.load(stringerName);
 
   var params = JSON.parse(argv[stringerName] || '{}');
-  var alertData = stringer.call(null, stringerApi, params);
 
-  if (alertData){
-    mailer.sendAlert(argv.emailRecipient, stringerName, alertData);
-  }
+  stringer.call(null, stringerApi, params)
+    .then(function(alertData){
+      mailer.sendAlert(
+        argv.emailRecipient,
+        stringerName,
+        stringerApi.formatStringerResult(stringerName, alertData)
+      );
+    })
+    .catch(console.error.bind(console));
 });

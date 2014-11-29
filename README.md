@@ -34,9 +34,35 @@ It will then proceed to fetch node modules dependencies.
 
 The install script has been written and tested on Linux Ubuntu 14.04.
 
+## Run
+
+```bash
+datastringer --<npm-stringer-module[ module-configuration]> --email-recipient recipient@example.com
+```
+
+### Basic stringers
+
+The stringers are called with their default values.
+
+```bash
+datastringer --uk-crime --email-recipient recipient@example.com
+```
+
+The following example demonstrates how to
+
+### Override defaults
+
+```bash
+datastringer --uk-crime '{ "lat": 51.52863195218981, "lng": -0.12342453002929688, "mounthCount": 6, "threshold": 10}' --email-recipient recipient@example.com
+```
+
+```bash
+datastringer --uk-local-police '{ "force": "metropolitan", "neighbourhood": "00AGGU" }' --email-recipient recipient@example.com
+```
+
 ##Introduction tour
 
-`node wizard.js` will start a small web server. Point towards
+`npm start` will start a small web server. Point towards
 [localhost:3000](localhost:3000) with your favourite web browser.
 
 When you are done with the configuration, you can stop the server by `CTRL-C`ing it.
@@ -56,7 +82,7 @@ to understand the architecture, rummage the examples and... build your own
 stringers!
 
 #Contributing
-Before submitting pull-requests, please refer to [the road-map](https://github.com/BBC-News-Labs/datastringer/wiki/Roadmap). 
+Before submitting pull-requests, please refer to [the road-map](https://github.com/BBC-News-Labs/datastringer/wiki/Roadmap).
 
 ##About the license
 

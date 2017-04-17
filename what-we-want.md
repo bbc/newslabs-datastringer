@@ -1,6 +1,6 @@
-#What we want from the Datastringer
+# What we want from the Datastringer
 
-##Source 1: Crime statistics in my region
+## Source 1: Crime statistics in my region
 
 * Source: Police.uk Rest API
 * User input: GPS location (clickable map)
@@ -16,7 +16,7 @@ That means there's a story to write, as the number is significant enough (though
 
 *Note: I might want to monitor several GPS location, or a polygon.*
 
-##Source 2: Local police news
+## Source 2: Local police news
 
 * Source: Police.uk Rest API
 * User input: GPS location - that will expose my neighbourhood's code

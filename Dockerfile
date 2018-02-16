@@ -6,7 +6,7 @@ RUN apt-get update && apt-get upgrade --yes && apt-get install --yes apt-utils \
         && apt-get install --yes npm \
         && apt-get install --yes cron
 
-COPY * /datastringer/
+COPY . /datastringer/
 COPY wizard /datastringer/wizard
 
 WORKDIR "/datastringer"

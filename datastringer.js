@@ -4,7 +4,7 @@ var mailer = require('./mailer.js');
 var stringerUseCases = [];
 
 // try to load the stringer use cases
-var stringerUseCasesPath = __dirname + '/assets/stringers_use_cases.json';
+var stringerUseCasesPath = process.env.HOME + '/.local/share/datastringer/stringers_use_cases.json';
 try {
   stringerUseCases = require(stringerUseCasesPath);
 }

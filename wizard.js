@@ -76,3 +76,7 @@ process.on('uncaughtException', function(err) {
   }
   process.exit(1);
 });
+
+process.on('SIGINT', function () {
+      process.exit(0);
+});

@@ -25,7 +25,7 @@ $ git clone http://github.com/BBC-News-Labs/datastringer.git && cd datastringer
 $ ./install.sh
 ```
 
-`install.sh` will take of installing the needed dependencies:
+`install.sh` will take care of installing the needed dependencies:
 * node
 * npm
 * postifx (needed to be able to send mail)
@@ -33,6 +33,16 @@ $ ./install.sh
 It will then proceed to fetch node modules dependencies.
 
 The install script has been written and tested on Linux Ubuntu 14.04.
+
+## Docker image
+
+A `Dockerfile` is also available to build a datastringer Docker image:
+
+* Build with `docker build -t datastringer .`
+  (This will expose port 3000 which should be mapped when running a container)
+* Run with `docker run -d -p 3000:3000 datastringer`
+* Visit `http://localhost:3000`
+
 
 ## Introduction tour
 

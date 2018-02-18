@@ -1,6 +1,10 @@
 var nm = require("nodemailer");
 var utils = require('./utils.js');
-var t = nm.createTransport();
+var t = nm.createTransport({
+  tls: {
+    rejectUnauthorized: false
+  }
+});
 
 function sendAlert(stringerName, alertContent) {
   utils.readAsset('user-email.json', function(err, data) {

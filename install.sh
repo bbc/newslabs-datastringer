@@ -25,10 +25,10 @@ fi
 echo node installed!
 
 # Storing how NodeJS is meant to be called
-set NODEJS_COMMAND = 'node'
-if ! which ${NODE_COMMAND} > /dev/null
+NODEJS_COMMAND='node'
+if ! which ${NODEJS_COMMAND} > /dev/null
 then
-  set NODEJS_COMMAND = 'nodejs'
+  NODEJS_COMMAND='nodejs'
 fi
 
 if ! which npm > /dev/null
